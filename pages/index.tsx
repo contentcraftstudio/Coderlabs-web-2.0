@@ -3,6 +3,7 @@ import '../settings/i18'
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import { useTranslation } from 'react-i18next'
+import Card from '@/components/Card'
 
 export default function Home () {
   const { t } = useTranslation()
@@ -20,9 +21,7 @@ export default function Home () {
         <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap' />
       </Head>
       <main className={styles.main}>
-        <h1 className='text-3xl font-bold underline'>
-          {t('Make_it_happen')}
-        </h1>
+        <Card/>
       </main>
     </>
   )
