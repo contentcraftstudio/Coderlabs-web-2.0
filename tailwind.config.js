@@ -26,8 +26,17 @@ module.exports = {
       'green-light': '#69B865',
       yellow: '#DACC67',
       'gray-dark': '#5C5C5C',
-      gray: '#9D9D9D',
-      'gray-light': '#C7C7C7',
+      'gray-divide': '#909090',
+      gray: {
+        100: '#EAEAEA',
+        200: '#C7C7C7',
+        300: '#9D9D9D',
+        400: '#5C5C5C',
+        500: '#444444',
+        600: '#373737',
+        700: '#2E2E2E',
+        800: '#232323'
+      },
       'background-white': '#EFEFEF',
       'background-dark': '#232323',
       transparent: 'transparent'
