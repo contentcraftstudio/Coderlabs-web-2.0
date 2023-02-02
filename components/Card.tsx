@@ -1,12 +1,20 @@
 import React from 'react'
 import Image from 'next/image'
-import img from '../public/assets/ux.svg'
-type Props = {}
+import { useTranslation } from 'react-i18next'
 
-export default function Card({}: Props) {
+type Props = {
+  color: string;
+  img: any;
+  title: string;
+  paragraph: string;
+}
+
+export default function Card ({ color, img, title, paragraph }: Props) {
+  const { t } = useTranslation()
+
   return (
-    <div className='w-375 h-375 flex flex-col gap-10 shadow-xl p-[12px] rounded border-b-[22px] '>
-      <div className=''>
+    <div className={`w-[375px] h-[375px] flex flex-col gap-[10px] shadow-2xl py-[12px] px-[12px] rounded border-b-[22px] border-b-${color}`}>
+      <div className='flex justify-center'>
         <Image
           src={img}
           alt='UI/UX Design'
@@ -14,9 +22,9 @@ export default function Card({}: Props) {
           height={150}
         />
       </div>
-      <div className='w-100% text-center'>
-        <h3>UI/UX Design</h3>
-        <p>User Interface Design and User Experience.</p>
+      <div className='w-100% text-center  '>
+        <h3 className='text-xl font-body font-medium'>{t(title)}</h3>
+        <p className='text-xl font-normal pt-[10px] '>{t(paragraph)}</p>
       </div>
     </div>
   )
