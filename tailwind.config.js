@@ -30,12 +30,12 @@ module.exports = {
       'gray-light': '#C7C7C7',
       'background-white': '#EFEFEF',
       'background-dark': '#232323',
-      transparent: 'transparent'
+      transparent: 'transparent',
+      white: '#FFF'
     },
     fontFamily: {
-      sans: ['Roboto', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
-      body: ['Poppins', 'sans-serif']
+      primary: ['Roboto', 'sans-serif'],
+      secondary: ['Poppins', 'sans-serif']
     },
     extend: {},
     borderRadius: {
