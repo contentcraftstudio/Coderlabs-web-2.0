@@ -13,7 +13,8 @@ module.exports = {
       sm: '480px',
       md: '768px',
       lg: '976px',
-      xl: '1440px'
+      xl: '1440px',
+      '2xl': '1600px'
     },
     colors: {
       blue: '#65AACD',
@@ -37,14 +38,14 @@ module.exports = {
         700: '#2E2E2E',
         800: '#232323'
       },
+      white: '#FFFFFF',
       'background-white': '#EFEFEF',
       'background-dark': '#232323',
       transparent: 'transparent'
     },
     fontFamily: {
-      sans: ['Roboto', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
-      body: ['Poppins', 'sans-serif']
+      primary: ['Roboto', 'sans-serif'],
+      secondary: ['Poppins', 'sans-serif']
     },
     extend: {},
     borderRadius: {

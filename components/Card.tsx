@@ -22,8 +22,8 @@ export default function Card ({ color, img, title, paragraph }: Props) {
           height={150}
         />
       </div>
-      <div className='w-100% text-center  '>
-        <h3 className='text-xl font-body font-medium'>{t(title)}</h3>
+      <div className='w-100% text-center'>
+        <h3 className='text-xl font-secondary font-medium'>{t(title)}</h3>
         <p className='text-xl font-normal pt-[10px] '>{t(paragraph)}</p>
       </div>
     </div>
