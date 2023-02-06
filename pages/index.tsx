@@ -1,11 +1,12 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import '../settings/i18'
 import Head from 'next/head'
+import TechnologiesGrid from '@/components/TechnologiesGrid'
 // import { useTranslation } from 'react-i18next'
-import Footer from '@/components/Footer'
-import Blog from '@/components/Blog'
-import CardTestimonials from '@/components/CardTestimonials'
-import CardsTestominial from '@/components/CardsTestominial'
+// import Footer from '@/components/Footer'
+// import Blog from '@/components/Blog'
+// import CardTestimonials from '@/components/CardTestimonials'
+// import CardsTestominial from '@/components/CardsTestominial'
 
 export default function Home () {
   // const { t } = useTranslation()
@@ -24,7 +25,8 @@ export default function Home () {
       </Head>
       <main className='container mx-auto bg-background-dark'>
         {/* <Cards /> */}
-        <CardsTestominial />
+        {/* <CardsTestominial /> */}
+        <TechnologiesGrid />
       </main>
       {/* <footer className='bg-background-dark'>
         <section className='container mx-auto'>
