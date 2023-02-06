@@ -18,7 +18,7 @@ export default function Blog({}: Props) {
         </div>
         
       </div>
-      <div className="h-max bg-blue">
+      <div className="h-max">
         <Image
           alt='Blog Coderlabs'
           src={blog}
