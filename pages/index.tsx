@@ -4,6 +4,8 @@ import Head from 'next/head'
 // import { useTranslation } from 'react-i18next'
 import Footer from '@/components/Footer'
 import Blog from '@/components/Blog'
+import CardTestimonials from '@/components/CardTestimonials'
+import CardsTestominial from '@/components/CardsTestominial'
 
 export default function Home () {
   // const { t } = useTranslation()
@@ -22,7 +24,7 @@ export default function Home () {
       </Head>
       <main className='container mx-auto bg-background-dark'>
         {/* <Cards /> */}
-        <Blog />
+        <CardsTestominial />
       </main>
       {/* <footer className='bg-background-dark'>
         <section className='container mx-auto'>
