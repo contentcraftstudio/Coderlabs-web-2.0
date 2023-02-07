@@ -2,11 +2,13 @@
 import '../settings/i18'
 import Head from 'next/head'
 import TechnologiesGrid from '@/components/TechnologiesGrid'
+import ToolsSec from '@/components/ToolsSec'
+import Footer from '@/components/Footer'
+import Blog from '@/components/Blog'
+import CardsTestominial from '@/components/CardsTestominial'
+import Cards from '@/components/Cards'
 // import { useTranslation } from 'react-i18next'
-// import Footer from '@/components/Footer'
-// import Blog from '@/components/Blog'
-// import CardTestimonials from '@/components/CardTestimonials'
-// import CardsTestominial from '@/components/CardsTestominial'
+
 
 export default function Home () {
   // const { t } = useTranslation()
@@ -23,16 +25,19 @@ export default function Home () {
         <link rel='preconnect' href='https://fonts.gstatic.com' />
         <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap' />
       </Head>
-      <main className='container mx-auto'>
-        {/* <Cards /> */}
-        {/* <CardsTestominial /> */}
-        <TechnologiesGrid />
-      </main>
-      {/* <footer className='bg-background-dark'>
+      <main>
         <section className='container mx-auto'>
-          <Footer />
+          <Cards />
+          <ToolsSec />
         </section>
-      </footer> */}
+        <footer className='bg-background-dark'>
+          <section className='container mx-auto'>
+            {/* <CardsTestominial /> */}
+            <Blog />
+            <Footer />
+          </section>
+        </footer>
+      </main>
     </>
   )
 }

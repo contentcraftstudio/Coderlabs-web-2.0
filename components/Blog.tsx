@@ -9,12 +9,12 @@ export default function Blog ({}: Props) {
 
   return (
     <div className='sm:columns-1 lg:columns-2 p-[24px] '>
-      <div className='flex flex-col  items-start min-h-[600px] py-3'>
-        <h2 className='font-secondary font-medium text-[60px] text-white'>{t('Explore_our_blog')}</h2>
+      <div className='flex flex-col  items-start xl:min-h-[600px] py-3 sm:pb-[100px]'>
+        <h2 className='font-secondary font-medium sm:text-[34px] md:text-[48px] xl:text-[60px] text-white sm:pb-[20px] xl:pb-[40px]'>{t('Explore_our_blog')}</h2>
         <div className=' space-y-4'>
-          <p className='font-normal font-primary text-[20px] text-white'>{t('paragraph_our_blog_1')}</p>
-          <p className='font-normal font-primary text-[20px] text-white'>{t('paragraph_our_blog_2')}</p>
-          <p className='font-normal font-primary text-[20px] text-white'>{t('paragraph_our_blog_3')}</p>
+          <p className='font-normal font-primary sm:text-[16px] lg:text-[20px] text-white'>{t('paragraph_our_blog_1')}</p>
+          <p className='font-normal font-primary sm:text-[16px] lg:text-[20px] text-white'>{t('paragraph_our_blog_2')}</p>
+          <p className='font-normal font-primary sm:text-[16px] lg:text-[20px] text-white'>{t('paragraph_our_blog_3')}</p>
         </div>
       </div>
       <div className='h-max'>

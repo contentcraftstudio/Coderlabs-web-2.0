@@ -23,30 +23,30 @@ export default function Footer ({}: Props): JSX.Element {
           width={20}
           height={70}
         />
-        <h3 className='font-secondary text-[64px] font-bold text-white px-1'>{t('Navigate')}</h3>
+        <h3 className='font-secondary sm:text-[40px] lg:text-[48px] xl:text-[64px] font-bold text-white px-1'>{t('Navigate')}</h3>
       </div>
-      <div className='py-[22px] flex justify-start gap-[40px] flex-wrap sm:text-center'>
+      <div className='py-[22px] flex justify-start gap-[40px] flex-wrap '>
         <a href='#'>
-          <p className='font-primary text-[20px] font-medium text-gray-300 text-center'>{t('Identity')}</p>
+          <p className='font-primary sm:text-[16px] lg:text-[18px] xl:text-[20px] font-medium text-gray-300 sm:text-start xl:text-center'>{t('Identity')}</p>
         </a>
         <a href='#'>
-          <p className='font-primary text-[20px] font-medium text-gray-300 text-center'>{t('Services')}</p>
+          <p className='font-primary sm:text-[16px] lg:text-[18px] xl:text-[20px] font-medium text-gray-300 sm:text-start xl:text-center'>{t('Services')}</p>
         </a>
         <a href='#'>
-          <p className='font-primary text-[20px] font-medium text-gray-300 text-center'>{t('Tools')}</p>
+          <p className='font-primary sm:text-[16px] lg:text-[18px] xl:text-[20px] font-medium text-gray-300 sm:text-start xl:text-center'>{t('Tools')}</p>
         </a>
         <a href='#'>
-          <p className='font-primary text-[20px] font-medium text-gray-300 text-center'>{t('Advantages')}</p>
+          <p className='font-primary sm:text-[16px] lg:text-[18px] xl:text-[20px] font-medium text-gray-300 sm:text-start xl:text-center'>{t('Advantages')}</p>
         </a>
         <a href='#'>
-          <p className='font-primary text-[20px] font-medium text-gray-300 text-center'>{t('Team')}</p>
+          <p className='font-primary sm:text-[16px] lg:text-[18px] xl:text-[20px] font-medium text-gray-300 sm:text-start xl:text-center'>{t('Team')}</p>
         </a>
         <a href='#'>
-          <p className='font-primary text-[20px] font-medium text-gray-300 text-center'>{t('Blog')}</p>
+          <p className='font-primary sm:text-[16px] lg:text-[18px] xl:text-[20px] font-medium text-gray-300 sm:text-start xl:text-center'>{t('Blog')}</p>
         </a>
       </div>
       <div className='py-[18px] flex justify-start items-end'>
-        <h3 className='font-secondary text-[64px] font-bold text-white px-1'>{t('Contact')}</h3>
+        <h3 className='font-secondary sm:text-[40px] lg:text-[48px] xl:text-[64px] font-bold text-white px-1'>{t('Contact')}</h3>
         <Image
           src={logobajo}
           alt='coderlabs'
@@ -55,14 +55,14 @@ export default function Footer ({}: Props): JSX.Element {
           style={{ marginBlockEnd: 24 }}
         />
       </div>
-      <div className='py-[18px] flex justify-between flex-wrap px-[8px] items-center'>
-        <div className='flex justify-between gap-[16px] sm:text-center'>
-          <p className='font-primary text-[20px] font-medium text-gray-300 text-center'>contact@coderlabs.co</p>
-          <p className='font-primary text-[20px] font-medium text-gray-100 text-center'>1234567890</p>
-          <p className='font-primary text-[20px] font-medium text-gray-100 text-center'>Barranquilla</p>
+      <div className='py-[18px] flex sm:flex-col md:flex-row justify-between flex-wrap px-[8px] lg:items-center'>
+        <div className='flex sm:flex-col md:flex-row justify-between gap-[16px] '>
+          <p className='font-primary sm:text-[16px] lg:text-[18px] xl:text-[20px] font-medium text-gray-300'>contact@coderlabs.co</p>
+          <p className='font-primary sm:text-[16px] lg:text-[18px] xl:text-[20px] font-medium text-gray-100'>1234567890</p>
+          <p className='font-primary sm:text-[16px] lg:text-[18px] xl:text-[20px] font-medium text-gray-100'>Barranquilla</p>
         </div>
-        <div className='sm:text-center'>
-          <p className='font-primary text-[20px] font-medium text-gray-100 text-center'>Book a call</p>
+        <div className='md:text-center sm:py-4 md:py-0'>
+          <p className='font-primary sm:text-[16px] lg:text-[18px] xl:text-[20px] font-medium text-gray-100 '>Book a call</p>
         </div>
         <div className='sm:text-center flex justify-between gap-[30px]'>
           <a href='#'>
@@ -104,7 +104,7 @@ export default function Footer ({}: Props): JSX.Element {
         </div>
       </div>
       <div className='py-[18px]'>
-        <p className='font-primary text-[16px] font-medium text-gray-400 text-center'>2023 CoderLabs SAS. Developing with love Barranquilla, Colombia.</p>
+        <p className='font-primary sm:text-[12px] lg:text-[14px] xl:text-[16px] font-medium text-gray-400 text-center'>2023 CoderLabs SAS. Developing with love Barranquilla, Colombia.</p>
       </div>
     </div>
   )
