@@ -8,6 +8,7 @@ import Blog from '@/components/Blog'
 import CardsTestominial from '@/components/CardsTestominial'
 import Cards from '@/components/Cards'
 import BestSec from '@/components/BestSec'
+import Hero from '@/components/Hero'
 // import { useTranslation } from 'react-i18next'
 
 
@@ -28,6 +29,7 @@ export default function Home () {
       </Head>
       <main>
         <section className='container mx-auto'>
+          <Hero />
           <Cards />
           <ToolsSec />
           {/* <BestSec /> */}
