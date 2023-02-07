@@ -7,6 +7,7 @@ import Footer from '@/components/Footer'
 import Blog from '@/components/Blog'
 import CardsTestominial from '@/components/CardsTestominial'
 import Cards from '@/components/Cards'
+import BestSec from '@/components/BestSec'
 // import { useTranslation } from 'react-i18next'
 
 
@@ -29,6 +30,7 @@ export default function Home () {
         <section className='container mx-auto'>
           <Cards />
           <ToolsSec />
+          <BestSec />
         </section>
         <footer className='bg-background-dark'>
           <section className='container mx-auto'>
