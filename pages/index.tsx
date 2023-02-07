@@ -34,13 +34,13 @@ export default function Home () {
           <ToolsSec />
           {/* <BestSec /> */}
         </section>
-        {/* <footer className='bg-background-dark'>
+        <footer className='bg-background-dark'>
           <section className='container mx-auto'>
-            <CardsTestominial />
+            {/* <CardsTestominial /> */}
             <Blog />
             <Footer />
           </section>
-        </footer> */}
+        </footer>
       </main>
     </>
   )
