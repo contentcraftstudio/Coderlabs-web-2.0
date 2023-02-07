@@ -14,7 +14,7 @@ export default function CardTestimonials ({ img, name, occupation, paragraph }: 
   return (
     <div className='w-[573px] grid  h-[318px] divide-y-2 pt-[60px] px-[70px] pb-[32px] border-2 rounded border-white'>
       <div className='pb-[32px]'>
-        <p className=' font-primary font-normal text-[19px] text-center text-white'>{t(paragraph)}</p>
+        <p className=' font-primary font-normal sm:text-[16px] xl:text-[19px] text-center text-white'>{t(paragraph)}</p>
       </div>
       <div className='flex justify-center items-center gap-x-[20px] pt-[32px]'>
         <Image
