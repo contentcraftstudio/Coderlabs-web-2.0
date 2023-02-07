@@ -15,6 +15,7 @@ export default function TechnologiesGrid ({}: Props) {
             src={item.img}
             width={132}
             height={132}
+            className='shadow-2xl'
           />
         )
       })}
