@@ -6,15 +6,13 @@ type Props = {}
 
 export default function TechnologiesGrid ({}: Props) {
   return (
-    <div className=' w-[570px] grid grid-cols-4 gap-4'>
+    <div className=' sm:w-[290px] md:w-[570px] grid grid-cols-4 gap-1 sm:mx-auto'>
       {TechnologiesData.data.map((item) => {
         return (
           <Image
             key={item.alt}
             alt={item.alt}
             src={item.img}
-            width={132}
-            height={132}
             className='shadow-2xl'
           />
         )
