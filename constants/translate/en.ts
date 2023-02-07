@@ -6,7 +6,7 @@ export const EN = {
   Make_it_happen: 'Make it happen',
   Book_a_call: 'Book a call',
   // sec 1
-  How_we_do: 'How we do',
+  How_we_do: 'How we do?',
   paragraph_focus: 'We focus on your business objectives and needs, using agile methodologies, UX design and the main programming languages, to ensure the integration, performance and scalability of the created applications.',
   Design_ui_ux: 'UI/UX Design',
   Development: 'Development',
