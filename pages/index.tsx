@@ -9,6 +9,7 @@ import CardsTestominial from '@/components/CardsTestominial'
 import Cards from '@/components/Cards'
 import BestSec from '@/components/BestSec'
 import Hero from '@/components/Hero'
+import Navbar from '@/components/Navbar'
 // import { useTranslation } from 'react-i18next'
 
 
@@ -29,6 +30,7 @@ export default function Home () {
       </Head>
       <main>
         <section className='container mx-auto'>
+        <Navbar />
           <Hero />
           <Cards />
           <ToolsSec />
