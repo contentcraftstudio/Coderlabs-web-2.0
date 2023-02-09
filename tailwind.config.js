@@ -41,7 +41,8 @@ module.exports = {
       white: '#FFFFFF',
       'background-white': '#EFEFEF',
       'background-dark': '#232323',
-      transparent: 'transparent'
+      transparent: 'transparent',
+      white: '#FFF'
     },
     fontFamily: {
       primary: ['Roboto', 'sans-serif'],
