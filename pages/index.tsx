@@ -10,6 +10,8 @@ import Cards from '@/components/Cards'
 import BestSec from '@/components/BestSec'
 import Hero from '@/components/Hero'
 import Navbar from '@/components/Navbar'
+import ProfileEdit from '@/components/SwiperTeam'
+import Team from '@/components/Team'
 // import { useTranslation } from 'react-i18next'
 
 
@@ -29,16 +31,19 @@ export default function Home () {
         <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap' />
       </Head>
       <main>
-        <section className='container mx-auto'>
-        <Navbar />
-          <Hero />
+        <section className='container mx-auto space-y-[180px]'>
+          <section className='mb-[190px] sm:space-y-[450px] md:space-y-[500px]'>
+            <Navbar />
+            <Hero />
+          </section>
           <Cards />
           <ToolsSec />
           {/* <BestSec /> */}
         </section>
-        <footer className='bg-background-dark'>
-          <section className='container mx-auto'>
+        <footer className='bg-background-dark mt-[200px]'>
+          <section className='container mx-auto space-y-[100px]'>
             {/* <CardsTestominial /> */}
+            <Team />
             <Blog />
             <Footer />
           </section>

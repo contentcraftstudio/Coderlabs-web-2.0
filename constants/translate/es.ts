@@ -26,7 +26,7 @@ export const ES = {
   paragraph_card_best_choice: 'Somos tus aliados para llevar tus ideas a otro nivel teniendo en cuenta tus necesidades ofreciéndote soluciones integrales que combinan diseño y desarrollo bajo un enfoque de trabajo colaborativo.',
   paragraph_card_positive_impact: 'Nuestros productos digitales aseguran una facilidad de uso, eficiencia, seguridad, estabilidad y un producto libre de errores, ajustandose a las necesidades del cliente.',
   // sec 4
-  Our_team: 'Nuestro equipo',
+  Our_team: 'Nuestro equipo :',
   paragraph_our_team: 'En CoderLabs tenemos un equipo capaz de enfrentar los desafíos con estrategias sólidas, calidad humana y enfoque al usuario.',
   // testimonials
   testimonials_kevin: 'Somos un equipo confiable en el mercado gracias a nuestra dedicación, innovación y determinación para superar las expectativas de nuestros clientes',

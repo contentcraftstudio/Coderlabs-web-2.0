@@ -31,13 +31,13 @@ export default function Navbar ({}: Props) {
   return (
     <nav className=' container py-4 flex justify-between items-center'>
       <Image
-      src={coderlabsLogo}
+        src={coderlabsLogo}
         alt='coderlabs logo'
         height={base[imgS].h}
         width={base[imgS].w}
       />
       <div>
-      <p>btn</p>
+        <p>btn</p>
       </div>
     </nav>
   )
