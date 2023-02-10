@@ -4,6 +4,7 @@ import React from 'react'
 import { useSize } from 'ahooks'
 import { Dom } from '@/settings/util'
 import coderlabsLogo from '../public/assets/coderlabs_logo.svg'
+import SwitchButton from './SwitchButton'
 type Props = {}
 
 const BASE = () => {
@@ -37,7 +38,7 @@ export default function Navbar ({}: Props) {
         width={base[imgS].w}
       />
       <div>
-        <p>btn</p>
+        <SwitchButton />
       </div>
     </nav>
   )
