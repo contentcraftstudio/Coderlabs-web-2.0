@@ -14,8 +14,6 @@ import roberto from '../public/assets/team/Roberto.png'
 import juan from '../public/assets/team/Juand.png'
 import jesus from '../public/assets/team/Jesus.png'
 import samuel from '../public/assets/team/Samuel.png'
-import { Dom } from '@/settings/util'
-import { useSize } from 'ahooks'
 
 const TEAM = [
   {
@@ -28,7 +26,7 @@ const TEAM = [
   {
     id: 2,
     name: 'Melissa Vega',
-    occupation: 'Director of Customer Operations',
+    occupation: 'Director Operations',
     linkedIn: '',
     photo: melissa
   },
@@ -162,7 +160,7 @@ export default function ProfileEdit () {
                   <h3 className='sm:text-[24px] md:text-[48px] lg:text-[55px] xl:text-[80px] leading-[1.2]  font-secondary font-bold overflow-hidden overflow-ellipsis whitespace-nowrap mb-[20px] xl:mb-[70px]'>
                     {team.name.split(' ')[0]}<br />{team.name.split(' ')[1]}
                   </h3>
-                  <div className='flex  justify-around items-center md:gap-8 w-fit md:grid-cols-2 border-[1px] border-[#444] leading-none rounded-[8px] py-[7px] px-[10px] lg:divide-x divide-solid'>
+                  <div className='flex  justify-around items-center md:gap-8 w-fit border-[1px] border-[#444] leading-none rounded-[8px] py-[7px] px-[10px] lg:divide-x divide-solid'>
                     <span className='text-left sm:text-[12px] lg:text-[16px] '>{team.occupation}</span>
                     <span className='text-right md:pl-8  flex items-center gap-2'>
                       <svg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -173,17 +171,14 @@ export default function ProfileEdit () {
                   </div>
                 </div>
                 <div className='flex justify-end overflow-hidden h-full'>
-
-                  <div className=' bg-red justify-center sm:w-[155px] md:w-[196px] xl:w-[332px] sm:h-[168px]  md:h-[219px] lg:h-[360px] rounded z-1  '>
+                  <div className=' justify-center sm:w-[155px] md:w-[196px] xl:w-[332px] sm:h-[168px]  md:h-[219px] lg:h-[360px] rounded z-1  '>
                     <Image
                       alt={team.name}
                       src={team.photo}
                       priority
-                      layout=''
                       className=' w-[100%] sm:h-[168px]  md:h-[219px] lg:h-[360px]'
                     />
                   </div>
-
                 </div>
               </div>
             </div>
