@@ -13,6 +13,7 @@ import kevin from '../public/assets/team/Kevin.png'
 import roberto from '../public/assets/team/Roberto.png'
 import juan from '../public/assets/team/Juand.png'
 import jesus from '../public/assets/team/Jesus.png'
+import samuel from '../public/assets/team/Samuel.png'
 import { Dom } from '@/settings/util'
 import { useSize } from 'ahooks'
 
@@ -33,7 +34,7 @@ const TEAM = [
   },
   {
     id: 3,
-    name: 'Armando Guzman',
+    name: 'Armando Guzmán',
     occupation: 'Tech Lead',
     linkedIn: '',
     photo: armando
@@ -47,14 +48,14 @@ const TEAM = [
   },
   {
     id: 5,
-    name: 'Laura Jaimini',
+    name: 'Laura Lamilla',
     occupation: 'Growth Brand',
     linkedIn: '',
     photo: laura
   },
   {
     id: 6,
-    name: 'Jose Perez',
+    name: 'Jose Pérez',
     occupation: 'Front-end Developer',
     linkedIn: '',
     photo: jose
@@ -75,7 +76,7 @@ const TEAM = [
   },
   {
     id: 9,
-    name: 'Juan Obregon',
+    name: 'Juan Obregón',
     occupation: 'UI Designer',
     linkedIn: '',
     photo: juan
@@ -86,11 +87,16 @@ const TEAM = [
     occupation: 'Front-end Developer',
     linkedIn: '',
     photo: jesus
+  },
+  {
+    id: 11,
+    name: 'Samuel Rodríguez',
+    occupation: 'Front-end Developer',
+    linkedIn: '',
+    photo: samuel
   }
 ]
 export default function ProfileEdit () {
-  const size = useSize(Dom)
-  const imgSize = size?.width <= 380 ? 155 : size?.width >= 381 && size?.width <= 768 ? 190 : 322
   return (
     <Swiper
       init={false}
@@ -168,14 +174,13 @@ export default function ProfileEdit () {
                 </div>
                 <div className='flex justify-end overflow-hidden h-full'>
 
-                  <div className=' justify-end w-[300px] sm:h-[160px]  md:h-[192px] lg:h-[360x] rounded z-1  '>
+                  <div className=' bg-red justify-center sm:w-[155px] md:w-[196px] xl:w-[332px] sm:h-[168px]  md:h-[219px] lg:h-[360px] rounded z-1  '>
                     <Image
                       alt={team.name}
                       src={team.photo}
                       priority
-                      objectFit='cover'
-                      height={300}
-                      className='rounded self-end ml-4'
+                      layout=''
+                      className=' w-[100%] sm:h-[168px]  md:h-[219px] lg:h-[360px]'
                     />
                   </div>
 
