@@ -33,7 +33,7 @@ export default function Hero ({}: Props) {
             />
           </div>
           <div className=' space-y-8 sm:pt-[20px] md:pt-[40px] xl:pt-[60px]'>
-            <p className='font-secondary font-normal sm:w-[290px] md:w-[600px]  sm:text-[16px] md:text-[20px] '>{t('Subtitle_hero')}</p>
+            <p className='font-secondary font-normal sm:w-[305px] md:w-[600px]  sm:text-[16px] md:text-[20px] '>{t('Subtitle_hero')}</p>
             <p className='font-secondary font-normal sm:w-[290px] md:w-[497px] sm:text-[16px] md:text-[20px] '>{t('paragraph_hero')}</p>
           </div>
         </div>

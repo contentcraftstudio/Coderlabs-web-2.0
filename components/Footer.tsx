@@ -20,10 +20,9 @@ export default function Footer ({}: Props): JSX.Element {
         <Image
           src={logo}
           alt='coderlabs'
-          width={20}
-          height={70}
+          className=' self-start mt-[6px] lg:mt-[10px]  sm:w-[20px] lg:w-[20px] sm:h-[46px]  md:h-[50px] lg:h-[70px]'
         />
-        <h3 className='font-secondary sm:text-[40px] lg:text-[48px] xl:text-[64px] font-bold text-white px-1'>{t('Navigate')}</h3>
+        <h3 className='font-secondary ml-[-8px]  sm:text-[40px] lg:text-[48px] xl:text-[64px] font-bold text-white px-1'>{t('Navigate')}</h3>
       </div>
       <div className='py-[22px] flex justify-start gap-[40px] flex-wrap '>
         <a href='#'>
@@ -45,14 +44,14 @@ export default function Footer ({}: Props): JSX.Element {
           <p className='font-primary sm:text-[16px] lg:text-[18px] xl:text-[20px] font-medium text-gray-300 sm:text-start xl:text-center'>{t('Blog')}</p>
         </a>
       </div>
-      <div className='py-[18px] flex justify-start items-end'>
+      <div className='py-[18px] flex justify-start '>
         <h3 className='font-secondary sm:text-[40px] lg:text-[48px] xl:text-[64px] font-bold text-white px-1'>{t('Contact')}</h3>
         <Image
           src={logobajo}
           alt='coderlabs'
           width={32}
           height={5}
-          style={{ marginBlockEnd: 24 }}
+          className='self-end lg:mt-[10px] sm:mb-[-6px]  sm:w-[20px] lg:w-[35px] sm:h-[46px]  md:h-[50px] lg:h-[70px]'
         />
       </div>
       <div className='py-[18px] flex sm:flex-col md:flex-row justify-between flex-wrap px-[8px] lg:items-center'>
