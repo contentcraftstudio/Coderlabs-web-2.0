@@ -1,19 +1,13 @@
-
-import { useSize } from 'ahooks'
 import Image from 'next/image'
 import React from 'react'
 import rocket from '../public/assets/rocket.svg'
 import logo from '../public/assets/llavelogo.svg'
 import logobajo from '../public/assets/rectangle.svg'
 import { useTranslation } from 'react-i18next'
-import { Dom } from '@/settings/util'
 
 type Props = {}
 
 export default function Hero ({}: Props) {
-  const size = useSize(Dom)
-  const imgSize = size?.width <= 380 ? 364 : size?.width >= 381 && size?.width <= 768 ? 520 : 600
-
   const { t } = useTranslation()
   return (
     <>
@@ -22,7 +16,7 @@ export default function Hero ({}: Props) {
         <div className='col-span-2 divide-y-2'>
           <div className='flex sm:pb-[20px] md:p-[40px]]'>
             <Image
-              className=' self-start'
+              className=' self-start mt-[5px] sm:w-[20px] lg:w-[20px] sm:h-[36px]  md:h-[50px] lg:h-[70px]'
               src={logo}
               alt='coderlabs'
               width={20}
@@ -43,12 +37,10 @@ export default function Hero ({}: Props) {
             <p className='font-secondary font-normal sm:w-[290px] md:w-[497px] sm:text-[16px] md:text-[20px] '>{t('paragraph_hero')}</p>
           </div>
         </div>
-        <div className=' mx-auto'>
+        <div className=' mx-auto sm:w-[364px] md:w-[520px] xl:w-[620px] sm:h-[364px]  md:h-[520px] lg:h-[620px]'>
           <Image
             alt='rocket'
             src={rocket}
-            width={imgSize}
-            height={imgSize}
           />
         </div>
       </div>

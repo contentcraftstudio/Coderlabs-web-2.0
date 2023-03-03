@@ -39,8 +39,8 @@ export default function Home () {
           <ToolsSec />
           {/* <BestSec /> */}
         </section>
-        <footer className='bg-background-dark mt-[200px]'>
-          <section className='container mx-auto space-y-[100px]'>
+        <footer className='bg-background-dark mt-[200px] pt-8'>
+          <section className='container mx-auto  space-y-[100px]'>
             {/* <CardsTestominial /> */}
             <Team />
             <Blog />

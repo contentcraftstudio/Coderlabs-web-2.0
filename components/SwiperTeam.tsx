@@ -176,7 +176,7 @@ export default function ProfileEdit () {
                       alt={team.name}
                       src={team.photo}
                       priority
-                      className=' w-[100%] sm:h-[168px]  md:h-[219px] lg:h-[360px]'
+                      className='w-[100%] sm:h-[168px]  md:h-[219px] lg:h-[360px]'
                     />
                   </div>
                 </div>
