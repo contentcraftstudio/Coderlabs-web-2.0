@@ -41,8 +41,8 @@ export default function Home () {
         </section>
         <footer className='bg-background-dark mt-[200px] pt-8'>
           <section className='container mx-auto  space-y-[100px]'>
-            {/* <CardsTestominial /> */}
             <Team />
+            <CardsTestominial />
             <Blog />
             <Footer />
           </section>

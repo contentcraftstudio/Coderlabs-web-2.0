@@ -49,13 +49,11 @@ export default function Footer ({}: Props): JSX.Element {
         <Image
           src={logobajo}
           alt='coderlabs'
-          width={32}
-          height={5}
           className='self-end lg:mt-[10px] sm:mb-[-6px]  sm:w-[20px] lg:w-[35px] sm:h-[46px]  md:h-[50px] lg:h-[70px]'
         />
       </div>
-      <div className='py-[18px] flex sm:flex-col md:flex-row justify-between flex-wrap px-[8px] lg:items-center'>
-        <div className='flex sm:flex-col md:flex-row justify-between gap-[16px] '>
+      <div className='py-[18px] flex flex-col md:flex-row gap-4 justify-between flex-wrap px-[8px] lg:items-center'>
+        <div className='flex flex-col md:flex-row justify-between gap-[16px] '>
           <p className='font-primary sm:text-[16px] lg:text-[18px] xl:text-[20px] font-medium text-gray-300'>contact@coderlabs.co</p>
           <p className='font-primary sm:text-[16px] lg:text-[18px] xl:text-[20px] font-medium text-gray-100'>1234567890</p>
           <p className='font-primary sm:text-[16px] lg:text-[18px] xl:text-[20px] font-medium text-gray-100'>Barranquilla</p>
