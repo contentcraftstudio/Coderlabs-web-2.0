@@ -1,13 +1,13 @@
-import React from 'react'
-import { useFormikContext, getIn } from 'formik'
+import React from "react"
+import { useFormikContext, getIn } from "formik"
 
 type Props = {
-  name: string;
-  label: string;
-  type: string;
+  name: string
+  label: string
+  type: string
 }
 
-export default function FormInput ({ name, label, type }: Props) {
+export default function FormInput({ name, label, type }: Props) {
   const { setFieldTouched, setFieldValue, values } = useFormikContext()
 
   return (
@@ -18,10 +18,9 @@ export default function FormInput ({ name, label, type }: Props) {
         name={name}
         placeholder={label}
         value={getIn(values, name)}
-        onChange={e => setFieldValue(name, e.target.value)}
+        onChange={(e) => setFieldValue(name, e.target.value)}
         onBlur={() => setFieldTouched(name)}
       />
-
     </div>
   )
 }
