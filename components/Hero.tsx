@@ -1,16 +1,16 @@
-import Image from 'next/image'
-import React from 'react'
-import rocket from '../public/assets/rocket.svg'
-import logo from '../public/assets/llavelogo.svg'
-import logobajo from '../public/assets/rectangle.svg'
-import { useTranslation } from 'react-i18next'
+import Image from "next/image"
+import React from "react"
+import rocket from "../public/assets/rocket.svg"
+import logo from "../public/assets/llavelogo.svg"
+import logobajo from "../public/assets/rectangle.svg"
+import { useTranslation } from "react-i18next"
 
 type Props = {}
 
-export default function Hero ({}: Props) {
+export default function Hero({}: Props) {
   const { t } = useTranslation()
   return (
-    <>
+    <div className='w-[100%] px-[103px]'>
       <div className=' h-screen-50' />
       <div className='grid sm:grid-cols-1 xl:grid-cols-3'>
         <div className='col-span-2 divide-y-2'>
@@ -22,7 +22,9 @@ export default function Hero ({}: Props) {
               width={20}
               height={70}
             />
-            <h1 className='font-secondary font-medium sm:text-[34px] md:text-[48px] xl:text-[60px]'>{t('title_hero')}</h1>
+            <h1 className='font-secondary font-medium sm:text-[34px] md:text-[48px] xl:text-[60px]'>
+              {t("title_hero")}
+            </h1>
             <Image
               className=' self-end'
               src={logobajo}
@@ -33,17 +35,18 @@ export default function Hero ({}: Props) {
             />
           </div>
           <div className=' space-y-8 sm:pt-[20px] md:pt-[40px] xl:pt-[60px]'>
-            <p className='font-secondary font-normal sm:w-[305px] md:w-[600px]  sm:text-[16px] md:text-[20px] '>{t('Subtitle_hero')}</p>
-            <p className='font-secondary font-normal sm:w-[290px] md:w-[497px] sm:text-[16px] md:text-[20px] '>{t('paragraph_hero')}</p>
+            <p className='font-secondary font-normal sm:w-[305px] md:w-[600px]  sm:text-[16px] md:text-[20px] '>
+              {t("Subtitle_hero")}
+            </p>
+            <p className='font-secondary font-normal sm:w-[290px] md:w-[497px] sm:text-[16px] md:text-[20px] '>
+              {t("paragraph_hero")}
+            </p>
           </div>
         </div>
-        <div className=' mx-auto sm:w-[364px] md:w-[520px] xl:w-[620px] sm:h-[364px]  md:h-[520px] lg:h-[620px]'>
-          <Image
-            alt='rocket'
-            src={rocket}
-          />
+        <div className=' mx-auto sm:w-[364px] md:w-[520px] xl:w-[450px] sm:h-[364px]  md:h-[520px] lg:h-[620px]'>
+          <Image alt='rocket' src={rocket} />
         </div>
       </div>
-    </>
+    </div>
   )
 }
