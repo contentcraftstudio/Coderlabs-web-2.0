@@ -1,20 +1,21 @@
 /* eslint-disable @next/next/no-page-custom-font */
-import '../settings/i18'
-import Head from 'next/head'
-import TechnologiesGrid from '@/components/TechnologiesGrid'
-import ToolsSec from '@/components/ToolsSec'
-import Footer from '@/components/Footer'
-import Blog from '@/components/Blog'
-import CardsTestominial from '@/components/CardsTestominial'
-import Cards from '@/components/Cards'
-import BestSec from '@/components/BestSec'
-import Hero from '@/components/Hero'
-import Navbar from '@/components/Navbar'
-import ProfileEdit from '@/components/SwiperTeam'
-import Team from '@/components/Team'
+import "../settings/i18"
+import Head from "next/head"
+import TechnologiesGrid from "@/components/TechnologiesGrid"
+import ToolsSec from "@/components/ToolsSec"
+import Footer from "@/components/Footer"
+import Blog from "@/components/Blog"
+import CardsTestominial from "@/components/CardsTestominial"
+import Cards from "@/components/Cards"
+import BestSec from "@/components/BestSec"
+import Hero from "@/components/Hero"
+import Navbar from "@/components/Navbar"
+import ProfileEdit from "@/components/SwiperTeam"
+import Team from "@/components/Team"
+import GetIn from "@/components/GetIn"
 // import { useTranslation } from 'react-i18next'
 
-export default function Home () {
+export default function Home() {
   // const { t } = useTranslation()
 
   return (
@@ -27,7 +28,10 @@ export default function Home () {
         {/* Roboto Fonts */}
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' />
-        <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap' />
+        <link
+          rel='stylesheet'
+          href='https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'
+        />
       </Head>
       <main>
         <section className='container mx-auto space-y-[180px]'>
@@ -44,6 +48,7 @@ export default function Home () {
             <Team />
             <CardsTestominial />
             <Blog />
+            <GetIn />
             <Footer />
           </section>
         </footer>
