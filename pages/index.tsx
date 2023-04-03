@@ -35,7 +35,7 @@ export default function Home() {
       </Head>
       <main>
         <section className='container mx-auto space-y-[180px]'>
-          <section className='mb-[190px] sm:space-y-[450px] md:space-y-[500px]'>
+          <section className='mb-[190px] sm:space-y-[450px] md:space-y-[150px]'>
             <Navbar />
             <Hero />
           </section>
