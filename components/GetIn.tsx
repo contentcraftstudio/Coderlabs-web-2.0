@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next"
 import Form from "./form/Form"
 import FormInput from "./form/FormInput"
 import FormButton from "./form/FormButton"
-import axios from 'axios'
+import axios from "axios"
 
 type Props = {}
 
@@ -76,17 +76,25 @@ export default function GetIn({}: Props) {
           <p className='w-225 font-roboto text-4xl font-medium leading-10 text-gray-700 mb-[42px]'>
             Get In Touch
           </p>
-          <div className='columns-2'>
-            <FormInput label={t("Name")} name='name' type='name' />
-            <FormInput label={t("Phone_number")} name='phone' type='phone' />
+          <div className='flex gap-[20px] flex-wrap'>
+            <div className='lg:w-[49.2%] sm:w-full'>
+              <FormInput label={t("Name")} name='name' type='name' />
+            </div>
+            <div className='lg:w-[49.2%] sm:w-full'>
+              <FormInput label={t("Email")} name='email' type='email' />
+            </div>
           </div>
-          <div className='columns-2'>
-            <FormInput label={t("Email")} name='email' type='email' />
-            <FormInput
-              label={t("Contacting_us")}
-              name='contacting'
-              type='contacting'
-            />
+          <div className='flex lg:gap-[20px] md:gap-[10px] flex-wrap'>
+            <div className='lg:w-[49.2%] sm:w-full md:w-[49.2%]'>
+              <FormInput label={t("Phone_number")} name='phone' type='phone' />
+            </div>
+            <div className='lg:w-[49.2%] sm:w-full md:w-[49.2%]'>
+              <FormInput
+                label={t("Contacting_us")}
+                name='contacting'
+                type='contacting'
+              />
+            </div>
           </div>
           <FormInput label={t("Defined_budget")} name='budget' type='budget' />
           <FormInput label={t("Your_budget")} name='menssage' type='menssage' />
