@@ -84,7 +84,7 @@ export default function GetIn({}: Props) {
               <FormInput label={t("Email")} name='email' type='email' />
             </div>
           </div>
-          <div className='flex lg:gap-[20px] md:gap-[10px] flex-wrap'>
+          <div className='flex gap-[20px] flex-wrap'>
             <div className='lg:w-[49.2%] sm:w-full md:w-[49.2%]'>
               <FormInput label={t("Phone_number")} name='phone' type='phone' />
             </div>
