@@ -43,9 +43,9 @@ export default function Hero({}: Props) {
               {t("paragraph_hero")}
             </p>
             <div className='flex'>
-              <IButton label={"Make it happen!"} variant={"contained"} />
+              <IButton label={t("Make_it_happen")} variant={"contained"} />
               <div className='mr-[20px]' />
-              <IButton label={"Book a call"} variant={"outlined"} />
+              <IButton label={t("Book_a_call")} variant={"outlined"} />
             </div>
           </div>
         </div>
