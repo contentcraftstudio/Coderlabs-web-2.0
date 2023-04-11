@@ -126,7 +126,7 @@ export default function Footer({}: Props): JSX.Element {
       </div>
       <div className='py-[18px]'>
         <p className='font-primary sm:text-[12px] lg:text-[14px] xl:text-[16px] font-medium text-gray-400 text-center'>
-          2023 CoderLabs SAS. Developing with love Barranquilla, Colombia.
+          {t("Copy")}
         </p>
       </div>
     </div>
