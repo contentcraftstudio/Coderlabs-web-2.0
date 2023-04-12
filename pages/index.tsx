@@ -35,13 +35,13 @@ export default function Home() {
       </Head>
       <main>
         <section className='container mx-auto space-y-[180px]'>
-          <section className='mb-[190px] sm:space-y-[450px] md:space-y-[500px]'>
+          <section className='mb-[190px] sm:space-y-[200px] md:space-y-[150px]'>
             <Navbar />
             <Hero />
           </section>
           <Cards />
           <ToolsSec />
-          {/* <BestSec /> */}
+          <BestSec />
         </section>
         <footer className='bg-background-dark mt-[200px] pt-8'>
           <section className='container mx-auto  space-y-[100px]'>
