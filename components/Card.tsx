@@ -16,7 +16,7 @@ export default function Card ({ color, img, title, paragraph }: Props) {
   const size = useSize(Dom)
   const imgSize = size?.width <= 380 ? 100 : size?.width >= 381 && size?.width <= 768 ? 110 : 150
   return (
-    <div className={`sm:w-[300px] sm:h-[300px] md:w-[310px] md:h-[310px] xl:w-[375px] xl:h-[375px] flex flex-col gap-[10px] shadow-xl py-[12px] rounded border-b-[22px] px-[12px]  border-b-${color}`}>
+    <div className={`sm:w-[300px] sm:h-[300px] md:w-[310px] md:h-[310px] xl:w-[375px] xl:h-[375px] flex flex-col gap-[10px] shadow-xl py-[12px] rounded border-b-[22px] px-[12px]  ${color}`}>
       <div className='flex justify-center'>
         <Image
           src={img}
