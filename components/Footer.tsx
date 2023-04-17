@@ -15,7 +15,7 @@ export default function Footer({}: Props): JSX.Element {
   const { t } = useTranslation()
 
   return (
-    <div className=' w-[100%] grid grid-cols-1 divide-y-2 divide-gray-300 px-4 container'>
+    <div className='w-[100%] grid grid-cols-1 divide-y-2 divide-gray-300 px-4 container lg:pt-[200px]'>
       <div className='py-[18px] flex justify-start'>
         <Image
           src={logo}
