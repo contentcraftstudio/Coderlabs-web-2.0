@@ -3,6 +3,7 @@ import React from "react"
 import { useTranslation } from "react-i18next"
 import blog from "../public/assets/blog.svg"
 import IButton from "./form/Button"
+import Link from "next/link"
 
 type Props = {}
 
@@ -27,7 +28,9 @@ export default function Blog({}: Props) {
               {t("paragraph_our_blog_3")}
             </p>
           </div>
-          <IButton label={t("Visit_us_now")} variant={"outlined"} />
+          <Link href='https://medium.com/@coderlabs'>
+            <IButton label={t("Visit_us_now")} variant={"outlined"} />
+          </Link>
         </div>
       </div>
       <div className='h-max'>
