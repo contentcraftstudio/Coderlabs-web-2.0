@@ -9,25 +9,25 @@ export const CardData = {
       img: ux,
       title: 'Design_ui_ux',
       paragraph: 'paragraph_card_desing',
-      color: 'orange'
+      color: 'border-b-orange'
     },
     {
       img: dev,
       title: 'Development',
       paragraph: 'paragraph_card_development',
-      color: 'green'
+      color: 'border-b-green'
     },
     {
       img: devops,
       title: 'Dev_ops',
       paragraph: 'paragraph_card_dev_ops',
-      color: 'red'
+      color: 'border-b-red'
     },
     {
       img: marketing,
       title: 'Marketing_SEO',
       paragraph: 'paragraph_card_marketing',
-      color: 'gray-200'
+      color: 'border-b-gray-200'
     }
   ]
 }
