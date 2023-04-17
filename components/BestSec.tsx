@@ -16,7 +16,7 @@ type Props = {
 function Card ({ img, alt, color, title, description }: Props): JSX.Element {
   return (
     <div
-      className={`sm:w-[330px] sm:h-[270px] md:w-[600px] md:h-[400px] xl:w-[600px] xl:h-[400px] flex flex-col sm:gap-[10px] md:gap-[24px] lg:gap-[24px] rounded border-b-[22px] border-${color} sm:px-[20px] md:px-[60px] lg:px-[60px] sm:pt-[36px] md:pt-[85px] lg:pt-[85px] shadow-md`}
+      className={`sm:w-[330px] sm:h-[270px] md:w-[600px] md:h-[400px] xl:w-[600px] xl:h-[400px] flex flex-col sm:gap-[10px] md:gap-[24px] lg:gap-[24px] rounded border-b-[22px] ${color} sm:px-[20px] md:px-[60px] lg:px-[60px] sm:pt-[36px] md:pt-[85px] lg:pt-[85px] shadow-md`}
     >
       <div className='flex justify-center'>
         <Image alt={alt} src={img} width={36} className=' sm:w-[36px] sm:h-[36px] xl:w-[64px] lg:h-[64px] ' />
@@ -44,14 +44,14 @@ export default function BestSec (): JSX.Element {
         <Card
           img={aliados}
           alt={t('We_are_your_allies')}
-          color='orange'
+          color='border-orange'
           title={t('We_are_your_allies')}
           description={t('paragraph_card_best_choice')}
         />
         <Card
           img={impacto}
           alt={t('Positive_impact')}
-          color='green'
+          color='border-green'
           title={t('Positive_impact')}
           description={t('paragraph_card_positive_impact')}
         />
