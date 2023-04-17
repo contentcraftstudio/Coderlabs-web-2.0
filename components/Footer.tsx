@@ -74,7 +74,7 @@ export default function Footer({}: Props): JSX.Element {
             contact@coderlabs.co
           </p>
           <p className='font-primary sm:text-[16px] lg:text-[18px] xl:text-[20px] font-medium text-gray-100'>
-            1234567890
+            322 7946096
           </p>
           <p className='font-primary sm:text-[16px] lg:text-[18px] xl:text-[20px] font-medium text-gray-100'>
             Barranquilla
