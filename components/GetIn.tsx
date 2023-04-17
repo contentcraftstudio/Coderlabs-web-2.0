@@ -60,7 +60,7 @@ export default function GetIn({}: Props) {
   }
 
   return (
-    <div className='w-[100%] px-6 container'>
+    <div className='w-[100%] px-6 container sm:pt-[70px] md:pt-[104px] lg:pt-[167px]'>
       <Form
         initialValues={{
           name: "",
@@ -77,18 +77,18 @@ export default function GetIn({}: Props) {
             {t("Get_in_touch")}
           </p>
           <div className='flex gap-[20px] flex-wrap'>
-            <div className='lg:w-[49.2%] sm:w-full'>
+            <div className='lg:w-[48.5%] sm:w-full xl:w-[49.2%]'>
               <FormInput label={t("Name")} name='name' type='name' />
             </div>
-            <div className='lg:w-[49.2%] sm:w-full'>
+            <div className='lg:w-[48.5%] sm:w-full xl:w-[49.2%]'>
               <FormInput label={t("Email")} name='email' type='email' />
             </div>
           </div>
           <div className='flex gap-[20px] flex-wrap'>
-            <div className='lg:w-[49.2%] sm:w-full md:w-[49.2%]'>
+            <div className='lg:w-[48.5%] sm:w-full md:w-[48.5%] xl:w-[49.2%]'>
               <FormInput label={t("Phone_number")} name='phone' type='phone' />
             </div>
-            <div className='lg:w-[49.2%] sm:w-full md:w-[49.2%]'>
+            <div className='lg:w-[48.5%] sm:w-full md:w-[48.5%] xl:w-[49.2%]'>
               <FormInput
                 label={t("Contacting_us")}
                 name='contacting'
