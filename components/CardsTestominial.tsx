@@ -1,13 +1,13 @@
-import { TestimonialData } from '@/pages/apis/testimonialData'
-import React from 'react'
-import CardTestimonials from './CardTestimonials'
+import { TestimonialData } from "@/pages/apis/testimonialData"
+import React from "react"
+import CardTestimonials from "./CardTestimonials"
 
 type Props = {}
 
-export default function CardsTestominial ({}: Props) {
+export default function CardsTestominial({}: Props) {
   const data = TestimonialData.data
   return (
-    <div>
+    <div className='sm:pt-[70px] md:pt-[104px] lg:pt-[167px]'>
       <div className=' flex flex-col lg:flex-row justify-center items-center gap-[60px] '>
         <CardTestimonials
           img={data[0].img}
