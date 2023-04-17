@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import "../settings/i18"
 import Head from "next/head"
-import TechnologiesGrid from "@/components/TechnologiesGrid"
 import ToolsSec from "@/components/ToolsSec"
 import Footer from "@/components/Footer"
 import Blog from "@/components/Blog"
