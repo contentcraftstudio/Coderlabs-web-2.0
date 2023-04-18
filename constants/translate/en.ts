@@ -20,7 +20,7 @@ export const EN = {
   Tools_and_technologies: 'Tools and technologies',
   paragraph_tools: 'We use technologies and tools to create more advanced applications and websites, with greater interactivity and functionality, which in turn improves the user experience and increases customer satisfaction and loyalty.',
   // sec 3
-  We_are_the_best_choice: '¡We are the best choice!',
+  We_are_the_best_choice: 'We are the best choice!',
   We_are_your_allies: 'We are your allies',
   Positive_impact: 'Positive impact',
   paragraph_card_best_choice: 'We are your allies to take your ideas to the next level taking into account your needs offering you comprehensive solutions that combine design and development under a collaborative work approach.',
