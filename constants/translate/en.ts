@@ -26,7 +26,7 @@ export const EN = {
   paragraph_card_best_choice: 'We are your allies to take your ideas to the next level taking into account your needs offering you comprehensive solutions that combine design and development under a collaborative work approach.',
   paragraph_card_positive_impact: 'Our digital products ensure ease of use, efficiency, security, stability, and a product free of errors, adjusting to the needs of the client.',
   // sec 4
-  Our_team: 'Our team :',
+  Our_team: 'Our team:',
   paragraph_our_team: 'At CoderLabs we have a team capable of facing challenges with solid strategies, human quality and user focus.',
   // testimonials
   testimonials_kevin: "We are a reliable team in the market thanks to our dedication, innovation and determination to exceed our customers' expectations.",
