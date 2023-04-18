@@ -24,7 +24,7 @@ function Card({
 }: Props): JSX.Element {
   return (
     <div
-      className={`sm:w-[330px] sm:h-[270px] md:w-[600px] md:h-[400px] xl:w-[600px] xl:h-[400px] flex flex-col sm:gap-[10px] md:gap-[24px] lg:gap-[24px] rounded border-b-[22px] ${color} sm:px-[20px] md:px-[60px] lg:px-[60px] sm:pt-[36px] md:pt-[85px] lg:pt-[85px] shadow-[0px_0px_40px_rgba(0,0,0,0.06)]`}
+      className={`sm:w-[330px] md:w-[600px] xl:w-[600px] flex flex-col sm:gap-[10px] md:gap-[24px] lg:gap-[24px] rounded border-b-[22px] ${color} sm:px-[20px] md:px-[60px] lg:px-[60px] sm:pt-[36px] md:pt-[85px] lg:pt-[85px] shadow-[0px_0px_40px_rgba(0,0,0,0.06)]`}
     >
       <div className='flex justify-center'>
         <Image
@@ -39,7 +39,7 @@ function Card({
       >
         {title}
       </p>
-      <p className='text-center sm:text-[14px] md:text-[16px] xl:text-[20px] font-normal pt-[10px] mb-[21px] font-Roboto'>
+      <p className='text-center sm:text-[14px] md:text-[16px] xl:text-[20px] font-normal pt-[10px] font-Roboto mb-[58px]'>
         {description}
       </p>
     </div>
