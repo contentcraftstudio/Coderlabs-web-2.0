@@ -24,7 +24,7 @@ function Card({
 }: Props): JSX.Element {
   return (
     <div
-      className={`sm:w-[330px] md:w-[600px] xl:w-[600px] flex flex-col rounded border-b-[22px] ${color} sm:px-[20px] md:px-[60px] lg:px-[60px] sm:pt-[36px] md:pt-[85px] lg:pt-[85px] shadow-[0px_0px_40px_rgba(0,0,0,0.06)]`}
+      className={`sm:w-[330px] md:w-[600px] xl:w-[600px] flex flex-col rounded sm:border-b-[16px] md:border-b-[22px] lg:border-b-[22px] ${color} sm:px-[20px] md:px-[60px] lg:px-[60px] sm:pt-[36px] md:pt-[85px] lg:pt-[85px] shadow-[0px_0px_40px_rgba(0,0,0,0.06)]`}
     >
       <div className='flex justify-center'>
         <Image
