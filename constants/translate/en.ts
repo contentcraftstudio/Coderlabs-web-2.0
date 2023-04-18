@@ -29,9 +29,9 @@ export const EN = {
   Our_team: 'Our team:',
   paragraph_our_team: 'At CoderLabs we have a team capable of facing challenges with solid strategies, human quality and user focus.',
   // testimonials
-  testimonials_kevin: "We are a reliable team in the market thanks to our dedication, innovation and determination to exceed our customers' expectations.",
-  testimonials_armando: 'We enjoy what we do so we train and improve every day in order to deliver a better product to you.',
-  testimonials_melissa: 'We stand out for offering personalized solutions to our customers, being flexible and adapting to the needs and challenges of digital product development.',
+  testimonials_kevin: "\"We are a reliable team in the market thanks to our dedication, innovation and determination to exceed our customers' expectations.\"",
+  testimonials_armando: '\"We enjoy what we do so we train and improve every day in order to deliver a better product to you.\"',
+  testimonials_melissa: '\"We stand out for offering personalized solutions to our customers, being flexible and adapting to the needs and challenges of digital product development.\"',
   // sec 5
   Explore_our_blog: 'Explore our blog',
   paragraph_our_blog_1: "Stay up to date with the latest news on the tech industry, get design and development tips and stay informed on what's happening in the world by subscribing to our site on Medium.",
