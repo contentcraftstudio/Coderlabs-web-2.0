@@ -35,11 +35,11 @@ function Card({
         />
       </div>
       <p
-        className={`text-center ${textColor} font-semibold sm:text-base md:text-xl lg:text-xl`}
+        className={`text-center ${textColor} font-semibold sm:text-base md:text-xl lg:text-xl font-secondary`}
       >
         {title}
       </p>
-      <p className='text-center sm:text-[14px] md:text-[16px] xl:text-[20px] pt-[10px] font-Roboto mb-[58px] leading-[23px]'>
+      <p className='text-center sm:text-[16px] md:text-[20px] xl:text-[20px] pt-[10px] font-primary font-normal mb-[58px] leading-[23px]'>
         {description}
       </p>
     </div>
