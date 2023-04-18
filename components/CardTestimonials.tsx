@@ -17,10 +17,10 @@ export default function CardTestimonials({
 }: Props) {
   const { t } = useTranslation()
   return (
-    <div className='flex items-center sm:h-[260px] md:h-[277px] lg:h-[318px] sm:w-[330px] md:w-[573px] lg:w-[573px] lg:pt-[69px] sm:px-[30px] md:px-[70px] lg:px-[66px] border-2 rounded border-white'>
+    <div className='flex items-center sm:h-[260px] md:h-[277px] lg:h-[318px] sm:w-[330px] md:w-[573px] lg:w-[573px] sm:px-[30px] md:px-[70px] lg:px-[66px] border-2 rounded border-white'>
       <div className='divide-y-2'>
         <div className='sm:pb-[16px] md:pb-[32px]'>
-          <p className='lg:h-[66px] flex items-end font-primary leading-[22px] font-normal sm:text-[16px] md:text-[19px] xl:text-[19px] text-center text-white'>
+          <p className='font-primary leading-[22px] font-normal sm:text-[16px] md:text-[19px] xl:text-[19px] text-center text-white'>
             {t(paragraph)}
           </p>
         </div>
