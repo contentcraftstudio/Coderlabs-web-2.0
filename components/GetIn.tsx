@@ -60,7 +60,7 @@ export default function GetIn({}: Props) {
   }
 
   return (
-    <div className='w-[100%] px-6 container sm:pt-[70px] md:pt-[104px] lg:pt-[167px]'>
+    <div className='w-[100%] px-6 container sm:pt-[70px] md:pt-[104px]'>
       <Form
         initialValues={{
           name: "",

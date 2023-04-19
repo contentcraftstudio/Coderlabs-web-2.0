@@ -41,7 +41,7 @@ export const ES = {
   // Social
   Check_our_social_media_content: 'Mira nuestro contenido en redes Sociales',
   // form Get In Touch
-  Get_in_touch: 'Get In Touch',
+  Get_in_touch: 'Contáctanos',
   Name: 'Nombre',
   Phone_number: 'Teléfono',
   Email: 'Correo',
