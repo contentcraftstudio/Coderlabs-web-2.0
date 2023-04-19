@@ -48,8 +48,12 @@ export default function Hero({}: Props) {
             </div>
           </div>
         </div>
-        <div className='h-max sm:w-[304px] sm:h-[364px] md:w-[520px] md:h-[520px] xl:w-[450px] lg:h-[620px]'>
-          <Image alt='rocket' src={rocket} />
+        <div className='flex justify-center'>
+          <Image 
+          alt='rocket' 
+          src={rocket} 
+          className="sm:w-[364px] sm:h-[364px] md:w-[520px] md:h-[520px] lg:w-[572px] lg:h-[620px] lg:mt-[-125px]"
+          />
         </div>
       </div>
     </div>
