@@ -52,6 +52,7 @@ export const ES = {
   // Footer
   Navigate: 'Navegar',
   Contact: 'Contacto',
+  Social_media: 'Social Media',
   Identity: 'Identidad',
   Services: 'Servicios',
   Tools: 'Herramientas',

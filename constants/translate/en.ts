@@ -52,6 +52,7 @@ export const EN = {
   // Footer
   Navigate: 'Navigate',
   Contact: 'Contact',
+  Social_media: 'Social Media',
   Identity: 'Identity',
   Services: 'Services',
   Tools: 'Tools',
