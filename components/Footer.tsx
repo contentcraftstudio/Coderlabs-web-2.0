@@ -81,10 +81,15 @@ function Lg() {
             Barranquilla
           </p>
         </div>
-        <div className='md:text-center py-0'>
-          <p className='font-primary text-[20px] font-medium text-gray-100 '>
+        <div className='md:text-center flex flex-row items-center gap-[14px] sm:mb-[10px]'>
+          <p className='h-[22px] font-primary text-[20px] font-medium text-gray-100 '>
             Book a call
           </p>
+          <Image
+            src={calendar}
+            alt='coderlabs'
+            className='self-end w-[20px] h-[20px]'
+          />
         </div>
         <div className='flex justify-between gap-[30px] items-center'>
           <a href='https://www.instagram.com/coderlabs_/' target='_blank'>
