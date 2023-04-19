@@ -143,7 +143,7 @@ function Sm() {
           <Image
             src={logo}
             alt='coderlabs'
-            className='self-start mt-[6px] sm:w-[20px] sm:h-[46px] md:h-[50px] lg:h-[70px]'
+            className='self-start mt-[6px] sm:w-[20px] sm:h-[46px] md:h-[50px]'
           />
           <h3 className='font-secondary ml-[-8px]  sm:text-[40px] lg:text-[48px] font-bold text-white px-1'>
             {t("Navigate")}
@@ -220,7 +220,7 @@ function Sm() {
           <Image
             src={logobajo}
             alt='coderlabs'
-            className='self-end lg:mt-[10px] sm:mb-[-6px]  sm:w-[20px] lg:w-[35px] sm:h-[46px]  md:h-[50px] lg:h-[70px]'
+            className='self-end sm:mb-[-6px] sm:w-[20px] sm:h-[46px] md:h-[50px]'
           />
         </div>
         <div className='flex flex-row sm:gap-[24px] md:gap-[24px]'>
