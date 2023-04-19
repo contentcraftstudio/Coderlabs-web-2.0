@@ -26,7 +26,7 @@ export default function Hero({}: Props) {
               {t("title_hero")}
             </h1>
             <Image
-              className=' self-end'
+              className='self-end'
               src={logobajo}
               alt='coderlabs'
               width={32}
@@ -35,7 +35,7 @@ export default function Hero({}: Props) {
             />
           </div>
           <div className='space-y-8 sm:pt-[20px] md:pt-[40px] xl:pt-[60px] mb-[30px]'>
-            <p className='font-primary font-normal sm:w-[305px] md:w-[600px] sm:text-[16px] md:text-[20px]'>
+            <p className='font-primary font-normal sm:w-[305px] md:w-[600px] sm:text-[16px] md:text-[20px] sm:leading-[19px] xl:leading-[23px]'>
               {t("Subtitle_hero")}
             </p>
             <p className='font-primary font-normal sm:w-[290px] md:w-[497px] sm:text-[16px] md:text-[20px] '>
@@ -48,7 +48,7 @@ export default function Hero({}: Props) {
             </div>
           </div>
         </div>
-        <div className='mx-auto sm:w-[364px] md:w-[520px] xl:w-[450px] sm:h-[364px] md:h-[520px] lg:h-[620px]'>
+        <div className='h-max sm:w-[304px] sm:h-[364px] md:w-[520px] md:h-[520px] xl:w-[450px] lg:h-[620px]'>
           <Image alt='rocket' src={rocket} />
         </div>
       </div>

@@ -28,18 +28,18 @@ function Card({
     >
       <div className='flex justify-center'>
         <Image
-          alt={alt}ju
+          alt={alt}
           src={img}
           width={36}
           className=' sm:w-[36px] sm:h-[36px] xl:w-[64px] lg:h-[64px] sm:mb-[10px] md:mb-[24px] lg:mb-[28px]'
         />
       </div>
       <p
-        className={`text-center ${textColor} font-semibold sm:text-base md:text-xl lg:text-xl font-secondary sm:mb-[10px] md:mb-[24px] lg:mb-[28px]`}
+        className={`text-center ${textColor} font-semibold sm:font-medium sm:text-[18px] lg:text-xl font-secondary sm:mb-[10px] md:mb-[24px] lg:mb-[28px]`}
       >
         {title}
       </p>
-      <p className='text-center sm:text-[16px] md:text-[20px] xl:text-[20px] font-primary font-normal sm:mb-[20px] md:mb-[58px] lg:mb-[58px] leading-[23px]'>
+      <p className='text-center sm:text-[16px] md:text-[20px] xl:text-[20px] font-primary font-normal sm:mb-[20px] md:mb-[58px] lg:mb-[58px] sm:leading-[19px] xl:leading-[23px]'>
         {description}
       </p>
     </div>
@@ -50,7 +50,7 @@ export default function BestSec(): JSX.Element {
   const { t } = useTranslation()
   return (
     <div className='w-[100%]'>
-      <h3 className=' font-secondary font-medium text-center sm:text-[34px] md:text-[48px] xl:text-[64px] sm:mb-[25px] md:mb-[60px] lg:mb-[115px]'>
+      <h3 className=' font-secondary font-medium text-center sm:text-[34px] md:text-[48px] xl:text-[64px] sm:mb-[40px] md:mb-[60px] lg:mb-[115px]'>
         {t("We_are_the_best_choice")}
       </h3>
       <div className='flex flex-wrap justify-center sm:gap-[44px] md:gap-[60px] xl:gap-[70px]'>
