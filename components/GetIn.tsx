@@ -73,7 +73,7 @@ export default function GetIn({}: Props) {
         onSubmit={handleValue}
       >
         <div className='w-full bg-white rounded px-[20px] py-[20px] sm:space-y-[20px]'>
-          <p className='w-225 font-roboto text-4xl font-medium leading-10 text-gray-700 mb-[42px]'>
+          <p className='w-225 font-secondary text-4xl font-[530] leading-10 text-gray-700 mb-[42px]'>
             {t("Get_in_touch")}
           </p>
           <div className='flex gap-[20px] flex-wrap'>
