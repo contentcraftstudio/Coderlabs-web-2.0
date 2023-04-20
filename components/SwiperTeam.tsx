@@ -160,7 +160,7 @@ export default function ProfileEdit () {
                   <h3 className='sm:text-[24px] md:text-[48px] lg:text-[55px] xl:text-[80px] leading-[1.2]  font-secondary font-bold overflow-hidden overflow-ellipsis whitespace-nowrap mb-[20px] xl:mb-[70px]'>
                     {team.name.split(' ')[0]}<br />{team.name.split(' ')[1]}
                   </h3>
-                  <div className='flex  sm:flex-col sm:h-[90px] lg:flex-row sm:p-[16px] lg:h-[28px] justify-between items-center sm:gap-0 md:gap-8 lg:w-fit border-[1px] border-[#444] leading-none rounded-[8px] py-[7px] lg:px-[10px] lg:divide-x divide-solid'>
+                  <div className='flex  sm:flex-col sm:h-[90px] md:h-[34px] md:flex-row sm:p-[16px] lg:h-[28px] justify-between items-center sm:gap-0 md:gap-8 lg:w-fit border-[1px] border-[#444] leading-none rounded-[8px] py-[7px] lg:px-[10px] md:divide-x divide-solid'>
                     <span className='text-left sm:text-[12px]  lg:text-[16px] '>{team.occupation}</span>
                     <div className=' md:hidden h-[1px] w-[100%] bg-gray-divide'></div>
                     <span className='text-right lg:pl-8  flex items-center  gap-2'>
