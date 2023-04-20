@@ -33,8 +33,8 @@ export default function Home() {
         />
       </Head>
       <main>
-        <section className='container mx-auto xl:space-y-[140px] sm:space-y-[80px]'>
-          <section className=' sm:space-y-[200px] md:space-y-[150px]'>
+        <section className='container mx-auto sm:space-y-[80px] md:space-y-[100px] lg:space-y-[140px]'>
+          <section className='sm:space-y-[200px] md:space-y-[514px] lg:space-y-[150px]'>
             <Navbar />
             <Hero />
           </section>
@@ -42,13 +42,15 @@ export default function Home() {
           <ToolsSec />
           <BestSec />
         </section>
-        <footer className='bg-background-dark xl:mt-[200px] sm:mt-[80px] pt-8'>
-          <section className='container mx-auto xl:space-y-[140px] sm:space-y-[40px] md:space-y-[100px]'>
+        <footer className='bg-background-dark sm:mt-[80px] md:mt-[100px] lg:mt-[200px] sm:pt-[39px] md:pt-[53px] lg:pt-[97px]]'>
+          <section className='container mx-auto sm:space-y-[40px] md:space-y-[100px] lg:space-y-[140px]'>
             <Team />
             <CardsTestominial />
             <Blog />
             <GetIn />
-            <Footer />
+            <div className='md:pt-[125px]'>
+              <Footer />
+            </div>
           </section>
         </footer>
       </main>

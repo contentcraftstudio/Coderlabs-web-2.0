@@ -25,9 +25,8 @@ export default function Hero({}: Props) {
             />
             <h1 className='font-secondary font-medium md:w-[624px] lg:w-[900px] sm:text-[34px] md:text-[48px] xl:text-[60px] lg:leading-[90px] sm:ml-[5px] mb-[40px]'>
               {t("title_hero")}
-            </h1>      
-            <i className="fas fa-band-aid"></i>
-
+            </h1>
+            <i className='fas fa-band-aid'></i>
           </div>
           <div className='space-y-8 sm:pt-[20px] md:pt-[40px] xl:pt-[60px] mb-[30px] '>
             <p className='font-primary font-normal sm:w-[305px] md:w-[600px] sm:text-[16px] md:text-[20px] sm:leading-[19px] xl:leading-[23px]'>
@@ -43,11 +42,11 @@ export default function Hero({}: Props) {
             </div>
           </div>
         </div>
-        <div className="lg:h-[572px] lg:w-[472px]">
-          <Image 
-          alt='rocket' 
-          src={rocket} 
-          className="sm:w-[364px] sm:h-[364px] md:w-[572px] md:h-[572px] xl:h-[620px] xl:mt-[-95px] "
+        <div className='lg:h-[572px] lg:w-[472px]'>
+          <Image
+            alt='rocket'
+            src={rocket}
+            className='sm:w-[364px] sm:h-[364px] md:w-[572px] md:h-[572px] xl:h-[620px] xl:mt-[-95px] '
           />
         </div>
       </div>

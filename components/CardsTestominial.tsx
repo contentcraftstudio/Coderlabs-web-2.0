@@ -7,7 +7,7 @@ type Props = {}
 export default function CardsTestominial({}: Props) {
   const data = TestimonialData.data
   return (
-    <div className='sm:pt-[70px] md:pt-[104px] lg:pt-[167px]'>
+    <>
       <div className=' flex flex-col lg:flex-row justify-center items-center gap-[60px] '>
         <CardTestimonials
           img={data[0].img}
@@ -30,6 +30,6 @@ export default function CardsTestominial({}: Props) {
           paragraph={data[2].paragraph}
         />
       </div>
-    </div>
+    </>
   )
 }

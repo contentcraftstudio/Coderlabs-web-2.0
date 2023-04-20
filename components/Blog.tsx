@@ -11,10 +11,7 @@ export default function Blog({}: Props) {
   const { t } = useTranslation()
 
   return (
-    <div
-      id='blog'
-      className='sm:columns-1 lg:columns-2 p-[24px] lg:px-[110px] sm:pt-[70px] md:pt-[104px] lg:pt-[167px]'
-    >
+    <div id='blog' className='sm:columns-1 lg:columns-2 p-[24px] lg:px-[110px]'>
       <div className='flex flex-col  items-start xl:min-h-[600px] py-3 sm:pb-[100px]'>
         <h2 className='font-secondary font-medium sm:text-[34px] md:text-[48px] lg:text-[60px] text-white sm:pb-[20px] lg:pb-[40px]'>
           {t("Explore_our_blog")}
