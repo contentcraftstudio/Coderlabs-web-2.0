@@ -41,11 +41,11 @@ export default function Hero({}: Props) {
             </div>
           </div>
         </div>
-        <div className="lg:h-[572px] lg:w-[472px]">
-          <Image 
-          alt='rocket' 
-          src={rocket} 
-          className="sm:w-[364px] sm:h-[364px] md:w-[572px] md:h-[572px] xl:h-[620px] xl:mt-[-95px] "
+        <div className='lg:h-[572px] lg:w-[472px]'>
+          <Image
+            alt='rocket'
+            src={rocket}
+            className='sm:w-[364px] sm:h-[364px] md:w-[572px] md:h-[572px] xl:h-[620px] xl:mt-[-95px] '
           />
         </div>
       </div>

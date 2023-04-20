@@ -7,8 +7,8 @@ type Props = {}
 export default function CardsTestominial({}: Props) {
   const data = TestimonialData.data
   return (
-    <div className='sm:pt-[70px] md:pt-[104px] lg:pt-[167px]'>
-      <div className=' flex flex-col lg:flex-row justify-center items-center gap-[60px] '>
+    <div>
+      <div className=' flex flex-col lg:flex-row justify-center items-center gap-[60px]'>
         <CardTestimonials
           img={data[0].img}
           name={data[0].name}
@@ -22,7 +22,7 @@ export default function CardsTestominial({}: Props) {
           paragraph={data[1].paragraph}
         />
       </div>
-      <div className=' flex flex-col justify-center items-center mt-[60px] '>
+      <div className='flex flex-col justify-center items-center mt-[60px]'>
         <CardTestimonials
           img={data[2].img}
           name={data[2].name}

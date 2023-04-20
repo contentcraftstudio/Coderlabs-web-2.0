@@ -98,7 +98,7 @@ export default function ProfileEdit () {
   return (
     <Swiper
       init={false}
-      className='md:px-[50px] lg:px-[32px] pt-[50px] pb-[40px] lg:pt-[120px]'
+      className='md:px-[50px] lg:px-[32px]'
       effect='creative'
       grabCursor={false}
       slideToClickedSlide
