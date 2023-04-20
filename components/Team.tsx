@@ -15,7 +15,7 @@ export default function Team({}: Props) {
         <h3 className='font-secondary font-medium sm:text-[16px] md:text-[20px] text-orange sm:mb-[32px]'>
           {t("Our_team")}
         </h3>
-        <p className='sm:w-[280px] md:w-[330px] xl:w-[406px] font-primary text-white font-normal sm:text-[16px] md:text-[20px] lg:mr-40 sm:leading-[19px] lg:leading-[23px]'>
+        <p className='sm:w-[280px] md:w-[330px] xl:w-[406px] font-primary text-white font-normal sm:text-[16px] md:text-[20px] lg:mr-40 sm:leading-[19px] md:leading-[23px]'>
           {t("paragraph_our_team")}
         </p>
       </div>

@@ -39,7 +39,7 @@ function Card({
       >
         {title}
       </p>
-      <p className='text-center sm:text-[16px] md:text-[20px] xl:text-[20px] font-primary font-normal sm:mb-[20px] md:mb-[58px] lg:mb-[58px] sm:leading-[19px] xl:leading-[23px]'>
+      <p className='text-center sm:text-[16px] md:text-[20px] xl:text-[20px] font-primary font-normal sm:mb-[20px] md:mb-[58px] lg:mb-[58px] sm:leading-[19px] md:leading-[23px]'>
         {description}
       </p>
     </div>
