@@ -33,13 +33,12 @@ export default function Blog({}: Props) {
           </Link>
         </div>
       </div>
-      <div className='flex justify-center'>
+      <div>
         <Image
           alt='Blog Coderlabs'
           src={blog}
           width={727}
           height={635}
-          className='md:w-[571px] md:h-[452px]'
         />
       </div>
     </div>
