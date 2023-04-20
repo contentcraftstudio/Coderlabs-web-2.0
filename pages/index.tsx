@@ -43,7 +43,7 @@ export default function Home() {
           <BestSec />
         </section>
         <footer className='bg-background-dark xl:mt-[200px] sm:mt-[80px] pt-8'>
-          <section className='container mx-auto xl:space-y-[140px] sm:space-y-[40px]'>
+          <section className='container mx-auto xl:space-y-[140px] sm:space-y-[40px] md:space-y-[100px]'>
             <Team />
             <CardsTestominial />
             <Blog />
