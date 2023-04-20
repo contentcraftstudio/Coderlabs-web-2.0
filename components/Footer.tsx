@@ -43,7 +43,7 @@ function Lg() {
             {t("Tools")}
           </p>
         </a>
-        <a href='#'>
+        <a href='#advantages'>
           <p className='font-primary text-[20px] font-medium text-gray-300 text-center'>
             {t("Advantages")}
           </p>

@@ -49,7 +49,7 @@ function Card({
 export default function BestSec(): JSX.Element {
   const { t } = useTranslation()
   return (
-    <div className='w-[100%]'>
+    <div id='advantages' className='w-[100%]'>
       <h3 className=' font-secondary font-medium text-center sm:text-[34px] md:text-[48px] xl:text-[64px] sm:mb-[40px] md:mb-[60px] lg:mb-[115px]'>
         {t("We_are_the_best_choice")}
       </h3>

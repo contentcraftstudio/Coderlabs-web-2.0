@@ -35,7 +35,7 @@ export default function Navbar ({}: Props) {
         : 'xl'
   const base = BASE()
   return (
-    <nav className='container py-4 px-[40px] flex justify-between items-center'>
+    <nav id='nav' className='container py-4 px-[40px] flex justify-between items-center'>
       <Image
         src={coderlabsLogo}
         alt='coderlabs logo'
