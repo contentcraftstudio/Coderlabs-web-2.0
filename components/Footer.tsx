@@ -81,15 +81,21 @@ function Lg() {
             Barranquilla
           </p>
         </div>
-        <div className='md:text-center flex flex-row items-center gap-[14px] sm:mb-[10px]'>
-          <p className='h-[22px] font-primary text-[20px] font-medium text-gray-100 '>
-            Book a call
-          </p>
-          <Image
-            src={calendar}
-            alt='coderlabs'
-            className='self-end w-[20px] h-[20px]'
-          />
+        <div>
+          <a
+            href='https://calendly.com/coderlabs'
+            target='_blank'
+            className='md:text-center flex flex-row items-center gap-[14px] sm:mb-[10px]'
+          >
+            <p className='h-[22px] font-primary text-[20px] font-medium text-gray-100 '>
+              Book a call
+            </p>
+            <Image
+              src={calendar}
+              alt='coderlabs'
+              className='self-end w-[20px] h-[20px]'
+            />
+          </a>
         </div>
         <div className='flex justify-between gap-[30px] items-center'>
           <a href='https://www.instagram.com/coderlabs_/' target='_blank'>
@@ -204,15 +210,21 @@ function Sm() {
             <p className='font-primary sm:text-[16px] lg:text-[18px] font-medium text-gray-100'>
               Barranquilla
             </p>
-            <div className='flex flex-row items-center gap-[14px] sm:mb-[10px]'>
-              <p className='h-[20px] font-primary sm:text-[16px] lg:text-[18px] font-medium text-gray-100'>
-                Book a call
-              </p>
-              <Image
-                src={calendar}
-                alt='coderlabs'
-                className='self-end w-[20px] h-[20px]'
-              />
+            <div>
+              <a
+                href='https://calendly.com/coderlabs'
+                target='_blank'
+                className='flex flex-row items-center gap-[14px] sm:mb-[10px]'
+              >
+                <p className='h-[20px] font-primary sm:text-[16px] lg:text-[18px] font-medium text-gray-100'>
+                  Book a call
+                </p>
+                <Image
+                  src={calendar}
+                  alt='coderlabs'
+                  className='self-end w-[20px] h-[20px]'
+                />
+              </a>
             </div>
           </div>
         </div>
