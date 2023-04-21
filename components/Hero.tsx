@@ -25,7 +25,7 @@ export default function Hero({}: Props) {
             />
             <h1 className='font-secondary font-medium md:w-[624px] lg:w-[900px] sm:text-[34px] md:text-[48px] xl:text-[60px] lg:leading-[90px] sm:ml-[5px] mb-[40px]'>
               {t("title_hero")}
-            </h1>      
+            </h1>
           </div>
           <div className='space-y-8 sm:pt-[20px] md:pt-[40px] xl:pt-[60px] mb-[30px] '>
             <p className='font-primary font-normal sm:w-[305px] md:w-[600px] sm:text-[16px] md:text-[20px] sm:leading-[19px] xl:leading-[23px]'>
@@ -35,9 +35,13 @@ export default function Hero({}: Props) {
               {t("paragraph_hero")}
             </p>
             <div className='flex'>
-              <IButton label={t("Make_it_happen")} variant={"contained"} />
+              <a href='https://website.coderlabs.co/' target='_blank'>
+                <IButton label={t("Make_it_happen")} variant={"contained"} />
+              </a>
               <div className='mr-[20px]' />
-              <IButton label={t("Book_a_call")} variant={"outlined"} />
+              <a href='https://calendly.com/coderlabs' target='_blank'>
+                <IButton label={t("Book_a_call")} variant={"outlined"} />
+              </a>
             </div>
           </div>
         </div>
