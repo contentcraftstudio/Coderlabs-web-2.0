@@ -1,10 +1,8 @@
-import React from "react"
-import { useFormikContext } from "formik"
-import { useTranslation } from "react-i18next"
+import React from 'react'
+import { useFormikContext } from 'formik'
+import { useTranslation } from 'react-i18next'
 
-type Props = {}
-
-export default function FormButton({}: Props) {
+export default function FormButton () {
   const { submitForm } = useFormikContext()
   const { t } = useTranslation()
   return (
@@ -13,7 +11,7 @@ export default function FormButton({}: Props) {
       type='submit'
       onClick={() => submitForm()}
     >
-      {t("Submit")}
+      {t('Submit')}
     </button>
   )
 }

@@ -1,6 +1,6 @@
-import React from "react"
-import { useTranslation } from "react-i18next"
-import Image from "next/image"
+import React from 'react'
+import { useTranslation } from 'react-i18next'
+import Image from 'next/image'
 
 type Props = {
   img: any
@@ -9,11 +9,11 @@ type Props = {
   paragraph: string
 }
 
-export default function CardTestimonials({
+export default function CardTestimonials ({
   img,
   name,
   occupation,
-  paragraph,
+  paragraph
 }: Props) {
   const { t } = useTranslation()
   return (

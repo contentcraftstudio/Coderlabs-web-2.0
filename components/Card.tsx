@@ -1,8 +1,6 @@
-import React from "react"
-import Image from "next/image"
-import { useTranslation } from "react-i18next"
-import { useSize } from "ahooks"
-import { Dom } from "@/settings/util"
+import React from 'react'
+import Image from 'next/image'
+import { useTranslation } from 'react-i18next'
 
 type Props = {
   color: string
@@ -11,19 +9,12 @@ type Props = {
   paragraph: string
 }
 
-export default function Card({ color, img, title, paragraph }: Props) {
+export default function Card ({ color, img, title, paragraph }: Props) {
   const { t } = useTranslation()
-  const size = useSize(Dom)
-  const imgSize =
-    size?.width <= 380
-      ? 100
-      : size?.width >= 381 && size?.width <= 768
-        ? 110
-        : 150
   return (
     <div className={`sm:w-[300px] md:w-[310px] xl:w-[375px] justify-center flex flex-col gap-[10px] shadow-[0px_0px_40px_rgba(0,0,0,0.06)] py-[20px] rounded xl:border-b-[22px] sm:border-b-[16px] px-[20px] ${color}`}>
       <div className='flex justify-center'>
-        <Image src={img} alt='UI/UX Design' width={imgSize} height={imgSize} />
+        <Image src={img} alt='UI/UX Design' className='sm:w-[100px] sm:h-[100px] md:w-[110px] md:h-[110px] lg:w-[150px] lg:h-[150px]' />
       </div>
       <div className='w-100% text-center'>
         <h3 className='sm:text-[16px] md:text-[18px] xl:text-[20px] font-secondary font-medium'>
