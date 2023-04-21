@@ -1,9 +1,9 @@
 /* eslint-disable no-undef */
-import Image from "next/image"
-import React from "react"
-import aliados from "../public/assets/aliado.svg"
-import impacto from "../public/assets/impacto.svg"
-import { useTranslation } from "react-i18next"
+import Image from 'next/image'
+import React from 'react'
+import aliados from '../public/assets/aliado.svg'
+import impacto from '../public/assets/impacto.svg'
+import { useTranslation } from 'react-i18next'
 
 type Props = {
   img: any
@@ -14,13 +14,13 @@ type Props = {
   textColor: string
 }
 
-function Card({
+function Card ({
   img,
   alt,
   color,
   title,
   description,
-  textColor,
+  textColor
 }: Props): JSX.Element {
   return (
     <div
@@ -46,29 +46,29 @@ function Card({
   )
 }
 
-export default function BestSec(): JSX.Element {
+export default function BestSec (): JSX.Element {
   const { t } = useTranslation()
   return (
     <div id='advantages' className='w-[100%]'>
       <h3 className=' font-secondary font-medium text-center sm:text-[34px] md:text-[48px] xl:text-[64px] sm:mb-[40px] md:mb-[60px] lg:mb-[115px]'>
-        {t("We_are_the_best_choice")}
+        {t('We_are_the_best_choice')}
       </h3>
       <div className='flex flex-wrap justify-center sm:gap-[44px] md:gap-[60px] xl:gap-[70px]'>
         <Card
           img={aliados}
-          alt={t("We_are_your_allies")}
+          alt={t('We_are_your_allies')}
           color='border-orange'
           textColor='text-orange'
-          title={t("We_are_your_allies")}
-          description={t("paragraph_card_best_choice")}
+          title={t('We_are_your_allies')}
+          description={t('paragraph_card_best_choice')}
         />
         <Card
           img={impacto}
-          alt={t("Positive_impact")}
+          alt={t('Positive_impact')}
           color='border-green'
           textColor='text-green'
-          title={t("Positive_impact")}
-          description={t("paragraph_card_positive_impact")}
+          title={t('Positive_impact')}
+          description={t('paragraph_card_positive_impact')}
         />
       </div>
     </div>

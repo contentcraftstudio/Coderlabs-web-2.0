@@ -1,15 +1,11 @@
-import Image from "next/image"
-import React from "react"
-import rocket from "../public/assets/rocket.svg"
-import logo from "../public/assets/llavelogo.svg"
-import logobajo from "../public/assets/rectangle.svg"
-import { useTranslation } from "react-i18next"
-import IButton from "./form/Button"
-import guion from "../public/assets/guion.ico"
+import Image from 'next/image'
+import React from 'react'
+import rocket from '../public/assets/rocket.svg'
+import logo from '../public/assets/llavelogo.svg'
+import { useTranslation } from 'react-i18next'
+import IButton from './form/Button'
 
-type Props = {}
-
-export default function Hero({}: Props) {
+export default function Hero () {
   const { t } = useTranslation()
   return (
     <div className='w-[100%] sm:px-[30px] md:px-[60px] lg:px-[103px]'>
@@ -24,20 +20,20 @@ export default function Hero({}: Props) {
               height={70}
             />
             <h1 className='titlehero font-secondary font-medium md:w-[620px] lg:w-[900px] sm:text-[32px] md:text-[46px] xl:text-[58px] lg:leading-[90px] sm:ml-[5px] mb-[40px]'>
-              {t("title_hero")}
-            </h1>      
+              {t('title_hero')}
+            </h1>
           </div>
           <div className='space-y-8 sm:pt-[20px] md:pt-[40px] xl:pt-[60px] mb-[30px] '>
             <p className='font-primary font-normal sm:w-[305px] md:w-[600px] sm:text-[16px] md:text-[20px] sm:leading-[19px] xl:leading-[23px]'>
-              {t("Subtitle_hero")}
+              {t('Subtitle_hero')}
             </p>
             <p className='font-primary font-normal sm:w-[290px] md:w-[497px] sm:text-[16px] md:text-[20px] '>
-              {t("paragraph_hero")}
+              {t('paragraph_hero')}
             </p>
             <div className='flex'>
-              <IButton label={t("Make_it_happen")} variant={"contained"} />
+              <IButton label={t('Make_it_happen')} variant='contained' />
               <div className='mr-[20px]' />
-              <IButton label={t("Book_a_call")} variant={"outlined"} />
+              <IButton label={t('Book_a_call')} variant='outlined' />
             </div>
           </div>
         </div>

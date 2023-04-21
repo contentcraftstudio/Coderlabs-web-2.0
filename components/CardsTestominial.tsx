@@ -1,10 +1,8 @@
-import { TestimonialData } from "@/pages/apis/testimonialData"
-import React from "react"
-import CardTestimonials from "./CardTestimonials"
+import { TestimonialData } from '@/pages/apis/testimonialData'
+import React from 'react'
+import CardTestimonials from './CardTestimonials'
 
-type Props = {}
-
-export default function CardsTestominial({}: Props) {
+export default function CardsTestominial () {
   const data = TestimonialData.data
   return (
     <div>

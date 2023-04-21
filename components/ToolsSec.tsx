@@ -1,10 +1,8 @@
-import React from "react"
-import { useTranslation } from "react-i18next"
-import TechnologiesGrid from "./TechnologiesGrid"
+import React from 'react'
+import { useTranslation } from 'react-i18next'
+import TechnologiesGrid from './TechnologiesGrid'
 
-type Props = {}
-
-export default function ToolsSec({}: Props) {
+export default function ToolsSec () {
   const { t } = useTranslation()
 
   return (
@@ -14,10 +12,10 @@ export default function ToolsSec({}: Props) {
     >
       <div className=' sm:pb-[50px] md:pb-[30px] sm:text-center xl:text-start xl:divide-y-2 divide-gray-800 px-4'>
         <h3 className='font-secondary font-medium sm:text-[34px] xl:w-[702px] md:text-[48px] sm:pb-4 xl:pb-[40px] sm:mb-[20px]'>
-          {t("Tools_and_technologies")}
+          {t('Tools_and_technologies')}
         </h3>
         <p className=' font-primary font-normal sm:text-[16px] md:text-[20px] lg:pt-[60px] sm:leading-[19px] md:leading-[23px]'>
-          {t("paragraph_tools")}
+          {t('paragraph_tools')}
         </p>
       </div>
       <div className='h-max'>

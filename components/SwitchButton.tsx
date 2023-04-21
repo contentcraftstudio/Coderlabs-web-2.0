@@ -1,28 +1,28 @@
-import React, { useState } from "react"
-import { useTranslation } from "react-i18next"
+import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 type Props = {}
 
-export default function SwitchButton({}: Props) {
+export default function SwitchButton ({}: Props) {
   const { t, i18n } = useTranslation()
 
   const [isEnglish, setIsEnglish] = useState(true)
-  const [color, setColor] = useState("bg-green")
-  const [textColor, setTextColor] = useState("after:text-green")
+  const [color, setColor] = useState('bg-green')
+  const [textColor, setTextColor] = useState('after:text-green')
 
   const handleClick = () => {
     if (isEnglish) {
-      i18n.changeLanguage("es")
+      i18n.changeLanguage('es')
     } else {
-      i18n.changeLanguage("en")
+      i18n.changeLanguage('en')
     }
     setIsEnglish(!isEnglish)
-    if (color == "bg-green") {
-      setColor("bg-orange")
-      setTextColor("after:text-orange")
+    if (color == 'bg-green') {
+      setColor('bg-orange')
+      setTextColor('after:text-orange')
     } else {
-      setColor("bg-green")
-      setTextColor("after:text-green")
+      setColor('bg-green')
+      setTextColor('after:text-green')
     }
   }
 

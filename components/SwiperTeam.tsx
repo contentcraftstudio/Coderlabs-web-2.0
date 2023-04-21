@@ -1,101 +1,101 @@
 /* eslint-disable no-unused-vars */
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react"
-import { EffectCreative } from "swiper"
-import Image from "next/image"
-import bryan from "../public/assets/team/Bryan.png"
-import melissa from "../public/assets/team/Melissa.png"
-import armando from "../public/assets/team/Armando.png"
-import ricardo from "../public/assets/team/Ricardo.png"
-import laura from "../public/assets/team/Laura.png"
-import jose from "../public/assets/team/Jose.png"
-import kevin from "../public/assets/team/Kevin.png"
-import roberto from "../public/assets/team/Roberto.png"
-import juan from "../public/assets/team/Juand.png"
-import jesus from "../public/assets/team/Jesus.png"
-import samuel from "../public/assets/team/Samuel.png"
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { EffectCreative } from 'swiper'
+import Image from 'next/image'
+import bryan from '../public/assets/team/Bryan.png'
+import melissa from '../public/assets/team/Melissa.png'
+import armando from '../public/assets/team/Armando.png'
+import ricardo from '../public/assets/team/Ricardo.png'
+import laura from '../public/assets/team/Laura.png'
+import jose from '../public/assets/team/Jose.png'
+import kevin from '../public/assets/team/Kevin.png'
+import roberto from '../public/assets/team/Roberto.png'
+import juan from '../public/assets/team/Juand.png'
+import jesus from '../public/assets/team/Jesus.png'
+import samuel from '../public/assets/team/Samuel.png'
 
 const TEAM = [
   {
     id: 1,
-    name: "Bryan Bolivar",
-    occupation: "Founder",
-    linkedIn: "bolivarbryan",
-    photo: bryan,
+    name: 'Bryan Bolivar',
+    occupation: 'Founder',
+    linkedIn: 'bolivarbryan',
+    photo: bryan
   },
   {
     id: 2,
-    name: "Melissa Vega",
-    occupation: "Director Operations",
-    linkedIn: "Melissa Vega",
-    photo: melissa,
+    name: 'Melissa Vega',
+    occupation: 'Director Operations',
+    linkedIn: 'Melissa Vega',
+    photo: melissa
   },
   {
     id: 3,
-    name: "Armando Guzmán",
-    occupation: "Tech Lead",
-    linkedIn: "Armando Guzmán",
-    photo: armando,
+    name: 'Armando Guzmán',
+    occupation: 'Tech Lead',
+    linkedIn: 'Armando Guzmán',
+    photo: armando
   },
   {
     id: 4,
-    name: "Ricardo Torres",
-    occupation: "Product Designer",
-    linkedIn: "Ricardo Torres",
-    photo: ricardo,
+    name: 'Ricardo Torres',
+    occupation: 'Product Designer',
+    linkedIn: 'Ricardo Torres',
+    photo: ricardo
   },
   {
     id: 5,
-    name: "Laura Lamilla",
-    occupation: "Growth Brand",
-    linkedIn: "Laura Lamilla",
-    photo: laura,
+    name: 'Laura Lamilla',
+    occupation: 'Growth Brand',
+    linkedIn: 'Laura Lamilla',
+    photo: laura
   },
   {
     id: 6,
-    name: "Jose Pérez",
-    occupation: "Front-end Developer",
-    linkedIn: "Jose Pérez",
-    photo: jose,
+    name: 'Jose Pérez',
+    occupation: 'Front-end Developer',
+    linkedIn: 'Jose Pérez',
+    photo: jose
   },
   {
     id: 7,
-    name: "Kevin Molinares",
-    occupation: "Back-end Developer",
-    linkedIn: "Kevin Molinares",
-    photo: kevin,
+    name: 'Kevin Molinares',
+    occupation: 'Back-end Developer',
+    linkedIn: 'Kevin Molinares',
+    photo: kevin
   },
   {
     id: 8,
-    name: "Roberto Bolivar",
-    occupation: "Front-end Developer",
-    linkedIn: "Roberto Bolivar",
-    photo: roberto,
+    name: 'Roberto Bolivar',
+    occupation: 'Front-end Developer',
+    linkedIn: 'Roberto Bolivar',
+    photo: roberto
   },
   {
     id: 9,
-    name: "Juan Obregón",
-    occupation: "UI Designer",
-    linkedIn: "Juan Obregón",
-    photo: juan,
+    name: 'Juan Obregón',
+    occupation: 'UI Designer',
+    linkedIn: 'Juan Obregón',
+    photo: juan
   },
   {
     id: 10,
-    name: "Jesus Barros",
-    occupation: "Front-end Developer",
-    linkedIn: "barrosjesus",
-    photo: jesus,
+    name: 'Jesus Barros',
+    occupation: 'Front-end Developer',
+    linkedIn: 'barrosjesus',
+    photo: jesus
   },
   {
     id: 11,
-    name: "Samuel Rodríguez",
-    occupation: "Front-end Developer",
-    linkedIn: "Samuel Rodríguez",
-    photo: samuel,
-  },
+    name: 'Samuel Rodríguez',
+    occupation: 'Front-end Developer',
+    linkedIn: 'Samuel Rodríguez',
+    photo: samuel
+  }
 ]
 
-export default function ProfileEdit() {
+export default function ProfileEdit () {
   return (
     <Swiper
       init={false}
@@ -117,13 +117,13 @@ export default function ProfileEdit() {
             shadowPerProgress: true,
             prev: {
               scale: 1,
-              translate: [0, "100%", 0],
+              translate: [0, '100%', 0]
             },
             next: {
               scale: 0.96,
-              translate: ["-2%", "-3.2%", 0],
-            },
-          },
+              translate: ['-2%', '-3.2%', 0]
+            }
+          }
         },
         769: {
           slidesPerView: 1.06,
@@ -134,14 +134,14 @@ export default function ProfileEdit() {
             shadowPerProgress: true,
             prev: {
               scale: 1,
-              translate: [0, "100%", 0],
+              translate: [0, '100%', 0]
             },
             next: {
               scale: 0.96,
-              translate: ["1.50%", 0, -20],
-            },
-          },
-        },
+              translate: ['1.50%', 0, -20]
+            }
+          }
+        }
       }}
       onClick={(e) => {
         e.slideNext()
@@ -161,15 +161,15 @@ export default function ProfileEdit() {
               <div className='grid grid-cols-2 items-end'>
                 <div className='member__data'>
                   <h3 className='sm:h-[58px] md:h-[117px] lg:h-[194px] sm:text-[24px] md:text-[48px] lg:text-[55px] xl:text-[80px] leading-[1.2] font-secondary font-bold overflow-hidden overflow-ellipsis whitespace-nowrap mb-[20px] xl:mb-[70px]'>
-                    {team.name.split(" ")[0]}
+                    {team.name.split(' ')[0]}
                     <br />
-                    {team.name.split(" ")[1]}
+                    {team.name.split(' ')[1]}
                   </h3>
                   <div className='flex sm:flex-col md:flex-row md:justify-between sm:p-[16px] md:py-[6.5px] md:px-[10px] lg:py-[7.5px] lg:px-[10px] justify-between sm:gap-0 lg:w-fit border-[1px] border-[#444] leading-none rounded-[8px] md:divide-x divide-solid'>
                     <span className='flex flex-1 items-center text-left sm:text-[12px] lg:text-[16px] lg:max-w-[216px] md:mr-[24px]'>
                       {team.occupation}
                     </span>
-                    <div className='md:hidden h-[1px] w-[100%] bg-gray-divide my-[16px]'></div>
+                    <div className='md:hidden h-[1px] w-[100%] bg-gray-divide my-[16px]' />
                     <span className='flex-2 md:text-right md:pl-[24px] lg:pl-[24px] flex items-center'>
                       <svg
                         width='17'
