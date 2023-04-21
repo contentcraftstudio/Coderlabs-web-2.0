@@ -1,5 +1,5 @@
-import React from "react"
-import { useFormikContext, getIn } from "formik"
+import React from 'react'
+import { useFormikContext, getIn } from 'formik'
 
 type Props = {
   name: string
@@ -7,7 +7,7 @@ type Props = {
   type: string
 }
 
-export default function FormInput({ name, label, type }: Props) {
+export default function FormInput ({ name, label, type }: Props) {
   const { setFieldTouched, setFieldValue, values } = useFormikContext()
 
   return (

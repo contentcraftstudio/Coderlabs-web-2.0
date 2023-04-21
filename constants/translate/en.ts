@@ -20,18 +20,18 @@ export const EN = {
   Tools_and_technologies: 'Tools and technologies',
   paragraph_tools: 'We use technologies and tools to create more advanced applications and websites, with greater interactivity and functionality, which in turn improves the user experience and increases customer satisfaction and loyalty.',
   // sec 3
-  We_are_the_best_choice: '¡We are the best choice!',
+  We_are_the_best_choice: 'We are the best choice!',
   We_are_your_allies: 'We are your allies',
   Positive_impact: 'Positive impact',
   paragraph_card_best_choice: 'We are your allies to take your ideas to the next level taking into account your needs offering you comprehensive solutions that combine design and development under a collaborative work approach.',
   paragraph_card_positive_impact: 'Our digital products ensure ease of use, efficiency, security, stability, and a product free of errors, adjusting to the needs of the client.',
   // sec 4
-  Our_team: 'Our team :',
+  Our_team: 'Our team:',
   paragraph_our_team: 'At CoderLabs we have a team capable of facing challenges with solid strategies, human quality and user focus.',
   // testimonials
-  testimonials_kevin: "We are a reliable team in the market thanks to our dedication, innovation and determination to exceed our customers' expectations.",
-  testimonials_armando: 'We enjoy what we do so we train and improve every day in order to deliver a better product to you.',
-  testimonials_melissa: 'We stand out for offering personalized solutions to our customers, being flexible and adapting to the needs and challenges of digital product development.',
+  testimonials_kevin: "\"We are a reliable team in the market thanks to our dedication, innovation and determination to exceed our customers' expectations.\"",
+  testimonials_armando: '\"We enjoy what we do so we train and improve every day in order to deliver a better product to you.\"',
+  testimonials_melissa: '\"We stand out for offering personalized solutions to our customers, being flexible and adapting to the needs and challenges of digital product development.\"',
   // sec 5
   Explore_our_blog: 'Explore our blog',
   paragraph_our_blog_1: "Stay up to date with the latest news on the tech industry, get design and development tips and stay informed on what's happening in the world by subscribing to our site on Medium.",
@@ -52,6 +52,7 @@ export const EN = {
   // Footer
   Navigate: 'Navigate',
   Contact: 'Contact',
+  Social_media: 'Social Media',
   Identity: 'Identity',
   Services: 'Services',
   Tools: 'Tools',

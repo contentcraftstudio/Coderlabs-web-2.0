@@ -1,20 +1,19 @@
 /* eslint-disable @next/next/no-page-custom-font */
-import "../settings/i18"
-import Head from "next/head"
-import ToolsSec from "@/components/ToolsSec"
-import Footer from "@/components/Footer"
-import Blog from "@/components/Blog"
-import CardsTestominial from "@/components/CardsTestominial"
-import Cards from "@/components/Cards"
-import BestSec from "@/components/BestSec"
-import Hero from "@/components/Hero"
-import Navbar from "@/components/Navbar"
-import ProfileEdit from "@/components/SwiperTeam"
-import Team from "@/components/Team"
-import GetIn from "@/components/GetIn"
+import '../settings/i18'
+import Head from 'next/head'
+import ToolsSec from '@/components/ToolsSec'
+import Footer from '@/components/Footer'
+import Blog from '@/components/Blog'
+import CardsTestominial from '@/components/CardsTestominial'
+import Cards from '@/components/Cards'
+import BestSec from '@/components/BestSec'
+import Hero from '@/components/Hero'
+import Navbar from '@/components/Navbar'
+import Team from '@/components/Team'
+import GetIn from '@/components/GetIn'
 // import { useTranslation } from 'react-i18next'
 
-export default function Home() {
+export default function Home () {
   // const { t } = useTranslation()
 
   return (
@@ -33,8 +32,8 @@ export default function Home() {
         />
       </Head>
       <main>
-        <section className='container mx-auto space-y-[180px]'>
-          <section className='mb-[190px] sm:space-y-[200px] md:space-y-[150px]'>
+        <section className='container mx-auto sm:space-y-[80px] md:space-y-[100px] lg:space-y-[140px]'>
+          <section className='sm:space-y-[200px] md:space-y-[514px] lg:space-y-[150px]'>
             <Navbar />
             <Hero />
           </section>
@@ -42,13 +41,15 @@ export default function Home() {
           <ToolsSec />
           <BestSec />
         </section>
-        <footer className='bg-background-dark mt-[200px] pt-8'>
-          <section className='container mx-auto  space-y-[100px]'>
+        <footer className='bg-background-dark sm:mt-[80px] md:mt-[100px] lg:mt-[200px] sm:pt-[39px] md:pt-[53px] lg:pt-[97px]]'>
+          <section className='container mx-auto sm:space-y-[40px] md:space-y-[100px] lg:space-y-[140px]'>
             <Team />
             <CardsTestominial />
             <Blog />
             <GetIn />
-            <Footer />
+            <div className='md:pt-[125px]'>
+              <Footer />
+            </div>
           </section>
         </footer>
       </main>
