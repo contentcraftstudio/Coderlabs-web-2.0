@@ -31,9 +31,13 @@ export default function Hero () {
               {t('paragraph_hero')}
             </p>
             <div className='flex'>
-              <IButton label={t('Make_it_happen')} variant='contained' />
+              <a href='https://website.coderlabs.co/' target='_blank' rel='noreferrer'>
+                <IButton label={t('Make_it_happen')} variant='contained' />
+              </a>
               <div className='mr-[20px]' />
-              <IButton label={t('Book_a_call')} variant='outlined' />
+              <a href='https://calendly.com/coderlabs' target='_blank' rel='noreferrer'>
+                <IButton label={t('Book_a_call')} variant='outlined' />
+              </a>
             </div>
           </div>
         </div>
