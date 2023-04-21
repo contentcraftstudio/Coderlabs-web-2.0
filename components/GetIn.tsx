@@ -24,7 +24,7 @@ export default function GetIn () {
     message: Yup.string().required('Required')
   })
 
-  const handleValue = async (values, action) => {
+  async function handleValue (values: any, action: { resetForm: () => void }): Promise<void> {
     try {
       const response = await axios({
         method: 'POST',
@@ -58,7 +58,7 @@ export default function GetIn () {
         onSubmit={handleValue}
         validationSchema={validationSchema}
       >
-        {({ errors, touched }): JSX.Element => (
+        <>
           <div className='w-full bg-white rounded px-[20px] py-[20px] sm:space-y-[20px]'>
             <p className='w-225 font-secondary text-4xl font-[530] leading-10 text-gray-700 mb-[42px]'>
               {t('Get_in_touch')}
@@ -107,7 +107,7 @@ export default function GetIn () {
               <FormButton />
             </div>
           </div>
-        )}
+        </>
       </Form>
     </div>
   )

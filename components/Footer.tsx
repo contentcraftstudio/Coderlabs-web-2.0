@@ -10,6 +10,8 @@ import twitter from '../public/assets/twitter.svg'
 import linkedin from '../public/assets/linkedin.svg'
 import calendar from '../public/assets/calendar.svg'
 
+type Props = {}
+
 function Lg () {
   const { t } = useTranslation()
 
