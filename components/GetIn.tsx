@@ -6,14 +6,12 @@ import FormInput from './form/FormInput'
 import FormButton from './form/FormButton'
 import axios from 'axios'
 
-type Props = {}
-
-export default function GetIn ({}: Props) {
+export default function GetIn () {
   const { t } = useTranslation()
 
   const [formularioEnviado, setFormularioEnviado] = useState(false)
 
-  const validate = (values) => {
+  const validate = (values: { name: string; phone: string; email: string; contacting: any; budget: string; message: any }) => {
     const errors = {}
     if (!values.name) {
       errors.name = 'Required'
@@ -40,7 +38,7 @@ export default function GetIn ({}: Props) {
     return errors
   }
 
-  const handleValue = async (values, action) => {
+  async function handleValue (values: any, action: { resetForm: () => void }): Promise<void> {
     try {
       const response = await axios({
         method: 'POST',

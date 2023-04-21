@@ -1,9 +1,7 @@
-/* eslint-disable no-undef */
-/* eslint-disable react/jsx-fragments */
 import * as React from 'react'
-import { Formik } from 'formik'
+import { Formik, type FormikConfig, type FormikValues } from 'formik'
 
-export default function Form ({ children, ...props }): JSX.Element {
+export default function Form (props: FormikConfig<FormikValues> & any) {
   return (
     <Formik
       validateOnBlur={false}
@@ -11,7 +9,7 @@ export default function Form ({ children, ...props }): JSX.Element {
       validateOnMount={false}
       {...props}
     >
-      {() => <React.Fragment>{children}</React.Fragment>}
+      {() => (props.children)}
     </Formik>
   )
 }
