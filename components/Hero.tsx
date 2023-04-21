@@ -17,13 +17,13 @@ export default function Hero({}: Props) {
         <div className='col-span-2 divide-y-2 divide-gray-800'>
           <div>
             <Image
-              className='lg:mb-[-72px] md:mb-[-60px] sm:w-[20px] sm:mb-[-43px] sm:ml-[-10px] lg:w-[19px] sm:h-[36px] md:h-[50px] lg:h-[58px]'
+              className='lg:mb-[-72px] md:mb-[-60px]  sm:mb-[-43px] sm:ml-[-10px] lg:w-[19px] sm:h-[40px] md:h-[50px] lg:h-[58px]'
               src={logo}
               alt='coderlabs'
               width={20}
               height={70}
             />
-            <h1 className='font-secondary font-medium md:w-[624px] lg:w-[900px] sm:text-[34px] md:text-[48px] xl:text-[60px] lg:leading-[90px] sm:ml-[5px] mb-[40px]'>
+            <h1 className='titlehero font-secondary font-medium md:w-[620px] lg:w-[900px] sm:text-[32px] md:text-[46px] xl:text-[58px] lg:leading-[90px] sm:ml-[5px] mb-[40px]'>
               {t("title_hero")}
             </h1>
           </div>
