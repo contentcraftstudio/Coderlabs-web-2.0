@@ -1,13 +1,13 @@
 import Image from 'next/dist/client/image'
 import React from 'react'
-import Logo from '../public/Assets/tree/logoTree.svg'
-import twitter from '../public/Assets/tree/twitter.svg'
-import linkedin from '../public/Assets/tree/linkedin.svg'
-import face from '../public/Assets/tree/face_ico.svg'
-import web from '../public/Assets/tree/web.svg'
-import medium from '../public/Assets/tree/medium.svg'
-import behance from '../public/Assets/tree/behance.svg'
-import whatsapp from '../public/Assets/tree/whatsapp.svg'
+import Logo from '../public/assets/tree/logoTree.svg'
+import twitter from '../public/assets/tree/twitter.svg'
+import linkedin from '../public/assets/tree/linkedin.svg'
+import face from '../public/assets/tree/face_ico.svg'
+import web from '../public/assets/tree/web.svg'
+import medium from '../public/assets/tree/medium.svg'
+import behance from '../public/assets/tree/behance.svg'
+import whatsapp from '../public/assets/tree/whatsapp.svg'
 
 export default function tree () {
   return (
