@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import { TechnologiesData } from '@/pages/apis/TechnologiesData'
+import { TechnologiesData } from '@/pages/apis/technologiesData'
 
 export default function TechnologiesGrid () {
   return (

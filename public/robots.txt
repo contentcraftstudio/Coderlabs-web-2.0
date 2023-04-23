@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://coderlabs.co
+
+# Sitemaps
+Sitemap: https://coderlabs.co/sitemap.xml
