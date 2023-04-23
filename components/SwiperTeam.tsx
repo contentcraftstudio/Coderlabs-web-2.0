@@ -99,7 +99,7 @@ export default function ProfileEdit () {
   return (
     <Swiper
       init={false}
-      className='md:px-[50px] lg:px-[32px]'
+      className='md:px-[50px] lg:px-[32px] pt-[50px] pb-[40px] lg:pt-[120px]'
       effect='creative'
       grabCursor={false}
       slideToClickedSlide
@@ -149,7 +149,7 @@ export default function ProfileEdit () {
     >
       {TEAM.map((team, index) => (
         <SwiperSlide key={index}>
-          <div className='member-block rounded bg-white text-[#444444] p-[15px] md:p-[30px] lg:p-[45px] xl:p-[100px] sm:pt-[60px] md:pt-[80px] h-full'>
+          <div className='member-block rounded bg-white text-[#444444] sm:pt-[60px] p-[15px] md:p-[30px] lg:p-[45px] xl:p-[100px] md:pt-[80px] h-full'>
             <div className='member__holder'>
               <div className='flex justify-end items-end'>
                 <p className='sm:text-[24px] md:text-[32px] lg:text-[40px] xl:text-[77px] leading-none uppercase font-secondary font-bold mb-4'>
