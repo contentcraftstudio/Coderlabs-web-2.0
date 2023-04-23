@@ -5,10 +5,10 @@ import { ES } from '@/constants/translate/es'
 import { EN } from '@/constants/translate/en'
 
 const resources = {
-  "es": {
+  es: {
     translation: ES
   },
-  "en": {
+  en: {
     translation: EN
   }
 }

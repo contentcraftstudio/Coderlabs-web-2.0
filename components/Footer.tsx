@@ -10,8 +10,6 @@ import twitter from '../public/assets/twitter.svg'
 import linkedin from '../public/assets/linkedin.svg'
 import calendar from '../public/assets/calendar.svg'
 
-type Props = {}
-
 function Lg () {
   const { t } = useTranslation()
 
@@ -289,7 +287,7 @@ function Sm () {
   )
 }
 
-export default function Footer ({}: Props): JSX.Element {
+export default function Footer (): JSX.Element {
   const [screenSize, setScreenSize] = useState({ width: 0, height: 0 })
 
   useEffect(() => {

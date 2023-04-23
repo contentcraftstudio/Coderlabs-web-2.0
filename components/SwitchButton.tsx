@@ -1,10 +1,9 @@
+/* eslint-disable eqeqeq */
 import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
-type Props = {}
-
-export default function SwitchButton ({}: Props) {
-  const { t, i18n } = useTranslation()
+export default function SwitchButton () {
+  const { i18n } = useTranslation()
 
   const [isEnglish, setIsEnglish] = useState(true)
   const [color, setColor] = useState('bg-green')
