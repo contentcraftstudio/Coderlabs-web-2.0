@@ -45,7 +45,7 @@ export default function GetIn () {
   }
 
   return (
-    <div className='w-[100%] container'>
+    <div className='w-[100%] md:px-[60px] lg:px-[103px]'>
       <Form
         initialValues={{
           name: '',

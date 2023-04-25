@@ -24,7 +24,7 @@ function Card ({
 }: Props): JSX.Element {
   return (
     <div
-      className={`sm:w-[330px] md:w-[600px] xl:w-[600px] flex flex-col rounded sm:border-b-[16px] md:border-b-[22px] lg:border-b-[22px] ${color} sm:px-[20px] md:px-[60px] lg:px-[60px] sm:pt-[36px] md:pt-[85px] lg:pt-[85px] shadow-[0px_0px_40px_rgba(0,0,0,0.06)]`}
+      className={`sm:w-[330px] md:w-[600px] lg:max-w-[600px] flex flex-col rounded sm:border-b-[16px] md:border-b-[22px] lg:border-b-[22px] ${color} sm:px-[20px] md:px-[60px] lg:px-[60px] sm:pt-[36px] md:pt-[85px] lg:pt-[85px] shadow-[0px_0px_40px_rgba(0,0,0,0.06)]`}
     >
       <div className='flex justify-center'>
         <Image
@@ -39,7 +39,7 @@ function Card ({
       >
         {title}
       </p>
-      <p className='text-center sm:text-[16px] md:text-[20px] xl:text-[20px] font-primary font-normal sm:mb-[20px] md:mb-[58px] lg:mb-[58px] sm:leading-[19px] md:leading-[23px]'>
+      <p className='text-center sm:text-[16px] md:text-[20px] lg:text-[20px] font-primary font-normal sm:mb-[20px] md:mb-[58px] lg:mb-[58px] sm:leading-[19px] md:leading-[23px]'>
         {description}
       </p>
     </div>
@@ -49,11 +49,11 @@ function Card ({
 export default function BestSec (): JSX.Element {
   const { t } = useTranslation()
   return (
-    <div id='advantages' className='w-[100%]'>
-      <h3 className=' font-secondary font-medium text-center sm:text-[34px] md:text-[48px] xl:text-[64px] sm:mb-[40px] md:mb-[60px] lg:mb-[115px]'>
+    <div id='advantages' className='w-[100%] md:px-[60px] lg:px-[103px]'>
+      <h3 className='font-secondary font-medium text-center sm:text-[34px] md:text-[48px] xl:text-[64px] sm:mb-[40px] md:mb-[60px] lg:mb-[115px]'>
         {t('We_are_the_best_choice')}
       </h3>
-      <div className='flex flex-wrap justify-center sm:gap-[44px] md:gap-[60px] xl:gap-[70px]'>
+      <div className='flex flex-wrap lg:flex-nowrap justify-center sm:gap-[44px] md:gap-[60px] xl:gap-[70px]'>
         <Card
           img={aliados}
           alt={t('We_are_your_allies')}

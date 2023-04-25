@@ -14,7 +14,7 @@ function Lg () {
   const { t } = useTranslation()
 
   return (
-    <div className='grid grid-cols-1 divide-y-2 divide-gray-300 mx-[62px]'>
+    <div className='grid grid-cols-1 divide-y-2 divide-gray-300 md:px-[60px] lg:px-[103px]'>
       <div className='pb-[40px] flex justify-start'>
         <Image
           src={logo}

@@ -6,7 +6,7 @@ import SwitchButton from './SwitchButton'
 
 export default function Navbar () {
   return (
-    <nav id='nav' className='py-4 flex justify-between items-center'>
+    <nav id='nav' className='py-4 flex justify-between items-center md:px-[24px] lg:px-[40px]'>
       <Image
         src={coderlabsLogo}
         alt='coderlabs logo'

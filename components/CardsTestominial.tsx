@@ -30,8 +30,8 @@ const TestimonialData = {
 export default function CardsTestominial () {
   const data = TestimonialData.data
   return (
-    <div>
-      <div className=' flex flex-col lg:flex-row justify-center items-center gap-[60px]'>
+    <div className='md:px-[62px] lg:px-[103px]'>
+      <div className='flex flex-col lg:flex-row justify-center items-center gap-[60px]'>
         <CardTestimonials
           img={data[0].img}
           name={data[0].name}

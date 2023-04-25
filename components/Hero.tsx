@@ -24,7 +24,7 @@ export default function Hero () {
             </h1>
           </div>
           <div className='space-y-8 sm:pt-[20px] md:pt-[40px] xl:pt-[60px] mb-[30px] '>
-            <p className='font-primary font-normal sm:w-[280px] md:w-[600px] sm:text-[16px] md:text-[20px] sm:leading-[19px] xl:leading-[23px]'>
+            <p className='font-primary font-normal md:w-[600px] sm:text-[16px] md:text-[20px] sm:leading-[19px] xl:leading-[23px]'>
               {t('Subtitle_hero')}
             </p>
             <p className='font-primary font-normal sm:w-[290px] md:w-[497px] sm:text-[16px] md:text-[20px] '>
