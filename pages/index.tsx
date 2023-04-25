@@ -75,7 +75,7 @@ export default function Home () {
           <BestSec />
         </section>
         <footer className='bg-background-dark sm:mt-[80px] md:mt-[100px] lg:mt-[200px] sm:pt-[39px] md:pt-[53px] lg:pt-[97px]]'>
-          <section className='container mx-auto sm:space-y-[40px] md:space-y-[100px] lg:space-y-[140px]'>
+          <section className='container mx-auto sm:space-y-[40px] md:space-y-[100px] lg:space-y-[140px] sm:w-full'>
             <Team />
             <CardsTestominial />
             <Blog />

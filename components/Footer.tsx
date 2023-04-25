@@ -146,7 +146,7 @@ function Sm () {
   const { t } = useTranslation()
 
   return (
-    <div className='w-[100%] grid grid-cols-1 divide-y-2 divide-gray-300 px-4 container'>
+    <div className='w-[100%] grid grid-cols-1 divide-y-2 divide-gray-300 container'>
       <div>
         <div className='sm:pb-[34px] md:pb-[44px] flex justify-start'>
           <Image

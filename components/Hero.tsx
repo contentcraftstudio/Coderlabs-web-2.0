@@ -8,7 +8,7 @@ import IButton from './form/Button'
 export default function Hero () {
   const { t } = useTranslation()
   return (
-    <div className='w-[100%] sm:px-[30px] md:px-[60px] lg:px-[103px]'>
+    <div className='w-[100%] md:px-[60px] lg:px-[103px]'>
       <div className='grid sm:grid-cols-1 xl:grid-cols-3'>
         <div className='col-span-2 divide-y-2 divide-gray-800'>
           <div>
@@ -24,7 +24,7 @@ export default function Hero () {
             </h1>
           </div>
           <div className='space-y-8 sm:pt-[20px] md:pt-[40px] xl:pt-[60px] mb-[30px] '>
-            <p className='font-primary font-normal sm:w-[305px] md:w-[600px] sm:text-[16px] md:text-[20px] sm:leading-[19px] xl:leading-[23px]'>
+            <p className='font-primary font-normal sm:w-[280px] md:w-[600px] sm:text-[16px] md:text-[20px] sm:leading-[19px] xl:leading-[23px]'>
               {t('Subtitle_hero')}
             </p>
             <p className='font-primary font-normal sm:w-[290px] md:w-[497px] sm:text-[16px] md:text-[20px] '>

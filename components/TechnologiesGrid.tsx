@@ -98,7 +98,7 @@ const TechnologiesData = {
 
 export default function TechnologiesGrid () {
   return (
-    <div className=' sm:w-[290px] md:w-[570px] grid grid-cols-4 gap-1 sm:mx-auto'>
+    <div className='sm:w-[290px] md:w-[570px] grid grid-cols-4 gap-1 sm:mx-auto'>
       {TechnologiesData.data.map((item) => {
         return (
           <Image

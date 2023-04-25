@@ -17,7 +17,28 @@ html{
 }
 
 .titlehero::after {
-  content : url(../public/assets/rectangle.svg)
+  background-image: url(../public/assets/rectangle.svg);
+  background-size: 33px 5px;
+  display: inline-block;
+  width: 33px; 
+  height: 5px;
+  content:"";
+}
+
+@media (max-width: 768px) {
+  .titlehero::after {
+    background-size: 22px 4px;
+    width: 18px; 
+    height: 3px; /* ancho para pantallas menores a 640px */
+  }
+}
+
+@media (max-width: 976px) {
+  .titlehero::after {
+    background-size: 28px 5px;
+    width: 28px; 
+    height: 5px; /* ancho para pantallas menores a 640px */
+  }
 }
 
 .swiper-slide {

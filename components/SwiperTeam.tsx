@@ -27,56 +27,56 @@ const TEAM = [
     id: 2,
     name: 'Melissa Vega',
     occupation: 'Director Operations',
-    linkedIn: 'Melissa Vega',
+    linkedIn: 'melissavega',
     photo: melissa
   },
   {
     id: 3,
     name: 'Armando Guzmán',
     occupation: 'Tech Lead',
-    linkedIn: 'Armando Guzmán',
+    linkedIn: 'armandoguz',
     photo: armando
   },
   {
     id: 4,
     name: 'Ricardo Torres',
     occupation: 'Product Designer',
-    linkedIn: 'Ricardo Torres',
+    linkedIn: 'ricardotorres',
     photo: ricardo
   },
   {
     id: 5,
     name: 'Laura Lamilla',
     occupation: 'Growth Brand',
-    linkedIn: 'Laura Lamilla',
+    linkedIn: 'lauralamilla',
     photo: laura
   },
   {
     id: 6,
     name: 'Jose Pérez',
     occupation: 'Front-end Developer',
-    linkedIn: 'Jose Pérez',
+    linkedIn: 'joseperez',
     photo: jose
   },
   {
     id: 7,
     name: 'Kevin Molinares',
     occupation: 'Back-end Developer',
-    linkedIn: 'Kevin Molinares',
+    linkedIn: 'kevindev',
     photo: kevin
   },
   {
     id: 8,
     name: 'Roberto Bolivar',
     occupation: 'Front-end Developer',
-    linkedIn: 'Roberto Bolivar',
+    linkedIn: 'robertodev',
     photo: roberto
   },
   {
     id: 9,
     name: 'Juan Obregón',
     occupation: 'UI Designer',
-    linkedIn: 'Juan Obregón',
+    linkedIn: 'juanobregon',
     photo: juan
   },
   {
@@ -90,7 +90,7 @@ const TEAM = [
     id: 11,
     name: 'Samuel Rodríguez',
     occupation: 'Front-end Developer',
-    linkedIn: 'Samuel Rodríguez',
+    linkedIn: 'samuelrodev',
     photo: samuel
   }
 ]
@@ -160,12 +160,16 @@ export default function ProfileEdit () {
               </div>
               <div className='grid grid-cols-2 items-end'>
                 <div className='member__data'>
-                  <h3 className='sm:h-[58px] md:h-[117px] lg:h-[194px] sm:text-[24px] md:text-[48px] lg:text-[55px] xl:text-[80px] leading-[1.2] font-secondary font-bold overflow-hidden overflow-ellipsis whitespace-nowrap mb-[20px] xl:mb-[70px]'>
+                  <h3 className='sm:h-[58px] md:h-[117px] lg:h-[194px] sm:text-[24px] md:text-[48px] lg:text-[55px] xl:text-[80px] leading-[1.2] font-secondary font-bold overflow-hidden overflow-ellipsis whitespace-nowrap sm:mb-[15px] md:mb-[20px] xl:mb-[70px]'>
                     {team.name.split(' ')[0]}
                     <br />
                     {team.name.split(' ')[1]}
                   </h3>
-                  <div className='flex sm:flex-col md:flex-row md:justify-between sm:p-[16px] md:py-[6.5px] md:px-[10px] lg:py-[7.5px] lg:px-[10px] justify-between sm:gap-0 lg:w-fit border-[1px] border-[#444] leading-none rounded-[8px] md:divide-x divide-solid'>
+                  <div 
+                    className='flex sm:flex-col md:flex-row md:justify-between sm:p-[12px] md:py-[6.5px] md:px-[10px] lg:py-[7.5px] 
+                    lg:px-[10px] justify-between sm:gap-0 lg:w-fit border-[1px] border-[#444] leading-none rounded-[8px] md:divide-x 
+                    divide-solid sm:w-[130px] md:w-full'
+                  >
                     <span className='flex flex-1 items-center text-left sm:text-[12px] lg:text-[16px] lg:max-w-[216px] md:mr-[24px]'>
                       {team.occupation}
                     </span>
@@ -190,12 +194,12 @@ export default function ProfileEdit () {
                   </div>
                 </div>
                 <div className='flex justify-end overflow-hidden h-full'>
-                  <div className=' justify-center sm:w-[155px] md:w-[196px] xl:w-[332px] sm:h-[168px]  md:h-[219px] lg:h-[360px] rounded z-1  '>
+                  <div className='justify-center sm:w-[155px] md:w-[196px] xl:w-[332px] sm:h-[168px] md:h-[219px] lg:h-[360px] z-1'>
                     <Image
                       alt={team.name}
                       src={team.photo}
                       priority
-                      className='w-[100%] sm:h-[168px]  md:h-[219px] lg:h-[360px]'
+                      className='w-[100%] sm:h-[168px]  md:h-[219px] lg:h-[360px] rounded-[8px]'
                     />
                   </div>
                 </div>
