@@ -9,19 +9,19 @@ export default function Blog () {
   const { t } = useTranslation()
 
   return (
-    <div id='blog' className='sm:columns-1 lg:columns-2 lg:px-[110px]'>
+    <div id='blog' className='sm:columns-1 lg:columns-2 lg:px-[110px] md:px-6'>
       <div className='flex flex-col  items-start xl:min-h-[600px] py-3 sm:pb-[100px]'>
         <h2 className='font-secondary font-medium sm:text-[34px] md:text-[48px] lg:text-[60px] text-white sm:pb-[20px] lg:pb-[40px]'>
           {t('Explore_our_blog')}
         </h2>
         <div className='sm:space-y-[14px] space-y-[16px]'>
-          <p className='font-normal font-primary sm:text-[16px] sm:w-[330px] md:w-[624px] xl:w-[497px] md:text-[20px] text-white sm:leading-[19px] md:leading-[23px]'>
+          <p className='font-normal font-primary sm:text-[16px] xl:w-[497px] md:text-[20px] text-white sm:leading-[19px] md:leading-[23px]'>
             {t('paragraph_our_blog_1')}
           </p>
-          <p className='font-normal font-primary sm:text-[16px] sm:w-[330px] md:w-[624px] xl:w-[497px] md:text-[20px] text-white sm:leading-[19px] md:leading-[23px]'>
+          <p className='font-normal font-primary sm:text-[16px] xl:w-[497px] md:text-[20px] text-white sm:leading-[19px] md:leading-[23px]'>
             {t('paragraph_our_blog_2')}
           </p>
-          <p className='font-normal font-primary sm:text-[16px] sm:w-[330px] md:w-[624px] xl:w-[497px] md:text-[20px] text-white sm:leading-[19px] md:leading-[23px]'>
+          <p className='font-normal font-primary sm:text-[16px] xl:w-[497px] md:text-[20px] text-white sm:leading-[19px] md:leading-[23px]'>
             {t('paragraph_our_blog_3')}
           </p>
         </div>

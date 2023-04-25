@@ -65,7 +65,7 @@ export default function Home () {
         />
       </Head>
       <main>
-        <section className='container mx-auto sm:space-y-[80px] md:space-y-[100px] lg:space-y-[140px]'>
+        <section className='mx-auto sm:space-y-[80px] md:space-y-[100px] lg:space-y-[140px]'>
           <section className='sm:space-y-[200px] md:space-y-[514px] lg:space-y-[150px]'>
             <Navbar />
             <Hero />

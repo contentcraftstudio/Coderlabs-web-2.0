@@ -45,7 +45,7 @@ export default function GetIn () {
   }
 
   return (
-    <div className='w-[100%] md:px-6 container'>
+    <div className='w-[100%] container'>
       <Form
         initialValues={{
           name: '',
@@ -64,17 +64,17 @@ export default function GetIn () {
               {t('Get_in_touch')}
             </p>
             <div className='flex gap-[20px] flex-wrap'>
-              <div className='lg:w-[48.5%] sm:w-full xl:w-[49.2%]'>
+              <div className='lg:w-[48.9%] sm:w-full'>
                 <FormInput label={t('Name')} name='name' type='name' />
                 <ErrorMessage name='name' />
               </div>
-              <div className='lg:w-[48.5%] sm:w-full xl:w-[49.2%]'>
+              <div className='lg:w-[48.9%] sm:w-full'>
                 <FormInput label={t('Email')} name='email' type='email' />
                 <ErrorMessage name='email' />
               </div>
             </div>
             <div className='flex gap-[20px] flex-wrap'>
-              <div className='lg:w-[48.5%] sm:w-full md:w-[48.5%] xl:w-[49.2%]'>
+              <div className='lg:w-[48.9%] sm:w-full md:w-[48.4%]'>
                 <FormInput
                   label={t('Phone_number')}
                   name='phone'
@@ -82,7 +82,7 @@ export default function GetIn () {
                 />
                 <ErrorMessage name='phone' />
               </div>
-              <div className='lg:w-[48.5%] sm:w-full md:w-[48.5%] xl:w-[49.2%]'>
+              <div className='lg:w-[48.9%] sm:w-full md:w-[48.4%]'>
                 <FormInput
                   label={t('Contacting_us')}
                   name='contacting'
