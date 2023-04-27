@@ -5,6 +5,7 @@
 html{
   -webkit-tap-highlight-color: transparent;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .swiper-slide {
