@@ -9,7 +9,7 @@ export default function Blog () {
   const { t } = useTranslation()
 
   return (
-    <div id='blog' className='sm:columns-1 lg:columns-2 md:px-[60px] lg:px-[103px]'>
+    <div id='blog' className='sm:columns-1 lg:columns-2 sm:px-[30px] md:px-[60px] lg:px-[103px]'>
       <div className='flex flex-col  items-start xl:min-h-[600px] py-3 sm:pb-[100px]'>
         <h2 className='font-secondary font-medium sm:text-[34px] md:text-[48px] lg:text-[60px] text-white sm:pb-[20px] lg:pb-[40px]'>
           {t('Explore_our_blog')}

@@ -8,7 +8,7 @@ import IButton from './form/Button'
 export default function Hero () {
   const { t } = useTranslation()
   return (
-    <div className='w-[100%] md:px-[60px] lg:px-[103px]'>
+    <div className='w-[100%] sm:px-[30px] md:px-[60px] lg:px-[103px]'>
       <div className='grid sm:grid-cols-1 xl:grid-cols-3'>
         <div className='col-span-2 divide-y-2 divide-gray-800'>
           <div>

@@ -74,7 +74,7 @@ export default function Home () {
           <ToolsSec />
           <BestSec />
         </section>
-        <footer className='bg-background-dark sm:mt-[80px] md:mt-[100px] lg:mt-[200px] sm:pt-[39px] md:pt-[53px] lg:pt-[97px]]'>
+        <footer className='bg-background-dark sm:mt-[80px] md:mt-[100px] lg:mt-[200px] sm:pt-[39px] md:pt-[53px] lg:pt-[97px] w-full'>
           <section className='lg:container mx-auto sm:space-y-[40px] md:space-y-[100px] lg:space-y-[140px] w-full'>
             <Team />
             <CardsTestominial />

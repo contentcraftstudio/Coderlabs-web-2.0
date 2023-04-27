@@ -30,7 +30,7 @@ const TestimonialData = {
 export default function CardsTestominial () {
   const data = TestimonialData.data
   return (
-    <div className='md:px-[62px] lg:px-[103px]'>
+    <div className='sm:px-[30px] md:px-[62px] lg:px-[103px]'>
       <div className='flex flex-col lg:flex-row justify-center items-center gap-[60px]'>
         <CardTestimonials
           img={data[0].img}
