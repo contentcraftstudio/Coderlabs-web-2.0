@@ -165,11 +165,7 @@ export default function ProfileEdit () {
                     <br />
                     {team.name.split(' ')[1]}
                   </h3>
-                  <div 
-                    className='flex sm:flex-col md:flex-row md:justify-between sm:p-[12px] md:py-[6.5px] md:px-[10px] lg:py-[7.5px] 
-                    lg:px-[10px] justify-between sm:gap-0 lg:w-fit border-[1px] border-[#444] leading-none rounded-[8px] md:divide-x 
-                    divide-solid sm:w-[130px] md:w-full'
-                  >
+                  <div className='flex sm:flex-col md:flex-row md:justify-between sm:p-[12px] md:py-[6.5px] md:px-[10px] lg:py-[7.5px] lg:px-[10px] justify-between sm:gap-0 lg:w-fit border-[1px] border-[#444] leading-none rounded-[8px] md:divide-x divide-solid sm:w-[130px] md:w-full'>
                     <span className='flex flex-1 items-center text-left sm:text-[12px] lg:text-[16px] lg:max-w-[216px] md:mr-[24px]'>
                       {team.occupation}
                     </span>

@@ -65,7 +65,7 @@ export default function Home () {
         />
       </Head>
       <main>
-        <section className='lg:container sm:space-y-[80px] md:space-y-[100px] lg:space-y-[140px]'>
+        <section className='w-full lg:container sm:space-y-[80px] md:space-y-[100px] lg:space-y-[140px] mx-auto'>
           <section className='sm:space-y-[200px] md:space-y-[514px] lg:space-y-[150px]'>
             <Navbar />
             <Hero />
@@ -75,7 +75,7 @@ export default function Home () {
           <BestSec />
         </section>
         <footer className='bg-background-dark sm:mt-[80px] md:mt-[100px] lg:mt-[200px] sm:pt-[39px] md:pt-[53px] lg:pt-[97px]]'>
-          <section className='mx-auto sm:space-y-[40px] md:space-y-[100px] lg:space-y-[140px] sm:w-full'>
+          <section className='lg:container mx-auto sm:space-y-[40px] md:space-y-[100px] lg:space-y-[140px] w-full'>
             <Team />
             <CardsTestominial />
             <Blog />
