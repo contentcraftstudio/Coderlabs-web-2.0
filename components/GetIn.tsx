@@ -59,32 +59,32 @@ export default function GetIn () {
         validationSchema={validationSchema}
       >
         <>
-          <div className='w-full bg-white rounded px-[20px] py-[20px] sm:space-y-[20px]'>
-            <p className='w-225 font-secondary text-4xl font-[530] leading-10 text-gray-700 mb-[42px]'>
+          <div className='w-full bg-white rounded sm:px-[15px] md:px-[40px] py-[20px] sm:py-[20px] sm:space-y-[20px] md:space-y-[40px]'>
+            <p className='font-primary sm:text-[20px] md:text-[40px] text-gray-700 sm:mb-[20px] md:mb-[62px]'>
               {t('Get_in_touch')}
             </p>
-            <div className='flex gap-[20px] flex-wrap'>
-              <div className='lg:w-[48.9%] sm:w-full'>
-                <FormInput label={t('Name')} name='name' type='name' />
+            <div className='flex sm:gap-[20px] lg:gap-[40px] flex-wrap'>
+              <div className='lg:w-[48.2%] sm:w-full'>
+                <FormInput label={t('Name')+' *'} name='name' type='name' />
                 <ErrorMessage name='name' />
               </div>
-              <div className='lg:w-[48.9%] sm:w-full'>
-                <FormInput label={t('Email')} name='email' type='email' />
+              <div className='lg:w-[48.2%] sm:w-full'>
+                <FormInput label={t('Email')+' *'} name='email' type='email' />
                 <ErrorMessage name='email' />
               </div>
             </div>
-            <div className='flex gap-[20px] flex-wrap'>
-              <div className='lg:w-[48.9%] sm:w-full md:w-[48.4%]'>
+            <div className='flex sm:gap-[20px] lg:gap-[40px] flex-wrap'>
+              <div className='lg:w-[48.2%] sm:w-full md:w-[48.4%]'>
                 <FormInput
-                  label={t('Phone_number')}
+                  label={t('Phone_number')+' *'}
                   name='phone'
                   type='phone'
                 />
                 <ErrorMessage name='phone' />
               </div>
-              <div className='lg:w-[48.9%] sm:w-full md:w-[48.4%]'>
+              <div className='lg:w-[48.2%] sm:w-full md:w-[48.4%]'>
                 <FormInput
-                  label={t('Contacting_us')}
+                  label={t('Contacting_us')+' *'}
                   name='contacting'
                   type='contacting'
                 />
@@ -92,7 +92,7 @@ export default function GetIn () {
               </div>
             </div>
             <FormInput
-              label={t('Defined_budget')}
+              label={t('Defined_budget')+' *'}
               name='budget'
               type='budget'
             />
@@ -103,7 +103,7 @@ export default function GetIn () {
               type='menssage'
             />
             <ErrorMessage name='message' />
-            <div className='pt-[42px] flex justify-end pb-[10px]'>
+            <div className='sm:pt-[35px] md:pt-[42px] flex justify-end pb-[10px]'>
               <FormButton />
             </div>
           </div>
