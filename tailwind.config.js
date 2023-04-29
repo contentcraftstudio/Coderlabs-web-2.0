@@ -28,6 +28,8 @@ module.exports = {
       yellow: '#DACC67',
       'gray-dark': '#5C5C5C',
       'gray-divide': '#909090',
+      'gray-input': '#FAFAFA',
+      'gray-border': '#DBDBDB',
       gray: {
         100: '#EAEAEA',
         200: '#C7C7C7',
