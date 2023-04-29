@@ -21,7 +21,7 @@ export default function CardTestimonials ({
       <div className='divide-y-2'>
         <div className='sm:mt-[23px] md:mt-[0px] sm:pb-[16px] md:pb-[32px]'>
           <p className='font-primary leading-[22px] font-normal sm:text-[16px] md:text-[19px] xl:text-[19px] text-center text-white'>
-            {t(paragraph)}
+            {"\""+t(paragraph)+"\""}
           </p>
         </div>
         <div className='flex justify-center items-center sm:pt-[16px] md:pt-[32px] gap-[20px] sm:mb-[23px] md:mb-[0px]'>
