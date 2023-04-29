@@ -20,7 +20,7 @@ export default function FormInput ({ name, label, type }: Props) {
         value={getIn(values, name)}
         onChange={(e) => setFieldValue(name, e.target.value)}
         onBlur={() => setFieldTouched(name)}
-        className='px-[12px] w-full h-full bg-gray-input rounded-[8px] py-23 border border-gray-border'
+        className='sm:text-[10px] md:text-[14px] px-[12px] w-full h-full bg-gray-input rounded-[8px] py-23 border border-gray-border'
       />
     </div>
   )

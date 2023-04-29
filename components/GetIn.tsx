@@ -63,28 +63,28 @@ export default function GetIn () {
             <p className='font-primary sm:text-[20px] md:text-[40px] text-gray-700 sm:mb-[20px] md:mb-[62px]'>
               {t('Get_in_touch')}
             </p>
-            <div className='flex sm:gap-[20px] lg:gap-[40px] flex-wrap'>
+            <div className='flex sm:gap-[20px] md:gap-[40px] flex-wrap'>
               <div className='lg:w-[48.2%] sm:w-full'>
-                <FormInput label={t('Name')+' *'} name='name' type='name' />
+                <FormInput label={`${t('Name')} *`} name='name' type='name' />
                 <ErrorMessage name='name' />
               </div>
               <div className='lg:w-[48.2%] sm:w-full'>
-                <FormInput label={t('Email')+' *'} name='email' type='email' />
+                <FormInput label={`${t('Email')} *`} name='email' type='email' />
                 <ErrorMessage name='email' />
               </div>
             </div>
             <div className='flex sm:gap-[20px] lg:gap-[40px] flex-wrap'>
-              <div className='lg:w-[48.2%] sm:w-full md:w-[48.4%]'>
+              <div className='lg:w-[48.2%] sm:w-full md:w-[48.3%]'>
                 <FormInput
-                  label={t('Phone_number')+' *'}
+                  label={`${t('Phone_number')} *`}
                   name='phone'
                   type='phone'
                 />
                 <ErrorMessage name='phone' />
               </div>
-              <div className='lg:w-[48.2%] sm:w-full md:w-[48.4%]'>
+              <div className='lg:w-[48.2%] sm:w-full md:w-[48.3%]'>
                 <FormInput
-                  label={t('Contacting_us')+' *'}
+                  label={`${t('Contacting_us')} *`}
                   name='contacting'
                   type='contacting'
                 />
@@ -92,7 +92,7 @@ export default function GetIn () {
               </div>
             </div>
             <FormInput
-              label={t('Defined_budget')+' *'}
+              label={`${t('Defined_budget')} *`}
               name='budget'
               type='budget'
             />
