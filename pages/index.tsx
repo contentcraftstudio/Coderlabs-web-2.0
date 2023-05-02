@@ -64,7 +64,7 @@ export default function Home () {
           href='https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'
         />
       </Head>
-      <main>
+      <main className='w-full'>
         <section className='w-full lg:container sm:space-y-[80px] md:space-y-[100px] lg:space-y-[140px] mx-auto'>
           <section className='sm:space-y-[200px] md:space-y-[514px] lg:space-y-[150px]'>
             <Navbar />
@@ -74,8 +74,8 @@ export default function Home () {
           <ToolsSec />
           <BestSec />
         </section>
-        <footer className='bg-background-dark sm:mt-[80px] md:mt-[100px] lg:mt-[200px] sm:pt-[39px] md:pt-[53px] lg:pt-[97px] w-full'>
-          <section className='lg:container mx-auto sm:space-y-[40px] md:space-y-[100px] lg:space-y-[140px] w-full'>
+        <footer className='w-full bg-background-dark sm:mt-[80px] md:mt-[100px] lg:mt-[200px] sm:pt-[39px] md:pt-[53px] lg:pt-[97px]'>
+          <section className='lg:container mx-auto sm:space-y-[40px] md:space-y-[100px] lg:space-y-[140px] w-full]'>
             <Team />
             <CardsTestominial />
             <Blog />

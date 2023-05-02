@@ -149,10 +149,10 @@ export default function ProfileEdit () {
     >
       {TEAM.map((team, index) => (
         <SwiperSlide key={index}>
-          <div className='member-block rounded bg-white text-[#444444] sm:pt-[60px] p-[15px] md:p-[30px] lg:p-[45px] xl:p-[100px] md:pt-[80px] h-full'>
+          <div className='member-block rounded bg-white text-[#444444] sm:pt-[21px] md:pt-[71px] lg:pt-[151px] p-[15px] md:p-[30px] lg:p-[45px] xl:p-[100px] h-full'>
             <div className='member__holder'>
               <div className='flex justify-end items-end'>
-                <p className='sm:text-[24px] md:text-[32px] lg:text-[40px] xl:text-[77px] leading-none uppercase font-secondary font-bold mb-4'>
+                <p className='sm:text-[24px] md:text-[32px] lg:text-[40px] xl:text-[77px] leading-none uppercase font-primary font-bold sm:mb-[20px]'>
                   <span>{team.id}</span>
                   <span>/</span>
                   <span>{TEAM.length}</span>
