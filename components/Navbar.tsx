@@ -1,12 +1,15 @@
 /* eslint-disable quote-props */
-import Image from 'next/image'
-import React from 'react'
-import coderlabsLogo from '../public/assets/coderlabs_logo.svg'
-import SwitchButton from './SwitchButton'
+import Image from "next/image"
+import React from "react"
+import coderlabsLogo from "../public/assets/coderlabs_logo.svg"
+import SwitchButton from "./SwitchButton"
 
-export default function Navbar () {
+export default function Navbar() {
   return (
-    <nav id='nav' className='py-4 flex justify-between items-center sm:px-[12px] md:px-[24px] lg:px-[40px]'>
+    <nav
+      id='nav'
+      className='py-4 flex justify-between items-center sm:px-[12px] md:px-[24px] lg:px-[40px] 2xl:px-0'
+    >
       <Image
         src={coderlabsLogo}
         alt='coderlabs logo'

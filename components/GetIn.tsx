@@ -45,7 +45,7 @@ export default function GetIn () {
   }
 
   return (
-    <div className='w-[100%] sm:px-[30px] md:px-[60px] lg:px-[103px]'>
+    <div className='w-[100%] sm:px-[30px] md:px-[60px] lg:px-[103px] 2xl:px-[60px]'>
       <Form
         initialValues={{
           name: '',

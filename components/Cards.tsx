@@ -38,7 +38,7 @@ const CardData = {
 export default function Cards () {
   const { t } = useTranslation()
   return (
-    <div className='sm:px-[30px]'>
+    <div className='sm:px-[30px] 2xl:px-0'>
       <div id='services' className='sm:pb-[0px] md:pb-[80px] lg:pb-[113px]'>
         <h2 className='font-secondary font-medium text-center sm:text-[34px] md:text-[48px] lg:text-[60px] mb-[20px]'>
           {t('How_we_do')}

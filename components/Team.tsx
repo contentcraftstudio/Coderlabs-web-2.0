@@ -5,7 +5,7 @@ import ProfileEdit from './SwiperTeam'
 export default function Team () {
   const { t } = useTranslation()
   return (
-    <div className='sm:px-[30px] md:px-[62px] lg:px-[103px]'>
+    <div className='sm:px-[30px] md:px-[62px] lg:px-[103px] 2xl:px-[60px]'>
       <div
         id='team'
         className='flex sm:flex-col md:flex-row justify-between sm:pt-[40px] md:pt-[60px] lg:pt-[40px] border-t-2 border-white'
