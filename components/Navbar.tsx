@@ -1,10 +1,9 @@
-/* eslint-disable quote-props */
-import Image from "next/image"
-import React from "react"
-import coderlabsLogo from "../public/assets/coderlabs_logo.svg"
-import SwitchButton from "./SwitchButton"
+import Image from 'next/image'
+import React from 'react'
+import coderlabsLogo from '../public/assets/coderlabs_logo.svg'
+import SwitchButton from './SwitchButton'
 
-export default function Navbar() {
+export default function Navbar () {
   return (
     <nav
       id='nav'
@@ -13,7 +12,7 @@ export default function Navbar() {
       <Image
         src={coderlabsLogo}
         alt='coderlabs logo'
-        className=' sm:w-[35px] sm:h-[32px] md:w-[45px] md:h-[40px] xl:w-[52px] xl:h-[48px]'
+        className='sm:w-[35px] sm:h-[32px] md:w-[45px] md:h-[40px] xl:w-[52px] xl:h-[48px]'
       />
       <div>
         <SwitchButton />

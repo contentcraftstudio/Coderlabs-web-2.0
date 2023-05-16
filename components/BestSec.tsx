@@ -53,7 +53,7 @@ export default function BestSec (): JSX.Element {
       <h3 className='font-secondary font-medium text-center sm:text-[34px] md:text-[48px] xl:text-[64px] sm:mb-[40px] md:mb-[60px] lg:mb-[115px]'>
         {t('We_are_the_best_choice')}
       </h3>
-      <div className='flex flex-wrap lg:flex-nowrap justify-center sm:gap-[44px] md:gap-[60px] xl:gap-[70px]'>
+      <div className='flex flex-wrap xl:flex-nowrap justify-center sm:gap-[44px] md:gap-[60px] xl:gap-[70px]'>
         <Card
           img={aliados}
           alt={t('We_are_your_allies')}

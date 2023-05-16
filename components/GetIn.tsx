@@ -45,7 +45,7 @@ export default function GetIn () {
   }
 
   return (
-    <div className='w-[100%] sm:px-[30px] md:px-[60px] lg:px-[103px] 2xl:px-[60px]'>
+    <div className='w-[100%] sm:px-[30px] md:px-[60px] xl:px-[103px] 2xl:px-[60px]'>
       <Form
         initialValues={{
           name: '',
@@ -59,22 +59,22 @@ export default function GetIn () {
         validationSchema={validationSchema}
       >
         <>
-          <div className='w-full bg-white rounded sm:px-[15px] md:px-[40px] py-[20px] sm:py-[20px] sm:space-y-[20px] md:space-y-[40px]'>
-            <p className='font-primary sm:text-[20px] md:text-[40px] text-gray-700 sm:mb-[20px] md:mb-[62px]'>
+          <div className='w-full bg-white rounded sm:px-[15px] md:px-[40px] py-[20px] sm:py-[20px] sm:space-y-[20px] md:space-y-[40px] text-sm'>
+            <p className='font-primary sm:font-semibold md:font-medium sm:text-[20px] md:text-[40px] text-gray-700 sm:mb-[20px] md:mb-[62px] sm:mt-[20px] md:mt-[40px] lg:mt-[40px]'>
               {t('Get_in_touch')}
             </p>
             <div className='flex sm:gap-[20px] md:gap-[40px] flex-wrap'>
-              <div className='lg:w-[48.2%] sm:w-full'>
+              <div className='lg:w-[47%] xl:w-[48.2%] sm:w-full'>
                 <FormInput label={`${t('Name')} *`} name='name' type='name' />
                 <ErrorMessage name='name' />
               </div>
-              <div className='lg:w-[48.2%] sm:w-full'>
+              <div className='lg:w-[47%] xl:w-[48.2%] sm:w-full'>
                 <FormInput label={`${t('Email')} *`} name='email' type='email' />
                 <ErrorMessage name='email' />
               </div>
             </div>
             <div className='flex sm:gap-[20px] lg:gap-[40px] flex-wrap'>
-              <div className='lg:w-[48.2%] sm:w-full md:w-[48.3%]'>
+              <div className='lg:w-[47%] xl:w-[48.2%] sm:w-full md:w-[48.2%]'>
                 <FormInput
                   label={`${t('Phone_number')} *`}
                   name='phone'
@@ -82,7 +82,7 @@ export default function GetIn () {
                 />
                 <ErrorMessage name='phone' />
               </div>
-              <div className='lg:w-[48.2%] sm:w-full md:w-[48.3%]'>
+              <div className='lg:w-[47%] xl:w-[48.2%] sm:w-full md:w-[48.2%]'>
                 <FormInput
                   label={`${t('Contacting_us')} *`}
                   name='contacting'

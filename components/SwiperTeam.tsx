@@ -149,7 +149,7 @@ export default function ProfileEdit () {
     >
       {TEAM.map((team, index) => (
         <SwiperSlide key={index}>
-          <div className='member-block rounded bg-white text-[#444444] sm:pt-[21px] md:pt-[71px] lg:pt-[151px] p-[15px] md:p-[30px] lg:p-[45px] xl:p-[100px] h-full'>
+          <div className='member-block rounded bg-white text-[#444444] sm:pt-[21px] md:pt-[71px] xl:pt-[151px] p-[15px] md:p-[30px] lg:p-[45px] xl:p-[100px] h-full'>
             <div className='member__holder'>
               <div className='flex justify-end items-end'>
                 <p className='sm:text-[24px] md:text-[32px] lg:text-[40px] xl:text-[77px] leading-none uppercase font-primary font-bold sm:mb-[20px]'>
@@ -160,7 +160,7 @@ export default function ProfileEdit () {
               </div>
               <div className='grid grid-cols-2 items-end'>
                 <div className='member__data'>
-                  <h3 className='sm:h-[58px] md:h-[117px] lg:h-[194px] sm:text-[24px] md:text-[48px] lg:text-[55px] xl:text-[80px] leading-[1.2] font-secondary font-bold overflow-hidden overflow-ellipsis whitespace-nowrap sm:mb-[15px] md:mb-[20px] xl:mb-[70px]'>
+                  <h3 className='sm:h-[58px] md:h-[117px] lg:h-[120px] xl:h-[194px] sm:text-[24px] md:text-[48px] lg:text-[55px] xl:text-[80px] leading-[1.2] font-secondary font-bold overflow-hidden overflow-ellipsis whitespace-nowrap sm:mb-[15px] md:mb-[20px] lg:mb-[20px] xl:mb-[70px]'>
                     {team.name.split(' ')[0]}
                     <br />
                     {team.name.split(' ')[1]}
@@ -190,12 +190,12 @@ export default function ProfileEdit () {
                   </div>
                 </div>
                 <div className='flex justify-end overflow-hidden h-full'>
-                  <div className='justify-center sm:w-[155px] md:w-[196px] xl:w-[332px] sm:h-[168px] md:h-[219px] lg:h-[360px] z-1'>
+                  <div className='justify-center sm:w-[155px] md:w-[196px] xl:w-[332px] sm:h-[168px] md:h-[219px] xl:h-[360px] z-1'>
                     <Image
                       alt={team.name}
                       src={team.photo}
                       priority
-                      className='w-[100%] sm:h-[168px]  md:h-[219px] lg:h-[360px] rounded-[8px]'
+                      className='w-[100%] sm:h-[168px]  md:h-[219px] xl:h-[360px] rounded-[8px]'
                     />
                   </div>
                 </div>

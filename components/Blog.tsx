@@ -9,8 +9,8 @@ export default function Blog () {
   const { t } = useTranslation()
 
   return (
-    <div id='blog' className='sm:columns-1 lg:columns-2 sm:px-[30px] md:px-[60px] lg:px-[103px] 2xl:px-[60px]'>
-      <div className='flex flex-col  items-start xl:min-h-[600px] py-3 sm:pb-[100px]'>
+    <div id='blog' className='sm:columns-1 xl:columns-2 sm:px-[30px] md:px-[60px] xl:px-[103px] 2xl:px-[60px]'>
+      <div className='flex flex-col items-start lg:min-h-[550px] py-3 sm:pb-[100px]'>
         <h2 className='font-secondary font-medium sm:text-[34px] md:text-[48px] lg:text-[60px] text-white sm:pb-[20px] lg:pb-[40px]'>
           {t('Explore_our_blog')}
         </h2>
@@ -25,18 +25,17 @@ export default function Blog () {
             {t('paragraph_our_blog_3')}
           </p>
         </div>
-        <div className='sm:mb-[-20px] md:mb-[40px] lg:mb-[80px] sm:mt-[60px] lg:mt-[80px]'>
+        <div className='sm:mb-[-20px] md:mb-[40px] xl:mb-[80px] sm:mt-[60px] lg:mt-[80px]'>
           <Link href='https://medium.com/@coderlabs'>
             <IButton label={t('Visit_us_now')} variant='outlined' />
           </Link>
         </div>
       </div>
-      <div>
+      <div className='lg:min-h-[550px] flex content-center'>
         <Image
           alt='Blog Coderlabs'
           src={blog}
-          width={727}
-          height={635}
+          className='sm:w-[364px] sm:h-[364px] md:w-[572px] md:h-[572px] xl:h-[620px] xl:mt-[-95px]'
         />
       </div>
     </div>

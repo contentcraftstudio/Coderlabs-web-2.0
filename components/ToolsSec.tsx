@@ -9,10 +9,10 @@ export default function ToolsSec () {
 
   useEffect(() => {
     function handleResize () {
-      if (window.innerWidth >= 976 && window.innerWidth <= 1650) {
+      if (window.innerWidth > 1430 && window.innerWidth <= 1650) {
         setWidthTitle('lg:w-[500px]')
       } else {
-        setWidthTitle('lg:w-[702px]')
+        setWidthTitle('lg:w-full')
       }
     }
     handleResize()
@@ -25,7 +25,7 @@ export default function ToolsSec () {
   return (
     <section
       id='tools'
-      className='grid sm:grid-cols-1 xl:grid-cols-2 gap-[80px] py-[32px] md:px-[62px] lg:px-[103px] 2xl:px-[60px]'
+      className='grid sm:grid-cols-1 xl:grid-cols-2 gap-[80px] py-[32px] md:px-[62px] xl:px-[103px] 2xl:px-[60px]'
     >
       <div className='sm:text-center xl:text-start xl:divide-y-2 divide-gray-800 sm:px-[30px]'>
         <h3 className={`font-secondary font-medium sm:text-[34px] md:text-[48px] xl:pb-[40px] sm:mb-[20px] ${widthTitle}`}>
