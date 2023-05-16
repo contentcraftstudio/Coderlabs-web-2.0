@@ -10,7 +10,7 @@ export default function Hero () {
   return (
     <div className='w-[100%] sm:px-[30px] md:px-[60px] xl:px-[103px] 2xl:px-[60px]'>
       <div className='grid sm:grid-cols-1 xl:grid-cols-3'>
-        <div className='col-span-2 divide-y-2 divide-gray-800 md:max-w-[800px] xl:w-[900px]'>
+        <div className='col-span-2 divide-y-2 divide-gray-800 md:max-w-[650px] lg:max-w-[800px] xl:w-[900px]'>
           <div>
             <Image
               className='lg:mb-[-72px] md:mb-[-60px]  sm:mb-[-43px] sm:ml-[-10px] xl:w-[19px] sm:h-[40px] md:h-[50px] lg:h-[58px]'
