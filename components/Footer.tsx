@@ -203,7 +203,7 @@ function Sm () {
               contact@coderlabs.co
             </p>
             <p className='font-primary sm:text-[16px] lg:text-[18px] font-medium text-gray-100'>
-              3226320675
+              +57 300 2771564
             </p>
             <p className='font-primary sm:text-[16px] lg:text-[18px] font-medium text-gray-100'>
               Barranquilla
