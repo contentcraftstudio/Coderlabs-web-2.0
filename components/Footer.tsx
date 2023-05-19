@@ -73,7 +73,7 @@ function Lg () {
             contact@coderlabs.co
           </p>
           <p className='font-primary text-[20px] font-medium text-gray-100'>
-            3226320675
+            +57 300 2771564
           </p>
           <p className='font-primary text-[20px] font-medium text-gray-100'>
             Barranquilla
