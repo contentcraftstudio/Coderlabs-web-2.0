@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-no-target-blank */
+/* eslint-disable react/jsx-tag-spacing */
 import Image from 'next/dist/client/image'
 import React from 'react'
 import Logo from '../public/assets/tree/logoTree.svg'
@@ -21,21 +23,21 @@ export default function tree () {
           />
         </div>
         <section className='red-social'>
-          <a href='https://twitter.com/coderlabs_?s=09' target='_blank' className='btn-social' rel='noreferrer'>
+          <a href='https://twitter.com/coderlabs_?s=09' target='_blank' className='btn-social'>
             <Image
               src={twitter}
               width={18}
               alt='twitter coderlabs'
             />
           </a>
-          <a href='https://www.linkedin.com/company/coderlabs/?viewAsMember=true' target='_blank' className='btn-social' rel='noreferrer'>
+          <a href='https://www.linkedin.com/company/coderlabs/?viewAsMember=true' target='_blank' className='btn-social'>
             <Image
               src={linkedin}
               width={16}
               alt='linkedin coderlabs'
             />
           </a>
-          <a href='https://www.facebook.com/coderlabs.code' target='_blank' className='btn-social' rel='noreferrer'>
+          <a href='https://www.facebook.com/coderlabs.code' target='_blank' className='btn-social'>
             <Image
               src={face}
               width={11}

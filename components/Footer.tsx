@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-closing-bracket-location */
 /* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable no-undef */
 import React, { useState, useEffect } from 'react'
@@ -84,7 +85,7 @@ function Lg () {
           <a
             href='https://calendly.com/coderlabs'
             target='_blank'
-            className='md:text-center flex flex-row items-center gap-[14px] sm:mb-[10px]' rel='noreferrer'
+            className='md:text-center flex flex-row items-center gap-[14px] sm:mb-[10px]'
           >
             <p className='h-[22px] font-primary text-[20px] font-medium text-gray-100 '>
               Book a call
@@ -97,7 +98,7 @@ function Lg () {
           </a>
         </div>
         <div className='flex justify-between gap-[30px] items-center'>
-          <a href='https://www.instagram.com/coderlabs_/' target='_blank' rel='noreferrer'>
+          <a href='https://www.instagram.com/coderlabs_/' target='_blank'>
             <Image
               src={instagram}
               alt='coderlabs instagram'
@@ -105,7 +106,7 @@ function Lg () {
               height={32}
             />
           </a>
-          <a href='https://www.facebook.com/coderlabs.code' target='_blank' rel='noreferrer'>
+          <a href='https://www.facebook.com/coderlabs.code' target='_blank'>
             <Image
               src={facebook}
               alt='coderlabs facebook'
@@ -113,7 +114,7 @@ function Lg () {
               height={32}
             />
           </a>
-          <a href='https://twitter.com/coderlabs_' target='_blank' rel='noreferrer'>
+          <a href='https://twitter.com/coderlabs_' target='_blank'>
             <Image
               src={twitter}
               alt='coderlabs twitter'
@@ -122,9 +123,7 @@ function Lg () {
             />
           </a>
           <a
-            href='https://www.linkedin.com/company/coderlabsco/'
-            target='_blank' rel='noreferrer'
-          >
+            href='https://www.linkedin.com/company/coderlabsco/' target='_blank'>
             <Image
               src={linkedin}
               alt='coderlabs linkedin'
@@ -213,7 +212,7 @@ function Sm () {
               <a
                 href='https://calendly.com/coderlabs'
                 target='_blank'
-                className='flex flex-row items-center gap-[14px] sm:mb-[10px]' rel='noreferrer'
+                className='flex flex-row items-center gap-[14px] sm:mb-[10px]'
               >
                 <p className='h-[20px] font-primary sm:text-[16px] lg:text-[18px] font-medium text-gray-100'>
                   Book a call
