@@ -147,3 +147,40 @@ html{
   }
 }
 
+@media screen and (max-width:1500px) {
+  .chat {
+    display: none;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .chat {
+    display: none;
+  }
+}
+
+.receiver {
+  clip-path: polygon( 0 100%, 12px 70%, 12px 0, 100% 0, 100% 100%,);
+  min-width: 60px;
+	max-width: 700px;
+  padding: 12px 12px;
+  padding-left: 21px;
+  background-color: #C7C7C7;
+  color: #444444;
+  width: 480px;
+  margin-left: 300px;
+  border-radius: 16px 16px 16px 0;
+}
+
+.sender {
+  clip-path: polygon(12px 0, 100% 0, 100% 100%, 0 100%, 12px 70%);
+  min-width: 60px;
+	max-width: 700px;
+  padding: 12px 12px;
+  padding-left: 21px;
+  background-color: #C1DCD7;
+  color: #444444;
+  margin-left: 20px;
+  border-radius: 16px 16px 16px 0;
+  width: 480px
+}
