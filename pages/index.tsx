@@ -17,7 +17,7 @@ export default function Home () {
     <>
       <Head>
         {/* Meta Data */}
-        <title>Making your business solutions come true | CoderLabs</title>
+        <title>Turning your projects into reality with our tech expertise | CoderLabs</title>
         <link rel='canonical' href='https://www.coderlabs.co/' />
         <meta name='robots' content='max-snippet:-1,max-image-preview:standard,max-video-preview:-1' />
         <meta name='description' content='CoderLabs Making your business solutions come true | CoderLabs.' />
@@ -28,7 +28,7 @@ export default function Home () {
         <meta property='og:image:alt' content='Mobile and Web Development Partner' />
         <meta property='og:locale' content='en_US' />
         <meta property='og:type' content='website' />
-        <meta property='og:title' content='Making your business solutions come true | CoderLabs' />
+        <meta property='og:title' content='Turning your projects into reality with our tech expertise | CoderLabs' />
         <meta
           property='og:description'
           content='Making your business solutions come true | CoderLabs'
@@ -39,7 +39,7 @@ export default function Home () {
         <meta name='twitter:card' content='summary_large_image' />
         <meta name='twitter:site' content='@coderlabs_' />
         <meta name='twitter:creator' content='@coderlabs_' />
-        <meta name='twitter:title' content='Making your business solutions come true | CoderLabs' />
+        <meta name='twitter:title' content='Turning your projects into reality with our tech expertise | CoderLabs' />
         <meta
           name='twitter:description'
           content='Making your business solutions come true | CoderLabs.'
