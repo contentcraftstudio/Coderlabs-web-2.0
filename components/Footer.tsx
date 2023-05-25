@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable no-undef */
 import React, { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
@@ -239,7 +240,7 @@ function Sm () {
           />
         </div>
         <div className='flex flex-row sm:gap-[24px] md:gap-[24px]'>
-          <a href='https://www.instagram.com/coderlabs_/' target='_blank' rel='noreferrer'>
+          <a href='https://www.instagram.com/coderlabs_/' target='_blank'>
             <Image
               src={instagram}
               alt='coderlabs instagram'
@@ -247,7 +248,7 @@ function Sm () {
               height={32}
             />
           </a>
-          <a href='https://www.facebook.com/coderlabs.code' target='_blank' rel='noreferrer'>
+          <a href='https://www.facebook.com/coderlabs.code' target='_blank'>
             <Image
               src={facebook}
               alt='coderlabs facebook'
@@ -255,7 +256,7 @@ function Sm () {
               height={32}
             />
           </a>
-          <a href='https://twitter.com/coderlabs_' target='_blank' rel='noreferrer'>
+          <a href='https://twitter.com/coderlabs_' target='_blank'>
             <Image
               src={twitter}
               alt='coderlabs twitter'
@@ -263,10 +264,7 @@ function Sm () {
               height={32}
             />
           </a>
-          <a
-            href='https://www.linkedin.com/company/coderlabsco/'
-            target='_blank' rel='noreferrer'
-          >
+          <a href='https://www.linkedin.com/company/coderlabsco/' target='_blank'>
             <Image
               src={linkedin}
               alt='coderlabs linkedin'
