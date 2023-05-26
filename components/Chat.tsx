@@ -21,7 +21,7 @@ function Chat () {
   }, [])
 
   const handleChatResponse = (item: any) => {
-    setResponses((prevResponses): any[] => [ ...item])
+    setResponses(item)
   }
 
   useEffect(() => {

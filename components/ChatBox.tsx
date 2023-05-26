@@ -32,7 +32,6 @@ function ChatBox ({ selection, onResponse }: props): JSX.Element {
       }))
 
       const fields = selection
-      console.log("🚀 ~ file: ChatBox.tsx:35 ~ sendMessage ~ fields:", fields)
       const messages = [{ role: 'system', content: fields }, ...userMessages]
       setLoading(true)
       axios
