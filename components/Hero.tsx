@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import Image from 'next/image'
 import React from 'react'
 import rocket from '../public/assets/rocket.svg'
@@ -31,11 +32,11 @@ export default function Hero () {
               {t('paragraph_hero')}
             </p>
             <div className='flex'>
-              <a href='https://www.linkedin.com/company/coderlabsco/' rel='noreferrer'>
+              <a href='https://www.linkedin.com/company/coderlabsco/' target='_blank'>
                 <IButton label={t('Make_it_happen')} variant='contained' />
               </a>
               <div className='mr-[20px]' />
-              <a href='https://calendly.com/coderlabs' target='_blank' rel='noreferrer'>
+              <a href='https://calendly.com/coderlabs' target='_blank'>
                 <IButton label={t('Book_a_call')} variant='outlined' />
               </a>
             </div>
