@@ -1,49 +1,71 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react'
+import { List, Typography } from 'antd'
+import ChatBox from './ChatBox'
 
-export default function Chat() {
-  const [messages, setMessages] = useState([]);
-  const [newMessage, setNewMessage] = useState('');
+import { CardPop } from './CardPop'
 
-  const handleInputChange = (event) => {
-    setNewMessage(event.target.value);
-  };
+function Chat () {
+  const [responses, setResponses] = useState([])
+  const [data, setData] = useState([])
+  console.log("🚀 ~ file: Chat.tsx:10 ~ Chat ~ data:", data)
+  const listRef = useRef(null)
+  useEffect(() => {
+    fetch('https://cdn.contentful.com/spaces/8rxe1sxxuabo/environments/master/entries?content_type=coderlabs', {
+      headers: {
+        Authorization: 'Bearer wIvUEV88zWPT7HNKdiSEfLFWlOgq8i5Uvpp8LdxNv5s'
+      }
+    })
+      .then((response) => response.json())
+      .then((result) => setData(result.items))
+      .catch((error) => console.error(error))
+  }, [])
 
-  const handleSendMessage = () => {
-    if (newMessage.trim() !== '') {
-      setMessages([...messages, newMessage]);
-      setNewMessage('');
+  const handleChatResponse = (item: any) => {
+    setResponses((prevResponses): any[] => [...prevResponses, ...item])
+  }
+
+  useEffect(() => {
+    if (listRef.current) {
+      listRef.current.scrollTop = listRef.current.scrollHeight
     }
-  };
+  }, [responses])
 
   return (
-    <div>
-      <div className="flex flex-col h-screen p-4">
-        <div className="flex-1 overflow-y-auto px-4 py-2">
-          {messages.map((message, index) => (
-            <div key={index} className={`message ${index % 2 === 0 ? 'sender' : 'receiver'} p-2 mb-2`}
-            >
-              {message}
-            </div>
-          ))}
+    <>
+      <div style={{ display: 'flex', height: '98vh', flexDirection: 'column', justifyContent: 'space-around' }}>
+        <div className='chat-messages-container' style={{ flex: 1, overflowY: 'auto', padding: '6px 12px' }} ref={listRef}>
+          <div>
+            <List
+              split={false}
+              header={
+                <div style={{ position: 'fixed', zIndex: 2, backgroundColor: 'white', top: 0, paddingTop: 16, width: '100%' }}>
+                  <Typography.Title style={{ paddingInline: 16 }}> Coderlabs Ai</Typography.Title>
+                </div>
+
+              }
+              locale={{ emptyText: ' ' }}
+              key={responses.length}
+              dataSource={responses.filter((msg) => msg?.role !== 'system')}
+              renderItem={(item) => (
+                <List.Item
+                  style={{
+                    flexDirection: 'row',
+                    justifyContent: item.role === 'assistant' ? 'flex-start' : 'flex-end'
+                  }}
+                >
+                  <CardPop
+                    role={item?.role}
+                    content={item?.content}
+                  />
+                </List.Item>
+              )}
+            />
+          </div>
         </div>
+        <ChatBox selection={data[0]?.fields.prompt} onResponse={handleChatResponse} />
       </div>
-      <div className="fixed bottom-[95px] lg:px-[70px] md:px-[50px] sm:px-[32px]">
-        <div className="relative">
-          <input
-            type="text"
-            placeholder="Escribe"
-            value={newMessage}
-            onChange={handleInputChange}
-            className="py-2 px-4 border bg-gray-input border-[#DBDBDB] rounded-[8px] pr-12 focus:outline-none md:w-[700px] sm:w-[330px] xl:w-[1120px]"
-          />
-          <button
-            onClick={handleSendMessage}
-            className="absolute right-0 mt-2 mr-2 py-[2px] px-4 bg-blue-500 rounded-[8px] bg-[#5EA496] text-white text-primary"
-          >
-            Send
-          </button>
-        </div>
-      </div>
-    </div>
-  );
-};
+    </>
+  )
+}
+
+export default Chat
