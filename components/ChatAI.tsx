@@ -7,20 +7,8 @@ export default function ChatAI() {
   // const { screens } = require('tailwindcss/defaultTheme');
   // const mobile = screens.sm
 
-  const showChat = () => {
-    setChat(true);
-  };
 
   return (
-    <>
-      <div className="col-span-1">
-        <InfoChat showChat={showChat} />
-      </div>
-      {chat && (
-        <div>
-          <Chat />
-        </div>
-      )}
-    </>
+    <InfoChat />
   )
 }

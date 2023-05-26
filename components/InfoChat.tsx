@@ -6,10 +6,15 @@ import coderlabsLogo from '../public/assets/coderlabs_logo.svg'
 import Chat from './Chat'
 
 export default function InfoChat() {
+  const [chat, setChat] = React.useState(false);
+
+  const showChat = () => {
+    setChat(true);
+  };
 
   return (
     <>
-      <div className='sm:px-[30px] md:px-[60px] xl:px-[103px] 2xl:px-[0px]'>
+      <div className='infochat'>
         <div className='grid sm:grid-cols-1 xl:grid-cols-2 bg-[#232323] h-full sm:h-screen md:h-screen lg:h-screen xl:h-screen mx-auto'>
           <div className='col-span-1 divide-y-2 divide-white lg:max-w-[900px] xl:w-[900px] md:max-w-[650px] lg:p-[70px] sm:p-[30px] lg:mt-[320px] md:mt-[170px] sm:mt-[90px] lg:ml-[100px] '>
             <div>
@@ -35,15 +40,17 @@ export default function InfoChat() {
               </p>
               <div className='flex'>
                 <div />
-                <a target='_blank' rel='noreferrer'>
+                <a target='_blank' onClick={showChat} rel='noreferrer'>
                   <IButton label='Start Chat' variant='outlined' />
                 </a>
               </div>
             </div>
           </div>
-          <div className='chat col-span-1 md:max-w-[650px] lg:max-w-[1400px] xl:max-w-[1400px] bg-white'>
-            <Chat />
-          </div>
+          {chat && (
+            <div className='chat col-span-1 md:max-w-[650px] lg:max-w-[1400px] xl:max-w-[1400px] bg-white'>
+              <Chat />
+            </div>
+          )}
         </div>
       </div>
     </>
