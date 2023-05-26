@@ -31,7 +31,7 @@ export default function Hero () {
               {t('paragraph_hero')}
             </p>
             <div className='flex'>
-              <a href='https://www.coderlabs.co/ai' target='_blank' rel='noreferrer'>
+              <a href='https://www.linkedin.com/company/coderlabsco/' rel='noreferrer'>
                 <IButton label={t('Make_it_happen')} variant='contained' />
               </a>
               <div className='mr-[20px]' />
