@@ -59,5 +59,10 @@ export const ES = {
   Advantages: 'Ventajas',
   Team: 'Equipo',
   Blog: 'Blog',
-  Copy: '2023 CoderLabs SAS. Developing with love Barranquilla, Colombia.'
+  Copy: '2023 CoderLabs SAS. Developing with love Barranquilla, Colombia.',
+  // Sec IA
+  Explore_our_ia: '¡Prueba nuestro chat de IA!',
+  paragraph_our_ia_1: 'Nuestro proyecto combina IA y la experiencia de CoderLabs para ofrecer un chat de IA que acompaña a los clientes en el desarrollo de sus productos. Buscamos optimizar sus procesos de desarrollo mediante asesoramiento técnico y apoyo en tiempo real.',
+  paragraph_our_ia_2: 'En este proyecto, utilizamos tecnologías de vanguardia en IA y aprendizaje automático para entrenar al chatbot con habilidades de conversación y conocimientos técnicos.',
+  Visit_ia_now: '¡Prueba nuestro chat de IA!'
 }
