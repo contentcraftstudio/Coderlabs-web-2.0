@@ -147,18 +147,6 @@ html{
   }
 }
 
-@media screen and (max-width:1500px) {
-  .chat {
-    display: none;
-  }
-}
-
-@media screen and (max-width:320px) {
-  .chat {
-    display: none;
-  }
-}
-
 .receiver {
   clip-path: polygon(12px 0, 100% 0, 100% 100%, 0 100%, 12px 70%);
   min-width: 60px;
