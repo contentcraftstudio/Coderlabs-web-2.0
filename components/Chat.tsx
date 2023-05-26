@@ -17,17 +17,13 @@ export default function Chat() {
 
   return (
     <div>
-      <div className=" p-4">
+      <div className="p-4">
         {messages.map((message, index) => (
           <div
             key={index}
-            className={`message ${index % 2 === 0 ? 'sender' : 'receiver'
-              } p-2 mb-2`}
-            style={{
-              transform: message === 'receiver' ? 'scale(-1, 1)' : 'none',
-            }}
+            className={`message ${index % 2 === 0 ? 'sender' : 'receiver'} p-2 mb-2`}
           >
-            {message}
+            {message}        
           </div>
         ))}
       </div>
