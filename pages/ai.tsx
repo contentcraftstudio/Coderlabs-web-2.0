@@ -1,18 +1,9 @@
 /* eslint-disable @next/next/no-page-custom-font */
+import ChatIa from '@/components/ChatAi'
 import '../settings/i18'
 import Head from 'next/head'
-import ToolsSec from '@/components/ToolsSec'
-import Footer from '@/components/Footer'
-import Blog from '@/components/Blog'
-import CardsTestominial from '@/components/CardsTestominial'
-import Cards from '@/components/Cards'
-import BestSec from '@/components/BestSec'
-import Hero from '@/components/Hero'
-import Navbar from '@/components/Navbar'
-import Team from '@/components/Team'
-import GetIn from '@/components/GetIn'
-import InfoChat from '@/components/InfoChat'
-import ChatAI from '@/components/ChatAI'
+import ChatAi from '@/components/ChatAi'
+
 
 export default function () {
   return (
@@ -64,7 +55,7 @@ export default function () {
         />
       </Head>
       <main>
-          <ChatAI />
+        <ChatAi />
       </main>
     </>
   )
