@@ -59,5 +59,8 @@ export const ES = {
   Advantages: 'Ventajas',
   Team: 'Equipo',
   Blog: 'Blog',
-  Copy: '2023 CoderLabs SAS. Developing with love Barranquilla, Colombia.'
+  Copy: '2023 CoderLabs SAS. Developing with love Barranquilla, Colombia.',
+   //Chat
+   TitleChat: 'Descubre el Universo de Coderlabs con nuestro chat AI',
+   SubtitleChat: 'Emprendiendo un viaje épico hacia la innovación en diseño y desarrollo.'
 }
