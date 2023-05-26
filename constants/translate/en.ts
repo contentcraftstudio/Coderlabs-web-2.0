@@ -62,7 +62,8 @@ export const EN = {
   Copy: '2023 CoderLabs SAS. Developing with love Barranquilla, Colombia.',
   // Sec IA
   Explore_our_ia: 'Try our AI chat!',
-  paragraph_our_ia_1: `Our project combines AI and the experience of CoderLabs to offer an AI chat that accompanies clients in the development of their products. We seek to optimize your development processes through technical advice and support in real time.`,
-  paragraph_our_ia_2: 'In this project, we use cutting-edge AI and machine learning technologies to train the chatbot with conversational skills and technical knowledge.',
+  paragraph_our_ia_1: `Our project combines artificial intelligence with the experience of coderlabs to offer you an exceptional AI chat. Whether you're a customer looking for one-on-one technical advice, a candidate interested in joining our talented team, or just someone curious to learn more about CoderLabs.`,
+  paragraph_our_ia_2: 'Thanks to our AI and machine learning technologies, we have trained our chatbot with conversational skills and technical knowledge.',
+  paragraph_our_ia_3: 'We invite you to immerse yourself in this interactive and personalized experience!',
   Visit_ia_now: 'Try our AI chat!'
 }
