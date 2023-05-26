@@ -12,6 +12,7 @@ import Navbar from '@/components/Navbar'
 import Team from '@/components/Team'
 import GetIn from '@/components/GetIn'
 import InfoChat from '@/components/InfoChat'
+import ChatAI from '@/components/ChatAI'
 
 export default function () {
   return (
@@ -63,7 +64,7 @@ export default function () {
         />
       </Head>
       <main>
-          <InfoChat />
+          <ChatAI />
       </main>
     </>
   )
