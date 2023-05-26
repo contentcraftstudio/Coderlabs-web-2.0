@@ -39,8 +39,10 @@ function ChatBox ({ selection, onResponse }: props): JSX.Element {
         .post(
           'https://api.openai.com/v1/chat/completions',
           {
-            model: 'gpt-3.5-turbo',
-            messages
+            model: 'gpt-4',
+            messages,
+            temperature: 0.6,
+            max_tokens: 450
           },
           {
             headers: {

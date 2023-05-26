@@ -7,7 +7,7 @@ import { CardPop } from './CardPop'
 function Chat () {
   const [responses, setResponses] = useState([])
   const [data, setData] = useState([])
-  console.log("🚀 ~ file: Chat.tsx:10 ~ Chat ~ data:", data)
+  console.log('🚀 ~ file: Chat.tsx:10 ~ Chat ~ data:', data)
   const listRef = useRef(null)
   useEffect(() => {
     fetch('https://cdn.contentful.com/spaces/8rxe1sxxuabo/environments/master/entries?content_type=coderlabs', {
@@ -21,7 +21,7 @@ function Chat () {
   }, [])
 
   const handleChatResponse = (item: any) => {
-    setResponses((prevResponses): any[] => [...prevResponses, ...item])
+    setResponses((prevResponses): any[] => [ ...item])
   }
 
   useEffect(() => {
@@ -44,6 +44,7 @@ function Chat () {
 
               }
               locale={{ emptyText: ' ' }}
+              style={{ paddingTop: '5%' }}
               key={responses.length}
               dataSource={responses.filter((msg) => msg?.role !== 'system')}
               renderItem={(item) => (
