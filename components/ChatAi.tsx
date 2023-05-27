@@ -38,23 +38,22 @@ export default function ChatAi () {
                 className='sm:w-[35px] sm:h-[32px] md:w-[45px] md:h-[40px] xl:w-[52px] xl:h-[48px] xl:mt-[-385px] xl:mb-[345px] sm:mt-[-115px] sm:mb-[145px] md:mt-[-235px] md:mb-[185px] lg:mt-[-385px]'
               />
               <Image
-                className='lg:mb-[-72px] md:mb-[-60px] sm:mb-[-43px] sm:ml-[-10px] xl:w-[19px] sm:h-[40px] md:h-[50px] lg:h-[58px]'
+                className='llave lg:mb-[-72px] md:mb-[-60px] sm:mb-[-43px] sm:ml-[-10px] xl:w-[19px] sm:h-[40px] md:h-[50px] lg:h-[58px]'
                 src={logo}
                 alt='coderlabs'
                 width={20}
                 height={70}
               />
-              <h1 className='titlehero font-secondary text-white font-normal sm:text-[32px] md:text-[46px] xl:text-[58px] lg:text-[58px] lg:leading-[90px] sm:ml-[5px] mb-[40px]'>
+              <h1 className='titlehero font-secondary text-white font-normal sm:text-[32px] md:text-[46px] xl:text-[58px] lg:text-[58px] lg:leading-[90px] sm:ml-[5px] mb-[40px] lg:mb-[-10px] lg:mt-[-140px]'>
                 Descubre el Universo de Coderlabs con nuestro chat AI
               </h1>
             </div>
             <div className='space-y-8 sm:pt-[20px] md:pt-[40px] xl:pt-[60px] mb-[30px]'>
-              <p className='font-primary font-light text-white sm:text-[16px] md:w-[600px] md:text-[20px] sm:leading-[19px] md:leading-[23px]'>
+              <p className='font-primary font-light text-white sm:text-[16px] md:w-[600px] md:text-[20px] sm:leading-[19px] md:leading-[23px] lg:mb-[-20px] lg:mt-[0px]'>
                 Emprendiendo un viaje épico hacia la innovación en diseño y desarrollo.
               </p>
               <div className='flex'>
-                <div />
-                <a target='_blank' onClick={showChat} rel='noreferrer'>
+                <a target='_blank' onClick={showChat} rel='noreferrer' className='lg:mt-[10px]'>
                   <IButton label='Start Chat' variant='outlined' />
                 </a>
               </div>
@@ -67,7 +66,7 @@ export default function ChatAi () {
 
   return (
     <>
-      {screenSize.width <= 1400
+      {screenSize.width <= 1450
         ? (
           <div>
             {!chat

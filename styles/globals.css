@@ -17,6 +17,7 @@ html{
   height: 100%;
 }
 
+
 .titlehero::after {
   background-image: url(../public/assets/rectangle.svg);
   background-size: 33px 5px;
@@ -147,26 +148,8 @@ html{
   }
 }
 
-.receiver {
-  clip-path: polygon(12px 0, 100% 0, 100% 100%, 0 100%, 12px 70%);
-  min-width: 60px;
-  max-width: 700px;
-  padding: 12px 12px;
-  padding-left: 21px;
-  background-color: #C1DCD7;
-  color: #4C7B72;
-  border-radius: 16px 16px 16px 0;
-  font-family: 'Roboto', sans-serif;
-}
-
-.sender {
-  clip-path: polygon(12px 0, 100% 0, 100% 100%, 0 100%, 12px 70%);
-  min-width: 60px;
-  max-width: 700px;
-  padding: 12px 12px;
-  padding-left: 21px;
-  background-color: #C7C7C7;
-  color: #444444;
-  border-radius: 16px 16px 16px 0;
-  font-family: 'Roboto', sans-serif;
+@media screen and (min-width:1000px){
+  .llave{
+      display: none;
+  }
 }
