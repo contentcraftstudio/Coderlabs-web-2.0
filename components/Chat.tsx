@@ -76,7 +76,7 @@ function Chat () {
             />
           </div>
         </div>
-        <ChatBox selection={data[0]?.fields.prompt} onResponse={handleChatResponse} />
+        <ChatBox selection={data[0]?.fields} onResponse={handleChatResponse} />
       </motion.div>
     </>
   )

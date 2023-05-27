@@ -3,8 +3,14 @@ import { useState, useRef } from 'react'
 import { Input, message, ConfigProvider } from 'antd'
 import axios from 'axios'
 
+interface selction {
+  model: string
+  prompt: string
+  temperature: number
+  max_tokens: number
+}
 interface props {
-  selection: any
+  selection: selction
   onResponse: () => void
 }
 
@@ -31,17 +37,17 @@ function ChatBox ({ selection, onResponse }: props): JSX.Element {
         content: msg.content
       }))
 
-      const fields = selection
+      const fields = selection?.prompt
       const messages = [{ role: 'system', content: fields }, ...userMessages]
       setLoading(true)
       axios
         .post(
           'https://api.openai.com/v1/chat/completions',
           {
-            model: 'gpt-4',
+            model: selection.model,
             messages,
-            temperature: 0.5,
-            max_tokens: 150
+            temperature: selection?.temperature,
+            max_tokens: selection?.max_tokens
           },
           {
             headers: {
