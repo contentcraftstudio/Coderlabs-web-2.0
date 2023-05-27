@@ -79,7 +79,7 @@ function Chat () {
                 </List.Item>
               )}
             />
-            {loading ? <Skeleton active /> : null}
+            {loading ? <Skeleton active style={{ marginBlockEnd: 100, width: '90%' }} /> : null}
           </div>
         </div>
         <ChatBox selection={data[0]?.fields} onResponse={handleChatResponse} onLoading={loadingQuery} />
