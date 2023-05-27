@@ -1,12 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react'
-import { List, Typography } from 'antd'
+import { List } from 'antd'
 import ChatBox from './ChatBox'
-
+import { motion } from 'framer-motion'
 import { CardPop } from './CardPop'
 
 function Chat () {
   const [responses, setResponses] = useState([])
   const [data, setData] = useState([])
+  const [screenSize, setScreenSize] = useState({ width: 0, height: 0 })
+
   console.log('🚀 ~ file: Chat.tsx:10 ~ Chat ~ data:', data)
   const listRef = useRef(null)
   useEffect(() => {
@@ -20,8 +22,19 @@ function Chat () {
       .catch((error) => console.error(error))
   }, [])
 
+  useEffect(() => {
+    function handleResize () {
+      setScreenSize({ width: window.innerWidth, height: window.innerHeight })
+    }
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
+
   const handleChatResponse = (item: any) => {
-    setResponses(item)
+    setResponses((): any[] => [...item])
   }
 
   useEffect(() => {
@@ -32,17 +45,17 @@ function Chat () {
 
   return (
     <>
-      <div style={{ display: 'flex', height: '98vh', flexDirection: 'column', justifyContent: 'space-around' }}>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ ease: 'easeOut', duration: 3 }}
+        style={{ display: 'flex', height: screenSize.width <= 700 ? '90vh' : '98vh', flexDirection: 'column', justifyContent: 'space-between', paddingBottom: screenSize.width <= 700 ? 20 : 0 }}
+      >
         <div className='chat-messages-container' style={{ flex: 1, overflowY: 'auto', padding: '6px 12px' }} ref={listRef}>
           <div>
             <List
               split={false}
-              header={
-                <div style={{ position: 'fixed', zIndex: 2, backgroundColor: 'white', top: 0, paddingTop: 16, width: '100%' }}>
-                  <Typography.Title style={{ paddingInline: 16 }}> Coderlabs Ai</Typography.Title>
-                </div>
-
-              }
               locale={{ emptyText: ' ' }}
               style={{ paddingTop: '5%' }}
               key={responses.length}
@@ -64,7 +77,7 @@ function Chat () {
           </div>
         </div>
         <ChatBox selection={data[0]?.fields.prompt} onResponse={handleChatResponse} />
-      </div>
+      </motion.div>
     </>
   )
 }

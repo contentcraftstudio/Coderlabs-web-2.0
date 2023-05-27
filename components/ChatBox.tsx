@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 import { useState, useRef } from 'react'
-import { Input, message } from 'antd'
+import { Input, message, ConfigProvider } from 'antd'
 import axios from 'axios'
 
 interface props {
@@ -40,8 +40,8 @@ function ChatBox ({ selection, onResponse }: props): JSX.Element {
           {
             model: 'gpt-4',
             messages,
-            temperature: 0.6,
-            max_tokens: 450
+            temperature: 0.5,
+            max_tokens: 150
           },
           {
             headers: {
@@ -72,23 +72,36 @@ function ChatBox ({ selection, onResponse }: props): JSX.Element {
   }
 
   return (
-    <div style={{ paddingInline: 16, marginTop: 8 }}>
-      <>
-        <Input.Search
-          placeholder='Type your message here'
-          enterButton='send'
-          loading={loading}
-          style={{ backgroundColor: '#5EA496', borderRadius: '12px 0 0 12px' }}
-          inputMode='search'
-          allowClear
-          size='large'
-          value={inputValue}
-          onChange={(e) => setInputValue(e.target.value)}
-          onSearch={(value) => sendMessage('user', value)}
-        />
-        {error && <div className='error'>{error}</div>}
-      </>
-    </div>
+    <ConfigProvider
+      theme={{
+        token: {
+          colorPrimary: '#5EA496'
+        },
+        components: {
+          Input: {
+            colorBgContainer: '#FAFAFA'
+          }
+        }
+      }}
+    >
+      <div style={{ paddingInline: 16, marginTop: 8 }}>
+        <>
+          <Input.Search
+            placeholder='Type your message here'
+            enterButton='Send'
+            loading={loading}
+            style={{ backgroundColor: '#5EA496', borderRadius: '12px 0 0 12px' }}
+            inputMode='text'
+            allowClear
+            size='large'
+            value={inputValue}
+            onChange={(e) => setInputValue(e.target.value)}
+            onSearch={(value) => sendMessage('user', value)}
+          />
+          {error && <div className='error'>{error}</div>}
+        </>
+      </div>
+    </ConfigProvider>
   )
 }
 

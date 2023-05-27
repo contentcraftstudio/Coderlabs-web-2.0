@@ -13,7 +13,8 @@ export function CardPop (props:CardProps) {
         backgroundColor: role === 'assistant' ? '#C7C7C7' : '#C1DCD7',
         fontSize: 14,
         fontWeight: 400,
-        color: role === 'assistant' ? '#444444' : '#4C7B72'
+        color: role === 'assistant' ? '#444444' : '#4C7B72',
+        maxWidth: '70%'
       }}
     >
       {content}
