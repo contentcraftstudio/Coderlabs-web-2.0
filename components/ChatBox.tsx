@@ -12,9 +12,10 @@ interface selction {
 interface props {
   selection: selction
   onResponse: () => void
+  onLoading: () => void
 }
 
-function ChatBox ({ selection, onResponse }: props): JSX.Element {
+function ChatBox ({ selection, onResponse, onLoading }: props): JSX.Element {
   const [error, setError] = useState(null)
   const [loading, setLoading] = useState(false)
   const [inputValue, setInputValue] = useState('')
@@ -26,7 +27,7 @@ function ChatBox ({ selection, onResponse }: props): JSX.Element {
       content,
       timestamp: Date.now()
     }
-
+    onLoading(true)
     responsesRef.current.push(newMessage)
 
     setInputValue('')
@@ -36,6 +37,7 @@ function ChatBox ({ selection, onResponse }: props): JSX.Element {
         role: msg.role,
         content: msg.content
       }))
+      // onResponse([...userMessages])
 
       const fields = selection?.prompt
       const messages = [{ role: 'system', content: fields }, ...userMessages]
@@ -67,6 +69,7 @@ function ChatBox ({ selection, onResponse }: props): JSX.Element {
           })
           onResponse(responsesRef.current)
           setLoading(false)
+          onLoading(false)
         })
         .catch((error) => {
           console.log(error)

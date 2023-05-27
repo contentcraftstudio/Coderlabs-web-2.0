@@ -1,12 +1,15 @@
 import React, { useState, useEffect, useRef } from 'react'
-import { List } from 'antd'
+import { List, Skeleton } from 'antd'
 import ChatBox from './ChatBox'
 import { motion } from 'framer-motion'
 import { CardPop } from './CardPop'
 
 function Chat () {
   const [responses, setResponses] = useState([])
+  console.log('🚀 ~ file: Chat.tsx:9 ~ Chat ~ responses:', responses)
   const [data, setData] = useState([])
+  const [loading, setLoading] = useState(false)
+  console.log("🚀 ~ file: Chat.tsx:12 ~ Chat ~ loading:", loading)
   const [screenSize, setScreenSize] = useState({ width: 0, height: 0 })
 
   console.log('🚀 ~ file: Chat.tsx:10 ~ Chat ~ data:', data)
@@ -35,6 +38,10 @@ function Chat () {
 
   const handleChatResponse = (item: any) => {
     setResponses((): any[] => [...item])
+  }
+
+  const loadingQuery = (item: boolean) => {
+    setLoading(item)
   }
 
   useEffect(() => {
@@ -74,9 +81,10 @@ function Chat () {
                 </List.Item>
               )}
             />
+            {loading ? <Skeleton /> : null}
           </div>
         </div>
-        <ChatBox selection={data[0]?.fields} onResponse={handleChatResponse} />
+        <ChatBox selection={data[0]?.fields} onResponse={handleChatResponse} onLoading={loadingQuery} />
       </motion.div>
     </>
   )
