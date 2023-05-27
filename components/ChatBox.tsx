@@ -12,7 +12,7 @@ interface selction {
 interface props {
   selection: selction
   onResponse: () => void
-  onLoading: () => void
+  onLoading: (item: boolean) => void
 }
 
 function ChatBox ({ selection, onResponse, onLoading }: props): JSX.Element {

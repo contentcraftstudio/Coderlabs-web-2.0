@@ -82,7 +82,7 @@ export default function ChatAi () {
         : (
           <div className='infochat'>
             <div className='grid sm:grid-cols-1 xl:grid-cols-2 bg-[#232323] h-full sm:h-screen md:h-screen lg:h-screen xl:h-screen mx-auto'>
-              <div className='col-span-1 divide-y-2 divide-white lg:max-w-[720px] xl:max-w-[900px] md:max-w-[650px] lg:p-[70px] md:p-[30px] sm:p-[30px] lg:mt-[20px] md:mt-[210px] sm:mt-[90px] lg:ml-[100px] md:ml-[75px]'>
+              <div className='col-span-1 divide-y-2 divide-white lg:max-w-[720px] xl:max-w-[900px] md:max-w-[650px] lg:p-[70px] md:p-[30px] sm:p-[30px] md:mt-[210px] sm:mt-[90px] lg:mt-[320px] lg:ml-[100px] md:ml-[75px]'>
                 <div>
                   <Image
                     src={coderlabsLogo}

@@ -6,10 +6,8 @@ import { CardPop } from './CardPop'
 
 function Chat () {
   const [responses, setResponses] = useState([])
-  console.log('🚀 ~ file: Chat.tsx:9 ~ Chat ~ responses:', responses)
   const [data, setData] = useState([])
   const [loading, setLoading] = useState(false)
-  console.log("🚀 ~ file: Chat.tsx:12 ~ Chat ~ loading:", loading)
   const [screenSize, setScreenSize] = useState({ width: 0, height: 0 })
 
   console.log('🚀 ~ file: Chat.tsx:10 ~ Chat ~ data:', data)
@@ -40,7 +38,7 @@ function Chat () {
     setResponses((): any[] => [...item])
   }
 
-  const loadingQuery = (item: boolean) => {
+  const loadingQuery = (item: boolean): void => {
     setLoading(item)
   }
 
@@ -57,7 +55,7 @@ function Chat () {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ ease: 'easeOut', duration: 3 }}
-        style={{ display: 'flex', height: screenSize.width <= 700 ? '90vh' : '98vh', flexDirection: 'column', justifyContent: 'space-between', paddingBottom: screenSize.width <= 700 ? 20 : 0 }}
+        style={{ display: 'flex', height: screenSize.width <= 700 ? '90vh' : '98vh', flexDirection: 'column', justifyContent: 'space-between', paddingBottom: screenSize.width <= 700 ? 40 : 10 }}
       >
         <div className='chat-messages-container' style={{ flex: 1, overflowY: 'auto', padding: '6px 12px' }} ref={listRef}>
           <div>
@@ -81,7 +79,7 @@ function Chat () {
                 </List.Item>
               )}
             />
-            {loading ? <Skeleton /> : null}
+            {loading ? <Skeleton active /> : null}
           </div>
         </div>
         <ChatBox selection={data[0]?.fields} onResponse={handleChatResponse} onLoading={loadingQuery} />
