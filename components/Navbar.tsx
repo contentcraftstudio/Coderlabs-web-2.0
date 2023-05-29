@@ -1,10 +1,11 @@
-import Image from "next/image"
-import React from "react"
-import coderlabsLogo from "../public/assets/coderlabs_logo.svg"
-import SwitchButton from "./SwitchButton"
-import IButton from "./form/Button"
+/* eslint-disable @next/next/no-html-link-for-pages */
+import Image from 'next/image'
+import React from 'react'
+import coderlabsLogo from '../public/assets/coderlabs_logo.svg'
+import SwitchButton from './SwitchButton'
+import IButton from './form/Button'
 
-export default function Navbar() {
+export default function Navbar () {
   return (
     <nav
       id='nav'
@@ -16,7 +17,7 @@ export default function Navbar() {
         className='sm:w-[35px] sm:h-[32px] md:w-[45px] md:h-[40px] xl:w-[52px] xl:h-[48px]'
       />
       <div className='flex'>
-        <a href='/ai' rel='noreferrer'>
+        <a href='/ai'>
           <IButton label='Try our AI chat!' variant='text' />
         </a>
         <SwitchButton />

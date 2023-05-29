@@ -1,11 +1,11 @@
-import Image from "next/image"
-import React from "react"
-import { useTranslation } from "react-i18next"
-import AI from "../public/assets/AI.svg"
-import IButton from "./form/Button"
-import Link from "next/link"
+import Image from 'next/image'
+import React from 'react'
+import { useTranslation } from 'react-i18next'
+import AI from '../public/assets/AI.svg'
+import IButton from './form/Button'
+import Link from 'next/link'
 
-export default function IA() {
+export default function IA () {
   const { t } = useTranslation()
 
   return (
@@ -15,22 +15,22 @@ export default function IA() {
     >
       <div className='flex-1 flex-col items-start lg:min-h-[550px] py-3 sm:pb-[100px] lg:pb-[0px]'>
         <h2 className='font-secondary font-medium sm:text-[34px] md:text-[48px] lg:text-[60px] text-white sm:pb-[20px] lg:pb-[40px] xl:max-w-[700px]'>
-          {t("Explore_our_ia")}
+          {t('Explore_our_ia')}
         </h2>
         <div className='sm:space-y-[14px] space-y-[16px]'>
           <p className='font-normal font-primary sm:text-[16px] xl:max-w-[600px] md:text-[20px] text-white sm:leading-[19px] md:leading-[23px]'>
-            {t("paragraph_our_ia_1")}
+            {t('paragraph_our_ia_1')}
           </p>
           <p className='font-normal font-primary sm:text-[16px] xl:max-w-[600px] md:text-[20px] text-white sm:leading-[19px] md:leading-[23px]'>
-            {t("paragraph_our_ia_2")}
+            {t('paragraph_our_ia_2')}
           </p>
           <p className='font-normal font-primary sm:text-[16px] xl:max-w-[600px] md:text-[20px] text-white sm:leading-[19px] md:leading-[23px]'>
-            {t("paragraph_our_ia_3")}
+            {t('paragraph_our_ia_3')}
           </p>
         </div>
         <div className='sm:mt-[60px] lg:mt-[80px]'>
           <Link href='/ia'>
-            <IButton label={t("Visit_ia_now")} variant='outlined' />
+            <IButton label={t('Visit_ia_now')} variant='outlined' />
           </Link>
         </div>
       </div>

@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-pascal-case */
 /* eslint-disable @next/next/no-page-custom-font */
 import '../settings/i18'
 import Head from 'next/head'
@@ -11,7 +12,7 @@ import Hero from '@/components/Hero'
 import Navbar from '@/components/Navbar'
 import Team from '@/components/Team'
 import GetIn from '@/components/GetIn'
-import IA from '@/components/IA'
+// import IA from '@/components/IA'
 
 export default function Home () {
   return (
@@ -76,7 +77,7 @@ export default function Home () {
             <Team />
             <CardsTestominial />
             <Blog />
-            <IA />
+            {/* <IA /> */}
             <GetIn />
             <div className='md:pt-[125px]'>
               <Footer />

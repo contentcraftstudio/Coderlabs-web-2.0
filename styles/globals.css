@@ -17,6 +17,7 @@ html{
   height: 100%;
 }
 
+
 .titlehero::after {
   background-image: url(../public/assets/rectangle.svg);
   background-size: 33px 5px;
@@ -147,3 +148,8 @@ html{
   }
 }
 
+@media screen and (min-width:1000px){
+  .llave{
+      display: none;
+  }
+}
