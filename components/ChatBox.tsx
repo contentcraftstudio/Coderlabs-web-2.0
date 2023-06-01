@@ -96,6 +96,7 @@ function ChatBox ({ selection, onResponse, onLoading }: props): JSX.Element {
       <div style={{ paddingInline: 16, marginTop: 8 }}>
         <>
           <Input.Search
+            id='ai__coderlabs'
             placeholder='Type your message here'
             enterButton='Send'
             loading={loading}
