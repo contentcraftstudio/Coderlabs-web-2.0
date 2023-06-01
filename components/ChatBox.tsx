@@ -2,6 +2,7 @@
 import { useState, useRef } from 'react'
 import { Input, message, ConfigProvider } from 'antd'
 import axios from 'axios'
+import build from 'next/dist/build'
 
 interface selction {
   model: string
@@ -19,7 +20,39 @@ function ChatBox ({ selection, onResponse, onLoading }: props): JSX.Element {
   const [error, setError] = useState(null)
   const [loading, setLoading] = useState(false)
   const [inputValue, setInputValue] = useState('')
+
   const responsesRef = useRef([])
+
+  function buildLastQuery (content: string, response: string) {
+    const postData = {
+      fields: {
+        content: { 'en-US': content },
+        response: { 'en-US': response }
+      },
+      metadata: {
+        tags: []
+      }
+    }
+
+    const config = {
+      headers: {
+        'Content-Type': 'application/vnd.contentful.management.v1+json',
+        Authorization: 'Bearer CFPAT-fKiWMmszBuloITj0wuE2LZH2c46tGaLtswEXsJulQFU',
+        'X-Contentful-Content-Type': 'aiQuery'
+      }
+    }
+
+    // Make the request using axios
+    axios.post('https://api.contentful.com/spaces/8rxe1sxxuabo/environments/master/entries', postData, config)
+      .then(response => {
+        // Handle successful response
+        console.log(response.data)
+      })
+      .catch(error => {
+        // Handle error
+        console.error(error)
+      })
+  }
 
   const sendMessage = (role: string, content: string): void => {
     const newMessage = {
@@ -67,6 +100,7 @@ function ChatBox ({ selection, onResponse, onLoading }: props): JSX.Element {
             content: newResponse,
             timestamp: Date.now()
           })
+          buildLastQuery(content, newResponse)
           onResponse(responsesRef.current)
           setLoading(false)
           onLoading(false)
