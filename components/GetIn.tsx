@@ -31,9 +31,9 @@ export default function GetIn () {
         url: 'https://api.contentful.com/spaces/8rxe1sxxuabo/environments/master/entries',
         headers: {
           'Content-Type': 'application/vnd.contentful.management.v1+json',
-          'Authorization': 'Bearer CFPAT-fKiWMmszBuloITj0wuE2LZH2c46tGaLtswEXsJulQFU',
+          Authorization: 'Bearer CFPAT-fKiWMmszBuloITj0wuE2LZH2c46tGaLtswEXsJulQFU',
           'X-Contentful-Content-Type': 'contact',
-          'Cookie': '_auth_new_session=5d8d195093d1c15c79da56cedc7644c9',
+          Cookie: '_auth_new_session=5d8d195093d1c15c79da56cedc7644c9'
         },
         data: {
           fields: {
