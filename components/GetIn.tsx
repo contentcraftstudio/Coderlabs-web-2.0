@@ -119,7 +119,7 @@ export default function GetIn () {
               type='message'
             />
             <ErrorMessage name='message' />
-             { (formularioEnviado === true) ? (<p>Hemos recibido tu solicitud de contacto, muchas gracias!</p>) : null }
+            {(formularioEnviado === true) ? (<p>{t('Contact_Form_successful')}</p>) : null}
             <div className='sm:pt-[35px] md:pt-[42px] flex justify-end pb-[10px]'>
               <FormButton />
             </div>
