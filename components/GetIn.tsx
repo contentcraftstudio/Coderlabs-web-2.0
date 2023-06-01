@@ -28,13 +28,29 @@ export default function GetIn () {
     try {
       const response = await axios({
         method: 'POST',
-        url: 'https://sheet.best/api/sheets/d7b94f3f-7644-43e3-a223-038b9d06d2da',
+        url: 'https://api.contentful.com/spaces/8rxe1sxxuabo/environments/master/entries',
+        headers: {
+          'Content-Type': 'application/vnd.contentful.management.v1+json',
+          'Authorization': 'Bearer CFPAT-fKiWMmszBuloITj0wuE2LZH2c46tGaLtswEXsJulQFU',
+          'X-Contentful-Content-Type': 'contact',
+          'Cookie': '_auth_new_session=5d8d195093d1c15c79da56cedc7644c9',
+        },
         data: {
-          ...values
+          fields: {
+            name: { 'en-US': values.name },
+            email: { 'en-US': values.email },
+            phone: { 'en-US': values.phone },
+            reason: { 'en-US': values.contacting },
+            budget: { 'en-US': values.message },
+            hasbudget: { 'en-US': false }
+          },
+          metadata: {
+            tags: []
+          }
         }
       })
       console.log(response.status)
-      if (response.status === 200) {
+      if (response.status === 201) {
         setFormularioEnviado(true)
         action.resetForm()
         setTimeout(() => setFormularioEnviado(false), 4000)
@@ -53,13 +69,13 @@ export default function GetIn () {
           email: '',
           contacting: '',
           budget: '',
-          menssage: ''
+          message: ''
         }}
         onSubmit={handleValue}
         validationSchema={validationSchema}
       >
         <>
-          <div id='form__coderlabs' lassName='w-full bg-white rounded sm:px-[15px] md:px-[40px] py-[20px] sm:py-[20px] sm:space-y-[20px] md:space-y-[40px] text-sm'>
+          <div id='form__coderlabs' className='w-full bg-white rounded sm:px-[15px] md:px-[40px] py-[20px] sm:py-[20px] sm:space-y-[20px] md:space-y-[40px] text-sm'>
             <p className='font-primary sm:font-semibold md:font-medium sm:text-[20px] md:text-[40px] text-gray-700 sm:mb-[20px] md:mb-[62px] sm:mt-[20px] md:mt-[40px] lg:mt-[40px]'>
               {t('Get_in_touch')}
             </p>
@@ -99,10 +115,11 @@ export default function GetIn () {
             <ErrorMessage name='budget' />
             <FormInput
               label={t('Your_budget')}
-              name='menssage'
-              type='menssage'
+              name='message'
+              type='message'
             />
             <ErrorMessage name='message' />
+            {(formularioEnviado === true) ? (<p>{t('Contact_Form_successful')}</p>) : null}
             <div className='sm:pt-[35px] md:pt-[42px] flex justify-end pb-[10px]'>
               <FormButton />
             </div>

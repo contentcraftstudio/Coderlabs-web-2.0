@@ -60,6 +60,7 @@ export const ES = {
   Team: 'Equipo',
   Blog: 'Blog',
   Copy: '2023 CoderLabs SAS. Developing with love Barranquilla, Colombia.',
+  Contact_Form_successful: 'Hemos recibido tu solicitud de contacto, muchas gracias!',
    //Chat
    TitleChat: 'Descubre el Universo de Coderlabs con nuestro chat AI',
    SubtitleChat: 'Emprendiendo un viaje épico hacia la innovación en diseño y desarrollo.'
