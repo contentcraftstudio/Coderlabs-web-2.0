@@ -81,8 +81,13 @@ export default function TheAssistant () {
         : (
           <div>
             <div className='grid sm:grid-cols-1 xl:grid-cols-2 bg-[#232323] h-full sm:h-screen md:h-screen lg:h-screen xl:h-screen mx-auto'>
-              <div className='col-span-1 divide-y-2 divide-white md:max-w-[650px] mx-auto my-auto p-[20px]  flex-col-reverse  justify-end '>
+              <div className='col-span-1 divide-y-2 divide-white md:max-w-[650px] mx-auto my-auto p-[20px]'>
                 <div>
+                  <Image
+                    src={coderlabsLogo}
+                    alt='coderlabs logo'
+                    className='sm:w-[35px] sm:h-[32px] md:w-[45px] md:h-[40px] xl:w-[52px] xl:h-[48px] xl:mt-[-385px] xl:mb-[345px] sm:mt-[-115px] sm:mb-[145px] md:mt-[-235px] md:mb-[185px] lg:mt-[-385px]'
+                  />
                   <Image
                     className='lg:mb-[-72px] md:mb-[-60px] sm:mb-[-43px] sm:ml-[-10px] xl:w-[19px] sm:h-[40px] md:h-[50px] lg:h-[58px]'
                     src={logo}
