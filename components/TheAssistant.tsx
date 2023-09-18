@@ -3,8 +3,6 @@ import React, { useEffect, useState } from 'react'
 import IButton from './form/Button'
 import logo from '../public/assets/llavelogo.svg'
 import assistant from '../public/assets/logoAssist.png'
-
-import AI from '../public/assets/AI.svg'
 import { motion } from 'framer-motion'
 import ChatAssistant from './ChatAssistant'
 
@@ -115,14 +113,14 @@ export default function TheAssistant () {
                 </div>
               </div>
               <motion.div
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ ease: 'easeOut', duration: 1 }}
-                  className='chat col-span-1 md:max-w-[650px] lg:max-w-[1400px] xl:max-w-[1400px] bg-white p-2'
-                >
-                  <ChatAssistant />
-                </motion.div>
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ ease: 'easeOut', duration: 1 }}
+                className='chat col-span-1 md:max-w-[650px] lg:max-w-[1400px] xl:max-w-[1400px] bg-white p-2'
+              >
+                <ChatAssistant />
+              </motion.div>
             </div>
           </div>
           )}
