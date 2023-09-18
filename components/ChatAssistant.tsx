@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react'
-import { Button, Form, Input, Skeleton, Typography } from 'antd'
+import React, { useState, useEffect } from 'react'
+import { Button, Form, Input, Skeleton } from 'antd'
 import { motion } from 'framer-motion'
 import { useRequest } from 'ahooks'
 import HTMLRenderer from 'react-html-renderer'
@@ -13,7 +13,7 @@ function ChatAssistant () {
 
   const { loading, run } = useRequest(
     async params =>
-      await axios.post('https://cors-anywhere.herokuapp.com/https://node-ai-9d3892bd650a.herokuapp.com/ai', params, {
+      await axios.post('https://node-ai-9d3892bd650a.herokuapp.com/ai', params, {
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
           'Access-Control-Allow-Origin': '*',

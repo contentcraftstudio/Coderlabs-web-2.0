@@ -2,7 +2,6 @@
 import { useState, useRef } from 'react'
 import { Input, message, ConfigProvider } from 'antd'
 import axios from 'axios'
-import build from 'next/dist/build'
 
 interface selction {
   model: string
