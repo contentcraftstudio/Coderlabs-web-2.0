@@ -2,7 +2,6 @@ import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import IButton from './form/Button'
 import logo from '../public/assets/llavelogo.svg'
-import coderlabsLogo from '../public/assets/coderlabs_logo.svg'
 import assistant from '../public/assets/logoAssist.png'
 
 import AI from '../public/assets/AI.svg'
