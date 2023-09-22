@@ -63,29 +63,29 @@ function ChatAssistant () {
         style={{ display: 'flex', height: screenSize.width <= 700 ? '90vh' : '98vh', flexDirection: 'column', justifyContent: 'space-between', paddingBottom: screenSize.width <= 700 ? 40 : 10 }}
       >
         <div className='chat-messages-container' style={{ flex: 1, overflowY: 'auto', padding: '6px 12px' }}>
-          <div>
+          <div className='' style={{ width: '96%', margin: '0 auto', borderRadius: 12, borderWidth: 1.6, borderColor: responses ? '#00aab8' : 'white', padding: 32 }}>
             {/* Web View */}
             {loading ? <Skeleton active style={{ marginBlockEnd: 100, width: '90%' }} /> : <HTMLRenderer html={responses} />}
           </div>
         </div>
         <div style={{ width: '100%' }}>
           <Form
-            layout='inline'
+            // layout='inline'
             form={form}
             onFinish={onFinish}
             style={{ maxWidth: 'none', flexDirection: 'row', justifyContent: 'space-between' }}
           >
             <Form.Item name='about'>
-              <Input placeholder='about' style={{ width: (screenSize.width / 2) / 3.8 }} />
+              <Input placeholder='about' style={{ width: '96%', marginInline: 16, height: 42 }} />
             </Form.Item>
             <Form.Item name='link'>
-              <Input placeholder='link ' style={{ width: (screenSize.width / 2) / 3.8 }} />
+              <Input placeholder='link ' style={{ width: '96%', marginInline: 16, height: 42 }} />
             </Form.Item>
             <Form.Item name='cta'>
-              <Input placeholder='input placeholder' style={{ width: (screenSize.width / 2) / 4 }} />
+              <Input placeholder='input placeholder' style={{ width: '96%', marginInline: 16, height: 42 }} />
             </Form.Item>
             <Form.Item>
-              <Button htmlType='submit' color='#F3A44D'>Submit</Button>
+              <Button htmlType='submit' type='primary' style={{ backgroundColor: '#00aab8', width: '96%', marginInline: 16, height: 48 }}>Submit</Button>
             </Form.Item>
           </Form>
         </div>
