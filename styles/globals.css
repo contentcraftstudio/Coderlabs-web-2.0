@@ -65,8 +65,9 @@ html{
 /* tree css style */
 
 .body-tree{
-  background-color: #232323;
   height: 100vh;
+  background-image: url('../public/assets/tree/heroRocket.png');
+  background-size: cover;
 }
 
 
@@ -76,7 +77,7 @@ html{
   justify-content: center;
   align-items: center;
   gap: 40px;
-  padding: 5%;
+  padding: 35px;
 }
 
 .img-primary{
@@ -87,17 +88,17 @@ html{
 .red-social{
   display: flex;
   justify-content: center;
-  gap: 36px;
+  align-items: center;
+  gap: 20px;
 }
 
 .go{
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 2px #444444 solid;
   gap: 10px;
-  background-color: #FFFFFF;
   width: 300px;
-  height: 46px;
   border-radius: 100px;
 }
 
@@ -114,7 +115,7 @@ html{
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  color: #232323;
+  color: #fff;
 }
 
 .container{
