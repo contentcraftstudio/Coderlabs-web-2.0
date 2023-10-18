@@ -24,15 +24,14 @@ const usefulLinks = {
     "https://api.whatsapp.com/send?phone=3002771564&text=%C2%A1Hola!%2520%C2%BFPodr%C3%ADan%2520proporcionarme%2520detalles%2520sobre%2520las%2520soluciones%2520que%2520tienen%2520disponibles%2520y%2520c%C3%B3mo%2520podr%C3%ADan%2520adaptarse%2520a%2520las%2520necesidades%2520de%2520mi%2520proyecto?",
   medium: "https://medium.com/@coderlabs",
   behance: "https://www.behance.net/coderlabs_",
-  contactUs: "",
   rate: "https://www.google.com/search?q=coderlabs&oq=coderlabs+&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQRRgnGDsyBggCECMYJzIGCAMQABgeMgYIBBBFGDwyBggFEEUYPDIGCAYQRRg80gEIMzA2MGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#ip=1&lrd=0x8ef5d33f5ec4df59:0xdef63dcd429a31e1,3",
   tikTok: "https://www.tiktok.com/@coderlabs_?_t=8g2ifUx4JJF&_r=1",
 };
 
 const socialMedia = {
-  linkedin: "https://www.linkedin.com/company/coderlabs/?viewAsMember=true",
+  linkedin: "https://www.linkedin.com/company/coderlabsco/mycompany/",
   facebook: "https://www.facebook.com/coderlabs.code",
-  mail: "",
+  mail: "mailto:contact@coderlabs.co",
   twitter: "https://twitter.com/coderlabs_?s=09",
   threads: "https://www.threads.net/@coderlabs_",
   youtube: "https://www.youtube.com/channel/UCXNrRjrjXpRlkoUsac4BEEg",
