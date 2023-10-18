@@ -1,31 +1,21 @@
 import React from "react";
 
 export default function SaveToContacts() {
-  const contactInfo = {
-    name: "Coder Labs",
-    email: "contact@coderlabs.co",
-    phone: "+573002771564",
-    address:
-      "Calle 35A No. 17-74, piso 3, Barranquilla, Atlantico, Colombia, 080006",
-    businessHours: "Lunes - viernes 9:00 a.m - 18:00 p.m",
-    notes: "Confirmar antes de llegar",
-  };
 
   const handleDownload = () => {
     // Build the content of the vCard in vCard 4.0 format
     const vCardContent = `
     BEGIN:VCARD
     VERSION:4.0
-    N:Gump;Forrest;;Mr.;
-    FN:Forrest Gump
+    N:CoderLabs;
+    FN:CoderLabs
     ORG:CoderLabs.
-    TITLE:Shrimp Man
+    TITLE:Company
     TEL;TYPE=work,voice;VALUE=uri:tel:+57-300-277-1564
-    ADR;TYPE=WORK;PREF=1;LABEL="100 Waters Edge\nBaytown\, LA 30314\nUnited States of America":;;100 Waters Edge;Baytown;LA;30314;United States of America
-    ADR;TYPE=HOME;LABEL="42 Plantation St.\nBaytown\, LA 30314\nUnited States of America":;;42 Plantation St.;Baytown;LA;30314;United States of America
+    ADR;TYPE=WORK;PREF=1;LABEL="Calle 35A No. 17-74, piso 3;Barranquilla;Atlantico;080006;Colombia"
+    BUSINESS:Lunes - viernes 9:00 a.m - 18:00 p.m
     EMAIL:contact@coderlabs.co
-    REV:20080424T195243Z
-    x-qq:21588891
+    REV:20231018T195243Z
     END:VCARD`;
 
     // Create a Blob object for the content and create a URL for downloading it
