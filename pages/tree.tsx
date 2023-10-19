@@ -62,7 +62,7 @@ export default function tree() {
               onClick={() => {
                 window.open(usefulLinks.website);
               }}
-              className="flex w-full justify-between items-center px-2 py-2 border-2 rounded-[50px] border-gray-500 text-white font-semibold text-xs"
+              className="flex w-full justify-between items-center px-3 py-2 border-2 rounded-[50px] border-gray-500 text-white font-semibold text-xs"
             >
               <Image src={globeOrange} alt="coderlabs web" />
               <span className="italic">Website</span>
@@ -72,7 +72,7 @@ export default function tree() {
               onClick={() => {
                 window.open(usefulLinks.whatsApp);
               }}
-              className="flex w-full justify-between items-center px-2 py-2 border-2 rounded-[50px] border-gray-500 text-white font-semibold text-xs"
+              className="flex w-full justify-between items-center px-3 py-2 border-2 rounded-[50px] border-gray-500 text-white font-semibold text-xs"
             >
               <Image src={whatsAppOrange} alt="WhatsApp CoderLabs" />
               <span className="italic">WhatsApp</span>
@@ -82,7 +82,7 @@ export default function tree() {
               onClick={() => {
                 window.open(usefulLinks.medium);
               }}
-              className="flex w-full justify-between items-center px-2 py-2 border-2 rounded-[50px] border-gray-500 text-white font-semibold text-xs"
+              className="flex w-full justify-between items-center px-3 py-2 border-2 rounded-[50px] border-gray-500 text-white font-semibold text-xs"
             >
               <Image src={mediumOrange} alt="Medium CoderLabs" />
               <span className="italic">Medium</span>
@@ -93,7 +93,7 @@ export default function tree() {
               onClick={() => {
                 window.open(usefulLinks.behance);
               }}
-              className="flex w-full justify-between items-center px-2 py-2 border-2 rounded-[50px] border-gray-500 text-white font-semibold text-xs"
+              className="flex w-full justify-between items-center px-3 py-2 border-2 rounded-[50px] border-gray-500 text-white font-semibold text-xs"
             >
               <Image src={behanceOrange} alt="Behance CoderLabs" />
               <span className="italic">Behance</span>
@@ -105,7 +105,7 @@ export default function tree() {
               onClick={() => {
                 window.open(usefulLinks.rate);
               }}
-              className="flex w-full justify-between items-center px-2 py-2 border-2 rounded-[50px] border-gray-500 text-white font-semibold text-xs"
+              className="flex w-full justify-between items-center px-3 py-2 border-2 rounded-[50px] border-gray-500 text-white font-semibold text-xs"
             >
               <Image src={sparkklesOrange} alt="medium coderlabs" />
               <span className="italic">Rate your experience</span>
@@ -116,7 +116,7 @@ export default function tree() {
               onClick={() => {
                 window.open(usefulLinks.tikTok);
               }}
-              className="flex w-full justify-between items-center px-2 py-2 border-2 rounded-[50px] border-gray-500 text-white font-semibold text-xs"
+              className="flex w-full justify-between items-center px-3 py-2 border-2 rounded-[50px] border-gray-500 text-white font-semibold text-xs"
             >
               <Image src={tiktokOrange} alt="medium coderlabs" />
               <span className="italic">TikTok</span>
@@ -132,38 +132,38 @@ export default function tree() {
               target="_blank"
               className="btn-social"
             >
-              <Image src={linkedin} width={16} alt="linkedin coderlabs" />
+              <Image src={linkedin} width={20} height={20} alt="linkedin coderlabs" />
             </a>
             <a
               href={socialMedia.facebook}
               target="_blank"
               className="btn-social"
             >
-              <Image src={face} width={11} alt="facebook coderlabs" />
+              <Image src={face} width={11} height={11} alt="facebook coderlabs" />
             </a>
             <a href={socialMedia.mail} target="_blank" className="btn-social">
-              <Image src={email} width={18} alt="email coderlabs" />
+              <Image src={email} width={20} height={20} alt="email coderlabs" />
             </a>
             <a
               href={socialMedia.twitter}
               target="_blank"
               className="btn-social"
             >
-              <Image src={newTwitter} width={18} alt="twitter coderlabs" />
+              <Image src={newTwitter} width={20} height={20} alt="twitter coderlabs" />
             </a>
             <a
               href={socialMedia.threads}
               target="_blank"
               className="btn-social"
             >
-              <Image src={threads} width={18} alt="threads coderlabs" />
+              <Image src={threads} width={20} height={20} alt="threads coderlabs" />
             </a>
             <a
               href={socialMedia.youtube}
               target="_blank"
               className="btn-social"
             >
-              <Image src={youtube} width={18} alt="youtube coderlabs" />
+              <Image src={youtube} width={20} height={20} alt="youtube coderlabs" />
             </a>
           </section>
         </div>
