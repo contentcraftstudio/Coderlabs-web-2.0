@@ -11,9 +11,9 @@ import locationIcon from '../public/assets/tree/locationIcon.svg'
 import clockIcon from '../public/assets/tree/clockIcon.svg'
 
 const dataToShare = {
-    title: 'CoderLabs',
-    text: 'CoderLabs | Tree',
-    url: 'https://coderlabs.co/tree', 
+  title: 'CoderLabs',
+  text: 'CoderLabs | Tree',
+  url: 'https://coderlabs.co/tree'
 }
 
 export default function ContactUsDrawer () {
@@ -25,18 +25,17 @@ export default function ContactUsDrawer () {
         await navigator
           .share(dataToShare)
           .then(() =>
-            console.log("Hooray! Your content was shared")
-          );
+            console.log('Hooray! Your content was shared')
+          )
       } catch (error) {
-        console.log(`Oops! I couldn't share to the world because: ${error}`);
+        console.log(`Oops! I couldn't share to the world because: ${error}`)
       }
     } else {
       console.log(
-        "Web share is currently not supported on this browser."
-      );
+        'Web share is currently not supported on this browser.'
+      )
     }
-  };
-
+  }
 
   useEffect(() => {
     if (isOpen) {
