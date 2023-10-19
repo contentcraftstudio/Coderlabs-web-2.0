@@ -32,7 +32,7 @@ export default function SaveToContacts () {
   return (
     <div>
       <button
-        className='flex w-full justify-center items-center px-2 py-2 mt-16 text-black border rounded-[50px] border-gray-200 font-semibold text-xs'
+        className='flex w-full justify-center items-center px-2 py-3 mt-10 text-black border rounded-[50px] border-gray-200 font-semibold text-xs'
         onClick={handleDownload}
       >
         Save to contacts

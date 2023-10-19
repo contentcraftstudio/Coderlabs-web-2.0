@@ -10,18 +10,43 @@ import phoneIcon from '../public/assets/tree/phoneIcon.svg'
 import locationIcon from '../public/assets/tree/locationIcon.svg'
 import clockIcon from '../public/assets/tree/clockIcon.svg'
 
+const dataToShare = {
+    title: 'CoderLabs',
+    text: 'CoderLabs | Tree',
+    url: 'https://coderlabs.co/tree', 
+}
+
 export default function ContactUsDrawer () {
   const [isOpen, setIsOpen] = useState(false)
 
+  const handleShare = async () => {
+    if (navigator.share) {
+      try {
+        await navigator
+          .share(dataToShare)
+          .then(() =>
+            console.log("Hooray! Your content was shared")
+          );
+      } catch (error) {
+        console.log(`Oops! I couldn't share to the world because: ${error}`);
+      }
+    } else {
+      console.log(
+        "Web share is currently not supported on this browser."
+      );
+    }
+  };
+
+
   useEffect(() => {
     if (isOpen) {
-      document.body.style.overflowY = 'hidden' // Prevent scrolling
+      document.body.style.overflowY = 'hidden'
     } else {
-      document.body.style.overflowY = 'auto' // Enable scrolling
+      document.body.style.overflowY = 'auto'
     }
 
     return () => {
-      document.body.style.overflowY = 'auto' // Ensure scrolling is enabled when component unmounts
+      document.body.style.overflowY = 'auto'
     }
   }, [isOpen])
 
@@ -31,7 +56,7 @@ export default function ContactUsDrawer () {
         onClick={() => {
           setIsOpen(true)
         }}
-        className='flex w-full justify-between items-center px-2 py-1 border-2 rounded-[50px] border-gray-500 text-white font-semibold text-xs'
+        className='flex w-full justify-between items-center px-3 py-2 border-2 rounded-[50px] border-gray-500 text-white font-semibold text-xs'
       >
         <Image src={messageOrange} alt='Contact Us CoderLabs' />
         <span className='italic'>Contact Us</span>
@@ -39,22 +64,22 @@ export default function ContactUsDrawer () {
       </button>
       <main
         className={
-          ' fixed overflow-hidden z-10 bg-gray-900 bg-opacity-25 inset-0 transform ease-in-out ' +
+          ' fixed z-10 bg-gray-900 bg-opacity-25 inset-0 transform ease-in-out ' +
           (isOpen
-            ? ' transition-opacity opacity-100 duration-500 translate-x-0  '
+            ? ' transition-opacity opacity-100 duration-500 translate-y-0  '
             : ' transition-all delay-500 opacity-0 translate-y-full  ')
         }
       >
         <section
           className={
             'rounded-t-[20px] w-screen max-w-lg bottom-0 absolute bg-white h-full delay-400 duration-500 ease-in-out transition-all transform  ' +
-            (isOpen ? ' translate-y-[420px] ' : ' translate-y-full ')
+            (isOpen ? ' translate-y-[350px] ' : ' translate-y-full ')
           }
         >
           <article className='relative w-screen max-w-lg pb-10 flex flex-col gap-4 h-full space-y-6 p-6'>
 
             <section className='w-full flex justify-between items-center'>
-              <button>
+              <button onClick={handleShare}>
                 <Image src={shareIcon} alt='Share' />
               </button>
               <p className='uppercase font-semibold text-base'>Contact us</p>
