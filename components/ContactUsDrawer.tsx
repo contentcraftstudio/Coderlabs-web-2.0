@@ -56,7 +56,7 @@ export default function ContactUsDrawer () {
         onClick={() => {
           setIsOpen(true)
         }}
-        className='flex w-full justify-between items-center px-2 py-1 border-2 rounded-[50px] border-gray-500 text-white font-semibold text-xs'
+        className='flex w-full justify-between items-center px-3 py-2 border-2 rounded-[50px] border-gray-500 text-white font-semibold text-xs'
       >
         <Image src={messageOrange} alt='Contact Us CoderLabs' />
         <span className='italic'>Contact Us</span>
