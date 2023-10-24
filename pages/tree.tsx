@@ -18,6 +18,7 @@ import sparkklesOrange from '../public/assets/tree/sparkles.svg'
 import tiktokOrange from '../public/assets/tree/tiktok.svg'
 import coderLabsLogo from '../public/assets/tree/coderlabsLogo.svg'
 import ContactUsDrawer from '@/components/ContactUsDrawer'
+import imageBackground from '../public/assets/tree/heroRocket.png'
 
 const message =
   '¡Hola! ¿Podrían proporcionarme detalles sobre las soluciones que tienen disponibles y cómo podrían adaptarse a las necesidades de mi proyecto?'
@@ -43,12 +44,22 @@ const socialMedia = {
 
 export default function tree () {
   return (
-    <section className='bg-gray-800'>
-      <div className='body-tree max-w-md mx-auto'>
-        <div className='image-tree flex justify-center w-full h-[420px]'>
+    <section className='bg-[#000]'>
+      <div className='max-w-lg min-w-[360px] mx-auto relative'>
+        <Image
+          src={imageBackground}
+          alt='CoderLabs Rocket'
+          style={{
+            width: '100%',
+            height: 450,
+            objectFit: 'cover',
+            objectPosition: 'top'
+          }}
+        />
+        <div className='flex justify-center w-full h-[450px] absolute top-0'>
           <Image
             alt='Coderlabs Logo'
-            className='w-fill h-[160px]'
+            className='w-fill h-[160px] absolute'
             src={coderLabsLogo}
           />
         </div>
