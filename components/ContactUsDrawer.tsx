@@ -63,7 +63,7 @@ export default function ContactUsDrawer () {
       </button>
       <main
         className={
-          ' fixed z-10 bg-gray-900 bg-opacity-25 inset-0 transform ease-in-out ' +
+          ' fixed z-10 bg-[#000] bg-opacity-50 inset-0 transform ease-in-out ' +
           (isOpen
             ? ' transition-opacity opacity-100 duration-500 translate-y-0  '
             : ' transition-all delay-500 opacity-0 translate-y-full  ')
@@ -71,8 +71,8 @@ export default function ContactUsDrawer () {
       >
         <section
           className={
-            'rounded-t-[20px] w-screen max-w-lg bottom-0 absolute bg-white h-full delay-400 duration-500 ease-in-out transition-all transform  ' +
-            (isOpen ? ' translate-y-[350px] ' : ' translate-y-full ')
+            'rounded-t-[20px] left-[50%] w-screen max-w-lg bottom-0 absolute bg-white h-96 delay-400 duration-500 ease-in-out transition-all transform  ' +
+            (isOpen ? ' translate-x-[-50%]' : ' translate-y-full translate-x-[-50%] ')
           }
         >
           <article className='relative w-screen max-w-lg pb-10 flex flex-col gap-4 h-full space-y-6 p-6'>
