@@ -14,80 +14,88 @@ import roberto from '../public/assets/team/Roberto.png'
 import juan from '../public/assets/team/Juand.png'
 import jesus from '../public/assets/team/Jesus.png'
 import samuel from '../public/assets/team/Samuel.png'
+import dylan from '../public/assets/team/dylan.png'
 
 const TEAM = [
   {
     id: 1,
+    name: 'Jesus Barros',
+    occupation: 'CEO & Co-Founder',
+    linkedIn: 'barrosjesus',
+    photo: jesus
+  },
+  {
+    id: 2,
     name: 'Bryan Bolivar',
-    occupation: 'Founder',
+    occupation: 'Founder | Innovation',
     linkedIn: 'bolivarbryan',
     photo: bryan
   },
   {
-    id: 2,
+    id: 3,
     name: 'Melissa Vega',
     occupation: 'Director Operations',
     linkedIn: 'melissavega',
     photo: melissa
   },
   {
-    id: 3,
+    id: 4,
+    name: 'Dylan peña',
+    occupation: 'Administrative Assistant',
+    linkedIn: 'dylan_pena',
+    photo: dylan
+  },
+  {
+    id: 5,
     name: 'Armando Guzmán',
     occupation: 'Tech Lead',
     linkedIn: 'armandoguz',
     photo: armando
   },
   {
-    id: 4,
+    id: 6,
     name: 'Ricardo Torres',
     occupation: 'Product Designer',
     linkedIn: 'ricardotorres',
     photo: ricardo
   },
   {
-    id: 5,
+    id: 7,
     name: 'Laura Lamilla',
     occupation: 'Growth Brand',
     linkedIn: 'lauralamilla',
     photo: laura
   },
   {
-    id: 6,
+    id: 8,
     name: 'Jose Pérez',
     occupation: 'Front-end Developer',
     linkedIn: 'joseperez',
     photo: jose
   },
   {
-    id: 7,
+    id: 9,
     name: 'Kevin Molinares',
     occupation: 'Back-end Developer',
     linkedIn: 'kevindev',
     photo: kevin
   },
   {
-    id: 8,
+    id: 10,
     name: 'Roberto Bolivar',
     occupation: 'Front-end Developer',
     linkedIn: 'robertodev',
     photo: roberto
   },
   {
-    id: 9,
+    id: 11,
     name: 'Juan Obregón',
     occupation: 'UI Designer',
     linkedIn: 'juanobregon',
     photo: juan
   },
   {
-    id: 10,
-    name: 'Jesus Barros',
-    occupation: 'Front-end Developer',
-    linkedIn: 'barrosjesus',
-    photo: jesus
-  },
-  {
-    id: 11,
+    id: 12,
     name: 'Samuel Rodríguez',
     occupation: 'Front-end Developer',
     linkedIn: 'samuelrodev',
