@@ -41,8 +41,8 @@ const TEAM = [
   {
     id: 4,
     name: 'Dylan peña',
-    occupation: 'Administrative Assistant',
-    linkedIn: 'dylan_pena',
+    occupation: 'Business manager',
+    linkedIn: 'dylan.vpa',
     photo: dylan
   },
   {
