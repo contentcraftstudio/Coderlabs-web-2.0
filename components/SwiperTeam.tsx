@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { EffectCreative } from 'swiper'
 import Image from 'next/image'
 import bryan from '../public/assets/team/Bryan.png'
-import melissa from '../public/assets/team/Melissa.png'
 import juan from '../public/assets/team/Juand.png'
 import jesus from '../public/assets/team/Jesus.png'
 import dylan from '../public/assets/team/dylan.png'
@@ -45,7 +44,7 @@ const TEAM = [
     occupation: 'UI Designer',
     linkedIn: 'juanobregon',
     photo: juan
-  },
+  }
 ]
 
 export default function ProfileEdit () {
