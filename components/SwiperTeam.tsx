@@ -5,16 +5,10 @@ import { EffectCreative } from 'swiper'
 import Image from 'next/image'
 import bryan from '../public/assets/team/Bryan.png'
 import melissa from '../public/assets/team/Melissa.png'
-import armando from '../public/assets/team/Armando.png'
-import ricardo from '../public/assets/team/Ricardo.png'
-import laura from '../public/assets/team/Laura.png'
-import jose from '../public/assets/team/Jose.png'
-import kevin from '../public/assets/team/Kevin.png'
-import roberto from '../public/assets/team/Roberto.png'
 import juan from '../public/assets/team/Juand.png'
 import jesus from '../public/assets/team/Jesus.png'
-import samuel from '../public/assets/team/Samuel.png'
 import dylan from '../public/assets/team/dylan.png'
+import jedy from '../public/assets/team/jedy.jpeg'
 
 const TEAM = [
   {
@@ -33,74 +27,25 @@ const TEAM = [
   },
   {
     id: 3,
-    name: 'Melissa Vega',
-    occupation: 'Director Operations',
-    linkedIn: 'melissavega',
-    photo: melissa
-  },
-  {
-    id: 4,
     name: 'Dylan peña',
     occupation: 'Business manager',
     linkedIn: 'dylan.vpa',
     photo: dylan
   },
   {
-    id: 5,
-    name: 'Armando Guzmán',
+    id: 4,
+    name: 'Jedidiaz Fagundez',
     occupation: 'Tech Lead',
-    linkedIn: 'armandoguz',
-    photo: armando
+    linkedIn: 'jedidiazfagundez',
+    photo: jedy
   },
   {
-    id: 6,
-    name: 'Ricardo Torres',
-    occupation: 'Product Designer',
-    linkedIn: 'ricardotorres',
-    photo: ricardo
-  },
-  {
-    id: 7,
-    name: 'Laura Lamilla',
-    occupation: 'Growth Brand',
-    linkedIn: 'lauralamilla',
-    photo: laura
-  },
-  {
-    id: 8,
-    name: 'Jose Pérez',
-    occupation: 'Front-end Developer',
-    linkedIn: 'joseperez',
-    photo: jose
-  },
-  {
-    id: 9,
-    name: 'Kevin Molinares',
-    occupation: 'Back-end Developer',
-    linkedIn: 'kevindev',
-    photo: kevin
-  },
-  {
-    id: 10,
-    name: 'Roberto Bolivar',
-    occupation: 'Front-end Developer',
-    linkedIn: 'robertodev',
-    photo: roberto
-  },
-  {
-    id: 11,
+    id: 5,
     name: 'Juan Obregón',
     occupation: 'UI Designer',
     linkedIn: 'juanobregon',
     photo: juan
   },
-  {
-    id: 12,
-    name: 'Samuel Rodríguez',
-    occupation: 'Front-end Developer',
-    linkedIn: 'samuelrodev',
-    photo: samuel
-  }
 ]
 
 export default function ProfileEdit () {
@@ -203,7 +148,7 @@ export default function ProfileEdit () {
                       alt={team.name}
                       src={team.photo}
                       priority
-                      className='w-[100%] sm:h-[168px]  md:h-[219px] xl:h-[360px] rounded-[8px]'
+                      className='w-[100%] sm:h-[168px]  md:h-[219px] xl:h-[360px] rounded-[8px] object-cover'
                     />
                   </div>
                 </div>
