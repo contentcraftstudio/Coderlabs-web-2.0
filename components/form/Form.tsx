@@ -1,7 +1,7 @@
-import * as React from 'react'
-import { Formik, type FormikConfig, type FormikValues } from 'formik'
+import * as React from "react";
+import { Formik, type FormikConfig, type FormikValues } from "formik";
 
-export default function Form (props: FormikConfig<FormikValues> & any) {
+export default function Form(props: FormikConfig<FormikValues> & any) {
   return (
     <Formik
       validateOnBlur={false}
@@ -9,7 +9,7 @@ export default function Form (props: FormikConfig<FormikValues> & any) {
       validateOnMount={false}
       {...props}
     >
-      {() => (props.children)}
+      {() => props.children}
     </Formik>
-  )
+  );
 }

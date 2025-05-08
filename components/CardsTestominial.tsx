@@ -1,37 +1,37 @@
-import React from 'react'
-import CardTestimonials from './CardTestimonials'
-import kevin from '../public/assets/testimonial/kevin.png'
-import armando from '../public/assets/testimonial/armando.png'
-import melissa from '../public/assets/testimonial/melissa.png'
+import React from "react";
+import CardTestimonials from "./CardTestimonials";
+import kevin from "../public/assets/testimonial/kevin.png";
+import armando from "../public/assets/testimonial/armando.png";
+import melissa from "../public/assets/testimonial/melissa.png";
 
 const TestimonialData = {
   data: [
     {
       img: kevin,
-      name: 'KEVIN MOLINARES',
-      occupation: 'Back-end developer',
-      paragraph: 'testimonials_kevin'
+      name: "KEVIN MOLINARES",
+      occupation: "Back-end developer",
+      paragraph: "testimonials_kevin",
     },
     {
       img: armando,
-      name: 'ARMANDO GUZMÁN',
-      occupation: 'Tech lead | 2020-2024',
-      paragraph: 'testimonials_armando'
+      name: "ARMANDO GUZMÁN",
+      occupation: "Tech lead | 2020-2024",
+      paragraph: "testimonials_armando",
     },
     {
       img: melissa,
-      name: 'MELISSA VEGA ',
-      occupation: 'COO | 2022-2024',
-      paragraph: 'testimonials_melissa'
-    }
-  ]
-}
+      name: "MELISSA VEGA ",
+      occupation: "COO | 2022-2024",
+      paragraph: "testimonials_melissa",
+    },
+  ],
+};
 
-export default function CardsTestominial () {
-  const data = TestimonialData.data
+export default function CardsTestominial() {
+  const data = TestimonialData.data;
   return (
-    <div className='sm:px-[30px] md:px-[62px] lg:px-[103px] 2xl:px-[60px]'>
-      <div className='flex flex-col xl:flex-row justify-center items-center gap-[60px]'>
+    <div className="sm:px-[30px] md:px-[62px] lg:px-[103px] 2xl:px-[60px]">
+      <div className="flex flex-col xl:flex-row justify-center items-center gap-[60px]">
         <CardTestimonials
           img={data[0].img}
           name={data[0].name}
@@ -45,7 +45,7 @@ export default function CardsTestominial () {
           paragraph={data[1].paragraph}
         />
       </div>
-      <div className='flex flex-col justify-center items-center mt-[60px]'>
+      <div className="flex flex-col justify-center items-center mt-[60px]">
         <CardTestimonials
           img={data[2].img}
           name={data[2].name}
@@ -54,5 +54,5 @@ export default function CardsTestominial () {
         />
       </div>
     </div>
-  )
+  );
 }

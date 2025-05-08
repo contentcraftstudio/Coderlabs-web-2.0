@@ -1,35 +1,35 @@
 /* eslint-disable eqeqeq */
-import React, { useState } from 'react'
-import { useTranslation } from 'react-i18next'
+import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
-export default function SwitchButton () {
-  const { i18n } = useTranslation()
+export default function SwitchButton() {
+  const { i18n } = useTranslation();
 
-  const [isEnglish, setIsEnglish] = useState(true)
-  const [color, setColor] = useState('bg-green')
-  const [textColor, setTextColor] = useState('after:text-green')
+  const [isEnglish, setIsEnglish] = useState(true);
+  const [color, setColor] = useState("bg-green");
+  const [textColor, setTextColor] = useState("after:text-green");
 
   const handleClick = () => {
     if (isEnglish) {
-      i18n.changeLanguage('es')
+      i18n.changeLanguage("es");
     } else {
-      i18n.changeLanguage('en')
+      i18n.changeLanguage("en");
     }
-    setIsEnglish(!isEnglish)
-    if (color == 'bg-green') {
-      setColor('bg-orange')
-      setTextColor('after:text-orange')
+    setIsEnglish(!isEnglish);
+    if (color == "bg-green") {
+      setColor("bg-orange");
+      setTextColor("after:text-orange");
     } else {
-      setColor('bg-green')
-      setTextColor('after:text-green')
+      setColor("bg-green");
+      setTextColor("after:text-green");
     }
-  }
+  };
 
-  const translate = isEnglish ? "after:content-['EN']" : "after:content-['ES']"
+  const translate = isEnglish ? "after:content-['EN']" : "after:content-['ES']";
 
   return (
-    <label className='relative inline-flex items-center cursor-pointer'>
-      <input type='checkbox' value='' className='sr-only peer' />
+    <label className="relative inline-flex items-center cursor-pointer">
+      <input type="checkbox" value="" className="sr-only peer" />
       <div
         onClick={handleClick}
         className={`sm:w-[55px] md:w-[65px] lg:w-[70px] sm:h-[30px] md:h-[36px] lg:h-[40px] ${color} 
@@ -40,5 +40,5 @@ export default function SwitchButton () {
         after:transition-all peer-checked:bg-blue-600 sm:after:ml-[2px] md:after:ml-[5px] lg:after:ml-[7px]`}
       />
     </label>
-  )
+  );
 }

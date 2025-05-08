@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: 'https://coderlabs.co',
+  siteUrl: "https://coderlabs.co",
   generateRobotsTxt: true,
-  sitemapSize: 7000
-}
+  sitemapSize: 7000,
+};

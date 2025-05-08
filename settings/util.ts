@@ -1,4 +1,5 @@
-
-export function Dom () {
-  if (process.browser) { return document.querySelector('body') }
+export function Dom() {
+  if (process.browser) {
+    return document.querySelector("body");
+  }
 }
