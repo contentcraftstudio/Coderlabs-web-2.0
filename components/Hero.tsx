@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next'
 import IButton from './form/Button'
 import CalendarButton from './buttons/CalendarButton'
 
-export default function Hero() {
+export default function Hero () {
   const { t } = useTranslation()
   return (
     <div className='w-[100%] sm:px-[30px] md:px-[60px] xl:px-[103px] 2xl:px-[60px]'>

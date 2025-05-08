@@ -6,7 +6,7 @@ import ToolsSec from '@/components/ToolsSec'
 import Footer from '@/components/Footer'
 import Blog from '@/components/Blog'
 import CardsTestominial from '@/components/CardsTestominial'
-import Cards from '@/components/Cards'
+// import Cards from '@/components/Cards'
 import BestSec from '@/components/BestSec'
 import Hero from '@/components/Hero'
 import Navbar from '@/components/Navbar'
@@ -17,7 +17,7 @@ import ScrollIndicator from '../components/ScrollIndicator'
 import ClientsSection from '../components/sections/ClientsSection'
 import PortfolioSection from '../components/sections/PortfolioSection'
 
-export default function Home() {
+export default function Home () {
   return (
     <div>
       <Head>
@@ -73,7 +73,7 @@ export default function Home() {
             <ScrollIndicator />
             <ServiceSection />
           </section>
-          {/*<Cards />*/}
+          {/* <Cards /> */}
           <BestSec />
           <PortfolioSection />
           <ToolsSec />
