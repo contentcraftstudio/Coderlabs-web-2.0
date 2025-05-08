@@ -63,5 +63,20 @@ export const EN = {
   Contact_Form_successful: 'Thanks for sharing your contact info. We\'ll be in touch soon!',
   //Chat
   TitleChat: 'Discover the Coderlabs Universe with our AI chat',
-  SubtitleChat: 'Embarking on an epic journey towards innovation in design and development.'
+  SubtitleChat: 'Embarking on an epic journey towards innovation in design and development.',
+  // Software Section
+  Software_title: 'Custom',
+  Software_subtitle: 'Software',
+  Software_speed: 'faster',
+  Our_services: 'Our Services',
+  Services_count: '4 services',
+  Web_platforms_title: 'Web Platform Development',
+  Web_platforms_desc: 'Web solutions designed to enhance user experience and meet specific business objectives.',
+  Mobile_apps_title: 'Mobile App Development',
+  Mobile_apps_desc: 'We create scalable, user-focused and easy-to-use mobile applications for iOS, Android and TV.',
+  AI_integrations_title: 'AI Integrations',
+  AI_integrations_desc: 'We optimize and create custom integrations for your CRM, ERP, databases and business flows, enhanced with Artificial Intelligence.',
+  Startup_services_title: 'Complete Services for Startups',
+  Startup_services_desc: 'We develop your MVP, build your tech team and accompany you at every stage of growth with digital solutions ready to scale.',
+  Request_quote: 'Request a quote'
 }

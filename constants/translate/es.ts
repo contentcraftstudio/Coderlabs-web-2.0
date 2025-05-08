@@ -51,9 +51,15 @@ export const ES = {
   Submit: 'Enviar',
   // Footer
   Navigate: 'Navegar',
-  Contact: 'Contacto',
+  // Calendar Modal
+  Schedule_call: "Agenda una llamada con nosotros",
+  Close: "Cerrar",
+  
+  // Navigation
+  Identity: "Identidad",
+  Projects: "Proyectos",
+  Contact: "Contáctanos",
   Social_media: 'Social Media',
-  Identity: 'Identidad',
   Services: 'Servicios',
   Tools: 'Herramientas',
   Advantages: 'Ventajas',
@@ -63,5 +69,21 @@ export const ES = {
   Contact_Form_successful: 'Hemos recibido tu solicitud de contacto, muchas gracias!',
    //Chat
    TitleChat: 'Descubre el Universo de Coderlabs con nuestro chat AI',
-   SubtitleChat: 'Emprendiendo un viaje épico hacia la innovación en diseño y desarrollo.'
+   SubtitleChat: 'Emprendiendo un viaje épico hacia la innovación en diseño y desarrollo.',
+  
+  // Software Section
+  Software_title: 'Software a la',
+  Software_subtitle: 'medida',
+  Software_speed: 'más rápido',
+  Our_services: 'Nuestros Servicios',
+  Services_count: '4 servicios',
+  Web_platforms_title: 'Desarrollo de Plataformas Web',
+  Web_platforms_desc: 'Soluciones web diseñadas para mejorar la experiencia del usuario y cumplir objetivos comerciales específicos.',
+  Mobile_apps_title: 'Desarrollo de Apps móviles',
+  Mobile_apps_desc: 'Creamos aplicaciones móviles escalables, enfocadas en el usuario y fáciles de usar para iOS, Android y TV.',
+  AI_integrations_title: 'Integraciones con IA',
+  AI_integrations_desc: 'Optimizamos y creamos integraciones personalizadas para tu CRM, ERP, bases de datos y flujos empresariales, mejorados con Inteligencia Artificial.',
+  Startup_services_title: 'Servicios completos para Startups',
+  Startup_services_desc: 'Desarrollamos tu MVP, armamos tu equipo tech y te acompañamos en cada etapa del crecimiento con soluciones digitales listas para escalar.',
+  Request_quote: 'Solicite su cotización'
 }

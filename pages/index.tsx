@@ -12,10 +12,11 @@ import Hero from '@/components/Hero'
 import Navbar from '@/components/Navbar'
 import Team from '@/components/Team'
 import GetIn from '@/components/GetIn'
+import ServiceSection from '../components/sections/ServiceSection'
 
-export default function Home () {
+export default function Home() {
   return (
-    <>
+    <div>
       <Head>
         {/* Meta Data */}
         <title>Turning your projects into reality with our tech expertise | CoderLabs</title>
@@ -66,6 +67,7 @@ export default function Home () {
           <section className='sm:space-y-[200px] md:space-y-[514px] lg:space-y-[150px]'>
             <Navbar />
             <Hero />
+            <ServiceSection />
           </section>
           <Cards />
           <ToolsSec />
@@ -76,7 +78,6 @@ export default function Home () {
             <Team />
             <CardsTestominial />
             <Blog />
-            {/* <IA /> */}
             <GetIn />
             <div className='md:pt-[125px]'>
               <Footer />
@@ -84,6 +85,6 @@ export default function Home () {
           </section>
         </footer>
       </main>
-    </>
+    </div>
   )
 }
