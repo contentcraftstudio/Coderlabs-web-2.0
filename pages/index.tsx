@@ -12,7 +12,6 @@ import Hero from '@/components/Hero'
 import Navbar from '@/components/Navbar'
 import Team from '@/components/Team'
 import GetIn from '@/components/GetIn'
-// import IA from '@/components/IA'
 
 export default function Home () {
   return (

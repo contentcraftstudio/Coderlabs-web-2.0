@@ -3,7 +3,6 @@ import Image from 'next/image'
 import React from 'react'
 import coderlabsLogo from '../public/assets/coderlabs_logo.svg'
 import SwitchButton from './SwitchButton'
-import IButton from './form/Button'
 
 export default function Navbar () {
   return (
@@ -17,9 +16,6 @@ export default function Navbar () {
         className='sm:w-[35px] sm:h-[32px] md:w-[45px] md:h-[40px] xl:w-[52px] xl:h-[48px]'
       />
       <div className='flex'>
-        <a href='/ai'>
-          <IButton label='Try our AI chat!' variant='text' />
-        </a>
         <SwitchButton />
       </div>
     </nav>
