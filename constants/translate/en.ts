@@ -78,5 +78,10 @@ export const EN = {
   AI_integrations_desc: 'We optimize and create custom integrations for your CRM, ERP, databases and business flows, enhanced with Artificial Intelligence.',
   Startup_services_title: 'Complete Services for Startups',
   Startup_services_desc: 'We develop your MVP, build your tech team and accompany you at every stage of growth with digital solutions ready to scale.',
-  Request_quote: 'Request a quote'
+  Request_quote: 'Request a quote',
+  // Portfolio Section
+  Our_portfolio: 'Our Portfolio',
+  Portfolio_desc: 'Explore our portfolio of innovative digital solutions, showcasing our creativity and expertise in delivering results in record time.',
+  View_more_projects: 'View more projects',
+  Get_more_info: 'Get more information'
 }

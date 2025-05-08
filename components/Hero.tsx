@@ -5,8 +5,9 @@ import rocket from '../public/assets/rocket.svg'
 import logo from '../public/assets/llavelogo.svg'
 import { useTranslation } from 'react-i18next'
 import IButton from './form/Button'
+import CalendarButton from './buttons/CalendarButton'
 
-export default function Hero () {
+export default function Hero() {
   const { t } = useTranslation()
   return (
     <div className='w-[100%] sm:px-[30px] md:px-[60px] xl:px-[103px] 2xl:px-[60px]'>
@@ -36,9 +37,7 @@ export default function Hero () {
                 <IButton label={t('Make_it_happen')} variant='contained' />
               </a>
               <div className='mr-[20px]' />
-              <a href='https://calendly.com/coderlabs' target='_blank'>
-                <IButton label={t('Book_a_call')} variant='outlined' />
-              </a>
+              <CalendarButton />
             </div>
           </div>
         </div>

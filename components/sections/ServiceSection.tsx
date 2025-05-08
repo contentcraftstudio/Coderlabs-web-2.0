@@ -61,7 +61,7 @@ export default function ServiceSection() {
   }, [isVisible, count])
 
   return (
-    <section className="py-24 bg-white" id="our-services">
+    <section className="bg-white" id="our-services">
       <div className="container mx-auto px-4">
         {/* Título principal */}
         <div className="max-w-4xl mx-auto">

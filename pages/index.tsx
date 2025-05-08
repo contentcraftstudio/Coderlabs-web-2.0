@@ -13,6 +13,9 @@ import Navbar from '@/components/Navbar'
 import Team from '@/components/Team'
 import GetIn from '@/components/GetIn'
 import ServiceSection from '../components/sections/ServiceSection'
+import ScrollIndicator from '../components/ScrollIndicator'
+import ClientsSection from '../components/sections/ClientsSection'
+import PortfolioSection from '../components/sections/PortfolioSection'
 
 export default function Home() {
   return (
@@ -67,11 +70,14 @@ export default function Home() {
           <section className='sm:space-y-[200px] md:space-y-[514px] lg:space-y-[150px]'>
             <Navbar />
             <Hero />
+            <ScrollIndicator />
             <ServiceSection />
           </section>
-          <Cards />
-          <ToolsSec />
+          {/*<Cards />*/}
           <BestSec />
+          <PortfolioSection />
+          <ToolsSec />
+          <ClientsSection />
         </section>
         <footer className='w-full bg-background-dark sm:mt-[80px] md:mt-[100px] lg:mt-[200px] sm:pt-[39px] md:pt-[53px] lg:pt-[97px]'>
           <section className='lg:container mx-auto sm:space-y-[40px] md:space-y-[100px] lg:space-y-[140px] w-full]'>
