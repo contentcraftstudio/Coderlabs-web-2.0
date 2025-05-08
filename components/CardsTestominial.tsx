@@ -15,13 +15,13 @@ const TestimonialData = {
     {
       img: armando,
       name: 'ARMANDO GUZMÁN',
-      occupation: 'Tech lead',
+      occupation: 'Tech lead | 2020-2024',
       paragraph: 'testimonials_armando'
     },
     {
       img: melissa,
       name: 'MELISSA VEGA ',
-      occupation: 'Director of Customer Operations',
+      occupation: 'COO | 2022-2024',
       paragraph: 'testimonials_melissa'
     }
   ]
