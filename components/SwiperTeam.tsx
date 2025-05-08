@@ -3,11 +3,18 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { EffectCreative } from 'swiper'
 import Image from 'next/image'
-import bryan from '../public/assets/team/Bryan.png'
-import juan from '../public/assets/team/Juand.png'
+
 import jesus from '../public/assets/team/Jesus.png'
+import bryan from '../public/assets/team/Bryan.png'
+import einer from '../public/assets/team/Einer.png'
+import ricardo from '../public/assets/team/Ricardo-Garcia.png'
+import michael from '../public/assets/team/Maic.png'
+import antonio from '../public/assets/team/Antonio.png'
+import julian from '../public/assets/team/Julian.png'
+import keyner from '../public/assets/team/Keyner.png'
 import dylan from '../public/assets/team/dylan.png'
-import jedy from '../public/assets/team/jedy.jpeg'
+import william from '../public/assets/team/William.png'
+import kevin from '../public/assets/team/Kevin.png'
 
 const TEAM = [
   {
@@ -20,30 +27,72 @@ const TEAM = [
   {
     id: 2,
     name: 'Bryan Bolivar',
-    occupation: 'Founder | Innovation',
+    occupation: 'CIO & Co-Founder',
     linkedIn: 'bolivarbryan',
     photo: bryan
   },
   {
     id: 3,
-    name: 'Dylan peña',
-    occupation: 'Business manager',
+    name: 'Einer Fritz',
+    occupation: 'CFO',
+    linkedIn: 'einer-fritz',
+    photo: einer
+  },
+  {
+    id: 4,
+    name: 'Ricardo García',
+    occupation: 'UX/UI Design',
+    linkedIn: 'xeldo_o',
+    photo: ricardo
+  },
+  {
+    id: 5,
+    name: 'Michael Donado',
+    occupation: 'Project Manager',
+    linkedIn: 'michael-donado',
+    photo: michael
+  },
+  {
+    id: 6,
+    name: 'Antonio Rudas',
+    occupation: 'Project Manager',
+    linkedIn: 'antonio-rudas',
+    photo: antonio
+  },
+  {
+    id: 7,
+    name: 'Julian Garcia',
+    occupation: 'Mobile Developer',
+    linkedIn: 'julian-garcia',
+    photo: julian
+  },
+  {
+    id: 8,
+    name: 'Keyner Oswaldo',
+    occupation: 'Frontend Developer',
+    linkedIn: 'keyner-de-la-hoz',
+    photo: keyner
+  },
+  {
+    id: 9,
+    name: 'Dylan Peña',
+    occupation: 'Fullstack Developer',
     linkedIn: 'dylan.vpa',
     photo: dylan
   },
   {
-    id: 4,
-    name: 'Jedidiaz Fagundez',
-    occupation: 'Tech Lead',
-    linkedIn: 'jedidiazfagundez',
-    photo: jedy
+    id: 10,
+    name: 'William Perez',
+    occupation: 'Backend Developer',
+    linkedIn: 'william-perez',
+    photo: william
   },
   {
-    id: 5,
-    name: 'Juan Obregón',
-    occupation: 'UI Designer',
-    linkedIn: 'juanobregon',
-    photo: juan
+    id: 11,
+    name: 'Kevin Molinares',
+    occupation: 'Backend Developer',
+    linkedIn: 'kevin-chadid',
+    photo: kevin
   }
 ]
 
