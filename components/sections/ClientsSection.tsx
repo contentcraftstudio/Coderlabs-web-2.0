@@ -10,7 +10,7 @@ import fomo from "../../public/assets/clients/fomo.svg";
 import caribe from "../../public/assets/clients/caribe_startup.svg";
 import innogrowth from "../../public/assets/clients/innogrowth.svg";
 import grupit from "../../public/assets/clients/grupit.svg";
-import coaching from "../../public/assets/clients/coaching_comercial.svg";
+import coaching from "../../public/assets/clients/Coaching_Comercial.svg";
 import foodiverso from "../../public/assets/clients/foodiverso-new.png";
 import feanware from "../../public/assets/clients/feanware.svg";
 import lobby from "../../public/assets/clients/lobby-logo.svg";
