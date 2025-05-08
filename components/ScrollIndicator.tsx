@@ -11,16 +11,18 @@ const ScrollIndicator = () => {
   }
 
   return (
-    <div style={{
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
-      height: '10rem',
-      gap: '1.5rem',
-      position: 'relative',
-      color: colors.border // Asegurar que el color de texto también sea fijo
-    }}>
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '10rem',
+        gap: '1.5rem',
+        position: 'relative',
+        color: colors.border
+      }}
+    >
       <motion.div
         style={{
           display: 'flex',
