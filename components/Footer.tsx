@@ -29,32 +29,32 @@ function Lg() {
       </div>
       <div className="py-[40px] flex justify-start gap-[40px] flex-wrap">
         <a href="#nav">
-          <p className="font-primary text-[20px] font-medium text-gray-300 text-center">
+          <p className="font-primary text-[20px] font-medium text-gray-300 text-center hover:text-orange transition-colors">
             {t("Identity")}
           </p>
         </a>
         <a href="#services">
-          <p className="font-primary text-[20px] font-medium text-gray-300 text-center">
+          <p className="font-primary text-[20px] font-medium text-gray-300 text-center hover:text-orange transition-colors">
             {t("Services")}
           </p>
         </a>
         <a href="#tools">
-          <p className="font-primary text-[20px] font-medium text-gray-300 text-center">
+          <p className="font-primary text-[20px] font-medium text-gray-300 text-center hover:text-orange transition-colors">
             {t("Tools")}
           </p>
         </a>
         <a href="#advantages">
-          <p className="font-primary text-[20px] font-medium text-gray-300 text-center">
+          <p className="font-primary text-[20px] font-medium text-gray-300 text-center hover:text-orange transition-colors">
             {t("Advantages")}
           </p>
         </a>
         <a href="#team">
-          <p className="font-primary text-[20px] font-medium text-gray-300 text-center">
+          <p className="font-primary text-[20px] font-medium text-gray-300 text-center hover:text-orange transition-colors">
             {t("Team")}
           </p>
         </a>
         <a href="#blog">
-          <p className="font-primary text-[20px] font-medium text-gray-300 text-center">
+          <p className="font-primary text-[20px] font-medium text-gray-300 text-center hover:text-orange transition-colors">
             {t("Blog")}
           </p>
         </a>
@@ -71,12 +71,12 @@ function Lg() {
       </div>
       <div className="py-[40px] flex flex-col md:flex-row gap-4 justify-between flex-wrap px-[8px] items-center">
         <div className="flex flex-col md:flex-row justify-between gap-[44px] ">
-          <p className="font-primary text-[20px] font-medium text-gray-300">
+          <a href="mailto:contact@coderlabs.co" className="font-primary text-[20px] font-medium text-gray-300 hover:text-orange transition-colors">
             contact@coderlabs.co
-          </p>
-          <p className="font-primary text-[20px] font-medium text-gray-100">
-            +57 300 2771564
-          </p>
+          </a>
+          <a href="https://wa.me/573506236454" target="_blank" className="font-primary text-[20px] font-medium text-gray-100 hover:text-orange transition-colors">
+            +57 350 623 6454
+          </a>
           <p className="font-primary text-[20px] font-medium text-gray-100">
             Barranquilla
           </p>
@@ -162,32 +162,32 @@ function Sm() {
         </div>
         <div className="sm:pb-[40px] md:pb-[44px] flex justify-start sm:gap-[20px] md:gap-[30px] flex-wrap">
           <a href="#nav">
-            <p className="font-primary sm:text-[16px] md:text-[18px] font-medium text-gray-300 sm:text-start xl:text-center">
+            <p className="font-primary sm:text-[16px] md:text-[18px] font-medium text-gray-300 sm:text-start xl:text-center hover:text-orange transition-colors">
               {t("Identity")}
             </p>
           </a>
           <a href="#services">
-            <p className="font-primary sm:text-[16px] lg:text-[18px] font-medium text-gray-300 sm:text-start xl:text-center">
+            <p className="font-primary sm:text-[16px] lg:text-[18px] font-medium text-gray-300 sm:text-start xl:text-center hover:text-orange transition-colors">
               {t("Services")}
             </p>
           </a>
           <a href="#tools">
-            <p className="font-primary sm:text-[16px] lg:text-[18px] font-medium text-gray-300 sm:text-start xl:text-center">
+            <p className="font-primary sm:text-[16px] lg:text-[18px] font-medium text-gray-300 sm:text-start xl:text-center hover:text-orange transition-colors">
               {t("Tools")}
             </p>
           </a>
           <a href="#advantages">
-            <p className="font-primary sm:text-[16px] lg:text-[18px] font-medium text-gray-300 sm:text-start xl:text-center">
+            <p className="font-primary sm:text-[16px] lg:text-[18px] font-medium text-gray-300 sm:text-start xl:text-center hover:text-orange transition-colors">
               {t("Advantages")}
             </p>
           </a>
           <a href="#team">
-            <p className="font-primary sm:text-[16px] lg:text-[18px] font-medium text-gray-300 sm:text-start xl:text-center">
+            <p className="font-primary sm:text-[16px] lg:text-[18px] font-medium text-gray-300 sm:text-start xl:text-center hover:text-orange transition-colors">
               {t("Team")}
             </p>
           </a>
           <a href="#blog">
-            <p className="font-primary sm:text-[16px] lg:text-[18px] font-medium text-gray-300 sm:text-start xl:text-center">
+            <p className="font-primary sm:text-[16px] lg:text-[18px] font-medium text-gray-300 sm:text-start xl:text-center hover:text-orange transition-colors">
               {t("Blog")}
             </p>
           </a>
@@ -201,12 +201,12 @@ function Sm() {
         </div>
         <div className="flex flex-col md:flex-row gap-4 justify-between flex-wrap px-[8px]">
           <div className="flex flex-col md:flex-row justify-between sm:gap-[22px] md:gap-[30px]">
-            <p className="font-primary sm:text-[16px] lg:text-[18px] font-medium text-gray-300">
+            <a href="mailto:contact@coderlabs.co" className="font-primary sm:text-[16px] lg:text-[18px] font-medium text-gray-300 hover:text-orange transition-colors">
               contact@coderlabs.co
-            </p>
-            <p className="font-primary sm:text-[16px] lg:text-[18px] font-medium text-gray-100">
-              +57 300 2771564
-            </p>
+            </a>
+            <a href="https://wa.me/573506236454" target="_blank" className="font-primary sm:text-[16px] lg:text-[18px] font-medium text-gray-100 hover:text-orange transition-colors">
+              +57 350 623 6454
+            </a>
             <p className="font-primary sm:text-[16px] lg:text-[18px] font-medium text-gray-100">
               Barranquilla
             </p>
