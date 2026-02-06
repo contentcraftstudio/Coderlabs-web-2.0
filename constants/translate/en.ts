@@ -1,104 +1,119 @@
 export const EN = {
   // hero
-  title_hero: " Your technological ally to make your projects a reality",
+  // title_hero: " Your technological ally to make your projects a reality",
+  title_hero: "World-Class Engineering for Business Models that Challenge the Status Quo",
   Subtitle_hero:
-    "We create solutions for your business needs through digital solutions based on software development and design.",
-  paragraph_hero: "Create your website quickly with us!",
-  Make_it_happen: "Make it happen",
-  Book_a_call: "Book a call",
+    "We don't just write code; we optimize your company's operational DNA. At CoderLabs, we build custom solutions focused on scalability, continuous research, and results that transcend technology.",
+  paragraph_hero: "Experts in strengthening complex business processes.",
+  Make_it_happen: "Elevate Your Business",
+  Book_a_call: "Speak with a Specialist",
   // sec 1
-  How_we_do: "How we do?",
+  How_we_do: "How We Engineer It",
   paragraph_focus:
-    "We focus on your business objectives and needs, using agile methodologies, UX design and the main programming languages, to ensure the integration, performance and scalability of the created applications.",
-  Design_ui_ux: "UI/UX Design",
-  Development: "Development",
-  Dev_ops: "Dev ops",
-  Marketing_SEO: "Marketing (SEO)",
-  paragraph_card_desing: "User Interface Design and User Experience.",
+    "We analyze, research, and strengthen your business model using advanced engineering methodologies, systemic design, and scalable architectures.",
+  Design_ui_ux: "Systemic Design",
+  Development: "Software Architecture",
+  Dev_ops: "Automation & Scale",
+  Marketing_SEO: "Growth Engineering",
+  paragraph_card_desing: "Interfaces designed for operational efficiency and a flawless user experience.",
   paragraph_card_development:
-    "Creating easy-to-use, accessible, and effective websites and applications for end users.",
+    "Building robust digital assets, optimized for high performance and scalability.",
   paragraph_card_dev_ops:
-    "Improve the speed and efficiency of software deployment through collaboration and automation between development and operations.",
+    "We ensure business stability and speed through automated and secure deployment flows.",
   paragraph_card_marketing:
-    "Improve website or page to increase its ranking in organic search engine results, such as Google.",
+    "Strategic positioning and technical optimization to dominate competitive markets.",
   // sec 2
-  Tools_and_technologies: "Tools and technologies",
+  Tools_and_technologies: "Technical Infrastructure",
   paragraph_tools:
-    "We use technologies and tools to create more advanced applications and websites, with greater interactivity and functionality, which in turn improves the user experience and increases customer satisfaction and loyalty.",
+    "We use a cutting-edge technological stack to build solutions that not only respond to the present but are prepared for tomorrow's evolution.",
   // sec 3
-  We_are_the_best_choice: "We are the best choice!",
-  We_are_your_allies: "We are your allies",
-  Positive_impact: "Positive impact",
+  We_are_the_best_choice: "The Trust Blueprint",
+  We_are_your_allies: "Impact Engineering",
+  Positive_impact: "Operational Excellence",
   paragraph_card_best_choice:
-    "We are your allies to take your ideas to the next level taking into account your needs offering you comprehensive solutions that combine design and development under a collaborative work approach.",
+    "We integrate into our partners' processes to deliver engineering solutions that solve real business problems, not just technical ones.",
   paragraph_card_positive_impact:
-    "Our digital products ensure ease of use, efficiency, security, stability, and a product free of errors, adjusting to the needs of the client.",
+    "Our developments ensure absolute stability, enterprise-grade security, and a fault-proof architecture.",
   // sec 4
-  Our_team: "Our team:",
+  Our_team: "Senior Engineering Hub:",
   paragraph_our_team:
-    "At CoderLabs we have a team capable of facing challenges with solid strategies, human quality and user focus.",
+    "A collective of technical minds dedicated to permanent research and excellence in execution in every line of code.",
   // testimonials
   testimonials_kevin:
-    "We are a reliable team in the market thanks to our dedication, innovation and determination to exceed our customers' expectations.",
+    "At CoderLabs, technical quality is the foundation, but business vision is what makes us exceed every expectation.",
   testimonials_armando:
-    "We enjoy what we do so we train and improve every day in order to deliver a better product to you.",
+    "Continuous research is our engine; that's why every architecture we design is more robust than the last.",
   testimonials_melissa:
-    "We stand out for offering personalized solutions to our customers, being flexible and adapting to the needs and challenges of digital product development.",
+    "Systemic adaptability: we customize every process so that technology is the fuel for your operational growth.",
   // sec 5
-  Explore_our_blog: "Explore our blog",
+  Explore_our_blog: "The Engineering Journal",
   paragraph_our_blog_1:
-    "Stay up to date with the latest news on the tech industry, get design and development tips and stay informed on what's happening in the world by subscribing to our site on Medium.",
+    "Explore our research on operational processes, technological trends, and high-impact engineering case studies.",
   paragraph_our_blog_2:
-    "We share fresh and useful content on these topics, as well as tips and featured articles.",
-  paragraph_our_blog_3: "Subscribe today to not miss out!",
-  Visit_us_now: "Visit us now!",
+    "We share deep technical knowledge to strengthen the global digital ecosystem.",
+  paragraph_our_blog_3: "Subscribe to the Journal to stay at the forefront.",
+  Visit_us_now: "Read the Journal",
   // Social
-  Check_our_social_media_content: "Check our social media content",
+  Check_our_social_media_content: "CoderLabs Digital Ecosystem",
   // form Get In Touch
-  Get_in_touch: "Get In Touch",
-  Name: "Name",
-  Phone_number: "Phone number",
-  Email: "E-mail",
-  Contacting_us: "Why are you contacting us?",
-  Defined_budget: "Do you have a defined budget?",
-  Your_budget: "What is your budget?",
-  Submit: "Submit",
+  Get_in_touch: "Start the Transformation",
+  Name: "Partner Name",
+  Phone_number: "Contact Phone",
+  Email: "Corporate Email",
+  Contacting_us: "Which process do you want to strengthen?",
+  Defined_budget: "Do you have an investment budget?",
+  Your_budget: "Estimated investment range",
+  Submit: "Consolidate Contact",
   // Footer
-  Navigate: "Navigate",
-  Contact: "Contact",
-  Social_media: "Social Media",
-  Identity: "Identity",
-  Services: "Services",
-  Tools: "Tools",
-  Advantages: "Advantages",
-  Team: "Team",
-  Blog: "Blog",
-  Copy: "2023 CoderLabs SAS. Developing with love Barranquilla, Colombia.",
+  Navigate: "Site Map",
+  // Calendar Modal
+  Schedule_call: "Strategic Engineering Session",
+  Close: "Close",
+
+  // Navigation
+  Identity: "DNA",
+  Projects: "Solutions",
+  Contact: "Transform",
+  Social_media: "Impact Network",
+  Services: "Engineering Units",
+  Tools: "Technology",
+  Advantages: "Differentials",
+  Team: "Experts",
+  Blog: "Journal",
+  Copy: "CoderLabs SAS. Engineering Excellence | Barranquilla, Colombia.",
   Contact_Form_successful:
-    "Thanks for sharing your contact info. We'll be in touch soon!",
+    "Request received. A specialist engineer will analyze your case shortly.",
   //Chat
-  TitleChat: "Discover the Coderlabs Universe with our AI chat",
+  TitleChat: "CoderLabs Engineering Assistant",
   SubtitleChat:
-    "Embarking on an epic journey towards innovation in design and development.",
+    "Explore how we can strengthen your business model through systemic technology.",
+
   // Software Section
   Software_title: "Custom",
-  Software_subtitle: "Software",
-  Software_speed: "faster",
-  Our_services: "Our Services",
-  Services_count: "4 services",
-  Web_platforms_title: "Web Platform Development",
+  Software_subtitle: "Engineering",
+  Software_speed: "more efficient",
+  Our_services: "Engineering Units",
+  Services_count: "4 Units",
+  Web_platforms_title: "Web Ecosystems & Optimization",
   Web_platforms_desc:
-    "Web solutions designed to enhance user experience and meet specific business objectives.",
-  Mobile_apps_title: "Mobile App Development",
+    "High-performance web architectures designed to maximize productivity and business efficiency.",
+  Mobile_apps_title: "High-Impact Mobile Ecosystems",
   Mobile_apps_desc:
-    "We create scalable, user-focused and easy-to-use mobile applications for iOS, Android and TV.",
-  AI_integrations_title: "AI Integrations",
+    "Scalable mobile assets for iOS and Android, optimized for deep integration with your operational processes.",
+  AI_integrations_title: "Strengthening with AI",
   AI_integrations_desc:
-    "We optimize and create custom integrations for your CRM, ERP, databases and business flows, enhanced with Artificial Intelligence.",
-  Startup_services_title: "Complete Services for Startups",
+    "We inject intelligence into your business flows (CRM, ERP) to automate decision-making and data analysis.",
+  Startup_services_title: "High-Growth Scaling for Startups",
   Startup_services_desc:
-    "We develop your MVP, build your tech team and accompany you at every stage of growth with digital solutions ready to scale.",
-  Request_quote: "Request a quote",
+    "Shock engineering for MVPs and massive technical scaling, accompanying you in the constant evolution of your model.",
+  Request_quote: "Speak with an expert",
+
+  // The Lab Keys
+  The_Lab_title: "The Lab: Research & Development",
+  The_Lab_subtitle: "Where curiosity becomes a competitive advantage.",
+  The_Lab_desc: "We dedicate permanent resources to researching new methodologies and emerging technologies to ensure your business never stops.",
+  The_Lab_mission: "Mission: Strengthen processes through continuous innovation.",
+  The_Lab_vision: "Vision: Lead technological change through constant learning.",
   // Portfolio Section
   Our_portfolio: "Our Portfolio",
   Portfolio_desc:

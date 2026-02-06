@@ -14,8 +14,9 @@ import Team from "@/components/Team";
 import GetIn from "@/components/GetIn";
 import ServiceSection from "../components/sections/ServiceSection";
 import ScrollIndicator from "../components/ScrollIndicator";
-import ClientsSection from "../components/sections/ClientsSection";
-import PortfolioSection from "../components/sections/PortfolioSection";
+// import ClientsSection from "../components/sections/ClientsSection";
+import TheLabSection from "../components/sections/TheLabSection";
+import ClientsCarousel from "../components/ClientsCarousel";
 
 export default function Home() {
   return (
@@ -23,7 +24,7 @@ export default function Home() {
       <Head>
         {/* Meta Data */}
         <title>
-          Turning your projects into reality with our tech expertise | CoderLabs
+          World-Class Custom Engineering & Software Development | CoderLabs
         </title>
         <link rel="canonical" href="https://www.coderlabs.co/" />
         <meta
@@ -49,7 +50,7 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Turning your projects into reality with our tech expertise | CoderLabs"
+          content="World-Class Custom Engineering & Software Development | CoderLabs"
         />
         <meta
           property="og:description"
@@ -63,7 +64,7 @@ export default function Home() {
         <meta name="twitter:creator" content="@coderlabs_" />
         <meta
           name="twitter:title"
-          content="Turning your projects into reality with our tech expertise | CoderLabs"
+          content="World-Class Custom Engineering & Software Development | CoderLabs"
         />
         <meta
           name="twitter:description"
@@ -80,7 +81,6 @@ export default function Home() {
           content="Mobile and Web Development Partner"
         />
         <meta name="theme-color" content="#232323" />
-        <title>Coderlabs</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         {/* Roboto Fonts */}
@@ -96,14 +96,13 @@ export default function Home() {
           <section className="sm:space-y-[200px] md:space-y-[514px] lg:space-y-[150px]">
             <Navbar />
             <Hero />
-            <ScrollIndicator />
+            <ClientsCarousel />
             <ServiceSection />
           </section>
-          {/* <Cards /> */}
+          <TheLabSection />
           <BestSec />
-          <PortfolioSection />
           <ToolsSec />
-          <ClientsSection />
+          {/* <ClientsSection /> */}
         </section>
         <footer className="w-full bg-background-dark sm:mt-[80px] md:mt-[100px] lg:mt-[200px] sm:pt-[39px] md:pt-[53px] lg:pt-[97px]">
           <section className="lg:container mx-auto sm:space-y-[40px] md:space-y-[100px] lg:space-y-[140px] w-full]">

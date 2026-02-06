@@ -137,7 +137,7 @@ function Lg() {
       </div>
       <div className="py-[40px]">
         <p className="font-primary text-[16px] font-medium text-gray-400 text-center">
-          {t("Copy")}
+          {new Date().getFullYear()} {t("Copy")}
         </p>
       </div>
     </div>
@@ -281,7 +281,7 @@ function Sm() {
       <div className="sm:pt-[24px] md:pt-[44px] flex md:justify-center">
         <div className="md:w-[350px] sm:pb-[42px] md:pb-[107px]">
           <p className="font-primary sm:text-[12px] md:text-[14px]font-medium text-gray-400 md:text-center">
-            {t("Copy")}
+            {new Date().getFullYear()} {t("Copy")}
           </p>
         </div>
       </div>
