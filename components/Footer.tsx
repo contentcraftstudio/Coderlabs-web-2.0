@@ -74,8 +74,8 @@ function Lg() {
           <a href="mailto:contact@coderlabs.co" className="font-primary text-[20px] font-medium text-gray-300 hover:text-orange transition-colors">
             contact@coderlabs.co
           </a>
-          <a href="https://wa.me/573506236454" target="_blank" className="font-primary text-[20px] font-medium text-gray-100 hover:text-orange transition-colors">
-            +57 350 623 6454
+          <a href="https://wa.me/573002771564" target="_blank" className="font-primary text-[20px] font-medium text-gray-100 hover:text-orange transition-colors">
+            +57 300 277 1564
           </a>
           <p className="font-primary text-[20px] font-medium text-gray-100">
             Barranquilla
@@ -204,8 +204,8 @@ function Sm() {
             <a href="mailto:contact@coderlabs.co" className="font-primary sm:text-[16px] lg:text-[18px] font-medium text-gray-300 hover:text-orange transition-colors">
               contact@coderlabs.co
             </a>
-            <a href="https://wa.me/573506236454" target="_blank" className="font-primary sm:text-[16px] lg:text-[18px] font-medium text-gray-100 hover:text-orange transition-colors">
-              +57 350 623 6454
+            <a href="https://wa.me/573002771564" target="_blank" className="font-primary sm:text-[16px] lg:text-[18px] font-medium text-gray-100 hover:text-orange transition-colors">
+              +57 300 277 1564
             </a>
             <p className="font-primary sm:text-[16px] lg:text-[18px] font-medium text-gray-100">
               Barranquilla

@@ -7,7 +7,7 @@ export default function CalendarButton() {
 
   return (
     <a
-      href="https://wa.me/573506236454"
+      href="https://wa.me/573002771564"
       target="_blank"
       rel="noopener noreferrer"
       className="inline-block"

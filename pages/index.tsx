@@ -6,16 +6,13 @@ import ToolsSec from "@/components/ToolsSec";
 import Footer from "@/components/Footer";
 import Blog from "@/components/Blog";
 import CardsTestominial from "@/components/CardsTestominial";
-// import Cards from '@/components/Cards'
+import Cards from '@/components/Cards'
 import BestSec from "@/components/BestSec";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Team from "@/components/Team";
 import GetIn from "@/components/GetIn";
 import ServiceSection from "../components/sections/ServiceSection";
-import ScrollIndicator from "../components/ScrollIndicator";
-// import ClientsSection from "../components/sections/ClientsSection";
-import TheLabSection from "../components/sections/TheLabSection";
 import ClientsCarousel from "../components/ClientsCarousel";
 
 export default function Home() {
@@ -97,12 +94,11 @@ export default function Home() {
             <Navbar />
             <Hero />
             <ClientsCarousel />
+            <Cards />
             <ServiceSection />
           </section>
-          <TheLabSection />
           <BestSec />
           <ToolsSec />
-          {/* <ClientsSection /> */}
         </section>
         <footer className="w-full bg-background-dark sm:mt-[80px] md:mt-[100px] lg:mt-[200px] sm:pt-[39px] md:pt-[53px] lg:pt-[97px]">
           <section className="lg:container mx-auto sm:space-y-[40px] md:space-y-[100px] lg:space-y-[140px] w-full]">
